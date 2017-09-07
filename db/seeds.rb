@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+
+
+
+
+	CSV.foreach('./db/test.csv', headers: true, col_sep: ";") do |row|
+	m = Maker.new	
+	row.each do |header,field|  
+
+	m.send((header+'=').to_sym,field)
+
+	end
+	m.save
+	
+
+
+	end

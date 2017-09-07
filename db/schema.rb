@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170907100802) do
+ActiveRecord::Schema.define(version: 20170907121541) do
 
   create_table "makers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string   "brand",                     null: false
+    t.string   "brand",                     default: "no brand", null: false
     t.string   "code"
     t.string   "series"
     t.string   "model"
-    t.string   "kind",                      null: false
+    t.string   "kind",                      default: "no kind",  null: false
     t.string   "size"
     t.text     "description", limit: 65535
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
   end
 
 end
