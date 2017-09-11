@@ -11,10 +11,10 @@ require 'csv'
 
 
 
-	CSV.foreach('./db/test.csv', headers: true, col_sep: ";") do |row|
+	CSV.foreach('./db/makers.csv', headers: true, col_sep: ";") do |row|
 	m = Maker.new	
 	row.each do |header,field|  
-
+	field.downcase! unless field.nil?
 	m.send((header+'=').to_sym,field)
 
 	end
