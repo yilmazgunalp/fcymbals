@@ -1,5 +1,5 @@
 class Maker < ApplicationRecord
-
+has_many :retailers
 
 #brands
 scope  :zildjian, -> {where(brand: "zildjian")}	

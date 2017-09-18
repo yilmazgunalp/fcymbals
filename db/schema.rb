@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170907121541) do
+ActiveRecord::Schema.define(version: 20170918135549) do
 
   create_table "makers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "brand",                     default: "no brand", null: false
@@ -24,4 +24,18 @@ ActiveRecord::Schema.define(version: 20170907121541) do
     t.datetime "updated_at",                                     null: false
   end
 
+  create_table "retailers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer  "maker_id"
+    t.string   "title"
+    t.float    "price",       limit: 24
+    t.float    "s_price",     limit: 24
+    t.boolean  "in_stock"
+    t.text     "description", limit: 65535
+    t.string   "picture_url"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
+  end
+
+  add_foreign_key "retailers", "makers"
 end
