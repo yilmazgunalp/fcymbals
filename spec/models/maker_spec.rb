@@ -12,7 +12,7 @@ RSpec.describe Maker do
     expect(Maker.count).to eq 1
   end
 
-  it "has one after one was created in a previous example" do
+  it "has none after one was created in a previous example" do
     expect(Maker.count).to eq 0
   end
 
@@ -30,7 +30,14 @@ it "returns all 'Istanbul Mehmet' brand cymbals" do
       expect(Maker.mehmet.length).to eq(10)
     end
 
-
   end  
 
-  end
+
+context "find cymbals by type" do 
+    it "returns all 'crash' cymbals" do 
+      Maker.create!(kind: "crash")
+      expect(Maker.crash.length).to eq(1)
+    end
+end
+
+end
