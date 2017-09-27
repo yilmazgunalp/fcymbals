@@ -1,5 +1,5 @@
 class Maker < ApplicationRecord
-has_many :retailers
+has_many :retailers, :inverse_of => :maker
 
 #brands
 scope  :zildjian, -> {where(brand: "zildjian")}	
@@ -29,6 +29,10 @@ scope  :finger, -> {where(kind: "finger cymbals")}
 scope  :hand, -> {where(kind: "hand cymbals")}
 scope  :suspended, -> {where(kind: "suspended")}
 scope  :crotales, -> {where(kind: "crotales")}
+#series
+scope :series, -> {select(:series).distinct}
+#models
+scope :models, -> {select(:model).distinct}
 
 
 

@@ -15,3 +15,12 @@
 <p><%= Maker.hi_hat.length %> many Hi Hats!!</p>
 
 <p><%= Maker.sabian.hi_hat.length %> many Sabian Hi Hats!!</p>
+
+<h3>Sabian Hi hat series</h3>
+
+<% Maker.sabian.hi_hat.series.each do |i| %>
+
+<p><%= i.series %></p>
+
+<%end %>
+

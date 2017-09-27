@@ -1,0 +1,14 @@
+<ol>
+
+<% @retailers.each do |r| %>
+<li>
+<ul><%=r.title %>
+<li><%=r.maker.code %></li>
+<li><%=r.price %></li>
+<li><%=r.s_price %></li>
+</ul>	
+</li>
+
+<%end %>
+
+</ol>
