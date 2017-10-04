@@ -1,14 +1,15 @@
-<ol>
 
 <% @retailers.each do |r| %>
-<li>
-<ul><%=r.title %>
+<h4><%=r.title %></h4>
+<a href= <%=r.link %>>Product Link</a>
+<ul>	
+<li><%=r.maker.brand %></li>
 <li><%=r.maker.code %></li>
-<li><%=r.price %></li>
-<li><%=r.s_price %></li>
+<li><%=r.maker.series %></li>
+<li><%=r.maker.model %></li>
+<li><%=r.maker.kind %></li>
+<li><%=r.maker.size %></li>
 </ul>	
-</li>
 
 <%end %>
 
-</ol>

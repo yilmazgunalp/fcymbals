@@ -55,7 +55,6 @@ istanbul:
   - gong
   msx:
   - msx
-
 bosphorus:
   basics:
   - traditional
@@ -83,7 +82,6 @@ bosphorus:
   - groove
   hammer series:
   - hammer series
-
 dream:
   bliss:
   - paper thin crash
@@ -141,7 +139,6 @@ dream:
   - effect
   finger cymbals:
   - effect
-
 istanbul mehmet:
   traditional:
   - traditional
@@ -202,7 +199,6 @@ istanbul mehmet:
   symphonic:
   - 
   - super symphonic
-
 meinl:
   byzance traditional:
   - 6' splash
@@ -595,7 +591,6 @@ meinl:
   - 14' brass marching cymbal pair
   - 16' brass marching cymbal pair
   - 18' brass marching cymbal pair
-
 sabian:
   hh:
   - king
@@ -826,7 +821,6 @@ sabian:
   - becker bow cymbal
   - finger cymbals
   - chopper
-
 ufip:
   bionic:
   - splash
@@ -952,7 +946,6 @@ ufip:
   - crotales
   - flat bells
   - tubular bells
-
 zildjian:
   k kerope:
   - kerope
@@ -1168,7 +1161,6 @@ zildjian:
   - high octave-single note (specify note)
   - 'low octave (13 notes) w/o bar '
   - low octave-single note (specify note)
-
 paiste:
   signature traditionals:
   - light ride
@@ -1326,3 +1318,4 @@ paiste:
   - ride crash
   - sound edge hats
   - crash ride
+  

@@ -1,24 +1,31 @@
-# README
+# CYMBAL FINDER APP #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###DATABASE SETUP###
 
-Things you may want to cover:
+1.Create a table to include all cymbals from all manufacturers:
+	Sabian, Zildjian, Paiste, Meinl, Istanbul Mehmet, Agop, Bosphorus, Dream, UFIP ...
 
-* Ruby version
+2.Create a table for all retailers in Australia to include all cymbals they have in stock
+	a) Write a web-scraping script to automatically scrape retailer websites and update database
 
-* System dependencies
+###APP FUNCTIONS###
 
-* Configuration
+1. Write a search algorithm to  list all cymbals based on query string which may include:
+	brand,type,size,model,sku
 
-* Database creation
+2. Make and advanced search function
 
-* Database initialization
+###FRONT END###
 
-* How to run the test suite
+1.Make the front end.
 
-* Services (job queues, cache servers, search engines, etc.)
+2.Posibble features:
+	* search by sound
+	* add reviews
+	* google ads
+	* user sign up for updates
+	* API for retailers
 
-* Deployment instructions
 
-* ...
+
+load data local infile  '~/ygprojects/hevna/db/manufacturers/bosphorus/_bosphorus.csv' into table makers fields terminated by ','  ignore 1 lines ;

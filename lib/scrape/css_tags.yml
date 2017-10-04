@@ -1,0 +1,10 @@
+gh_music:
+  product: .item
+  title: .pro_title
+  price: .price.redprice
+  s_price: .specialPrice
+  in_stock: 
+  picture: a.product-image img
+  link: a.product-image 
+  desc: div.std
+
