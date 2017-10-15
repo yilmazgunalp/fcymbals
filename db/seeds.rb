@@ -11,7 +11,7 @@ require 'csv'
 
 
 	i =  0
-	CSV.foreach('./db/makers_excel_amended.csv', headers: true, col_sep: ";") do |row|
+	CSV.foreach('./db/cleaned_makers_at_swires.csv', headers: true, col_sep: ";") do |row|
 		i += 1
 	begin	
 	m = Maker.new	
@@ -28,21 +28,4 @@ require 'csv'
 	end
 	end
 
-	i =  0
-	CSV.foreach('./db/paiste.csv', headers: true, col_sep: ";") do |row|
-		i += 1
-	begin	
-	m = Maker.new	
-	row.each do |header,field|  
-	field.downcase! unless field.nil?
-	m.send((header+'=').to_sym,field)
-
-	end
-	m.save
-	rescue => e
-
-	puts e
-	puts "#{i}:" + row.to_s	
-
-	end
-	end
+	

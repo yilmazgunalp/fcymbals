@@ -17,7 +17,7 @@ page.css(@tags[merchant]['product']).each do |item|
  r.title = item.at_css(@tags[merchant]['title']).text 
  r.picture_url = item.at_css(@tags[merchant]['picture'])['src']
  #product page link and description on that page 
- # r.link = item.at_css(@tags[merchant]['link'])['href']
+ r.link = item.at_css(@tags[merchant]['link'])['href']
  # r.description = Mechanize::Page::Link.new(item.at_css(@tags[merchant]['link']),@agent,page).click.css(@tags[merchant]['desc']).text
  r.save!
 end	

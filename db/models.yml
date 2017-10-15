@@ -670,7 +670,7 @@ sabian:
   - b8x first pack
   - b8x 2-pack
   - b8x complete set
-  bxpro:
+  b8p:
   - medium ride
   - rock ride
   - thin crash
@@ -764,7 +764,7 @@ sabian:
   - hhx evolution performance set
   - hhx effects pack
   - hhx praise & worship pack
-  paragon:
+  para:
   - ride
   - crash
   - hats
@@ -774,7 +774,7 @@ sabian:
   - paragon performance set
   - paragon effects pack
   - paragon complete set-up
-  artisan:
+  artis:
   - light ride
   - medium ride
   - crash
@@ -1166,11 +1166,13 @@ paiste:
   - light ride
   - thin crash
   - medium light hi-hat
+  signature dark energy:
   - dark energy ride mark i
   - dark energy ride mark ii
   - dark energy crash mark i
   - dark energy hats mark i
   - dark energy splash mark i
+  signature:
   - blue bell ride
   - full ride
   - reflector bell ride
@@ -1191,16 +1193,32 @@ paiste:
   - splash
   - reflector splash
   - mega cup chime
+  signature precision:
   - ride
   - heavy ride
   - crash
+  - thin crash
   - heavy crash
-  - hi-hat
+  - sound edge hi-hat
+  - hi hat
   - heavy hi-hat
   - china
+  - splash
+  formula 602 modern essentials:
+  - ride
+  - crash
+  - hi hat
+  - china
+  - splash
+  formula 602 classic sounds:
   - medium ride
   - medium flatride
+  - thin crash
   - paperthin
+  - sound edge hi-hat
+  - medium hi-hat
+  masters:
+  - medium ride
   - dark dry ride
   - deep ride
   - dark ride
@@ -1213,16 +1231,28 @@ paiste:
   - dark hi-hat
   - thin hi-hat
   - swish
+  '2002':
   - power ride
+  - ride
   - big ride
+  - heavy ride
   - giga bell ride
   - swish ride
+  - thin crash
+  - crash
   - medium
+  - power crash
   - wild crash
+  - medium hi-hat
+  - sound edge hi-hat
+  - heavy hi-hat
   - novo china
+  - china
   - wild china
+  - splash
   - mega bell
   - accent cymbal
+  2002 black:
   - big beat hi-hat 16
   - big beat hi-hat 15
   - big beat 18
@@ -1231,26 +1261,55 @@ paiste:
   - big beat 21
   - big beat 22
   - big beat 24
+  rude:
   - mega power ride
+  - power ride
   - ride/crash
   - power ride the reign
+  - thin crash
+  - wild crash
   - crash/ride
   - basher
+  - sound edge hi-hat
+  - hi hat
+  - china
+  - novo china
+  - wild china
   - blast china
+  - splash
   - shred bell
+  giant beat:
+  - hi hat
   - giant beat
+  - thin
+  alpha:
+  - full ride
   - rock ride
   - metal ride
+  - thin crash
   - medium crash
   - rock crash
   - metal crash
   - medium hats
+  - sound edge hi-hat
   - rock hats
   - metal edge hats
+  - china
   - rock china
   - thin splash
   - metal splash
+  900 series:
+  - ride
+  - heavy ride
   - mega ride
+  - crash
+  - heavy crash
+  - sound edge hi-hat
+  - heavy hi-hat
+  - hi hat
+  - china
+  - splash
+  color sound 900:
   - black ride
   - black heavy ride
   - black mega ride
@@ -1291,6 +1350,7 @@ paiste:
   - blue splash
   - red splash
   - purple splash
+  pst x:
   - djs 45 ride
   - swiss thin crash
   - swiss medium crash
@@ -1301,6 +1361,7 @@ paiste:
   - swiss splash
   - pure bell
   - swiss flanger stack
+  pst 8:
   - reflector medium ride
   - reflector rock ride
   - reflector medium crash
@@ -1314,8 +1375,37 @@ paiste:
   - reflector china
   - reflector thin splash
   - reflector rock splash
+  pst 7:
+  - ride
+  - light ride
+  - heavy ride
+  - thin crash
+  - crash
+  - heavy crash
+  - heavy hi-hat
+  - hi hat
   - light hi-hat
+  - china
+  - splash
+  pst 5:
+  - medium ride
+  - rock ride
   - ride crash
+  - medium crash
+  - rock crash
   - sound edge hats
+  - medium hats
+  - china
+  - splash
+  pst 3:
+  - ride
   - crash ride
-  
+  - crash
+  - hi hat
+  - china
+  - splash
+  101 brass:
+  - ride
+  - crash ride
+  - crash
+  - hi hat

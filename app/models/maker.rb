@@ -1,6 +1,12 @@
 class Maker < ApplicationRecord
 has_many :retailers, :inverse_of => :maker
 
+def maker_lookup 
+
+
+
+end	
+
 #brands
 scope  :zildjian, -> {where(brand: "zildjian")}	
 scope  :sabian, -> {where(brand: "sabian")}	

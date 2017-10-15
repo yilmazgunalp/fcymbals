@@ -6637,3 +6637,183 @@ D, [2017-10-04T22:00:04.087331 #8180] DEBUG -- : Read 8096 bytes (84390 total)
 D, [2017-10-04T22:00:04.087448 #8180] DEBUG -- : Read 227 bytes (84617 total)
 D, [2017-10-04T22:00:04.087531 #8180] DEBUG -- : Read 8 bytes (84625 total)
 D, [2017-10-04T22:00:04.087755 #8180] DEBUG -- : gzip response
+I, [2017-10-08T20:19:10.561310 #3793]  INFO -- : Net::HTTP::Get: /drums/cymbals?limit=all
+D, [2017-10-08T20:19:10.595064 #3793] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2017-10-08T20:19:10.595223 #3793] DEBUG -- : request-header: accept => */*
+D, [2017-10-08T20:19:10.595292 #3793] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2017-10-08T20:19:10.595355 #3793] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2017-10-08T20:19:10.595418 #3793] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2017-10-08T20:19:10.595480 #3793] DEBUG -- : request-header: host => www.ghmusic.com.au
+I, [2017-10-08T20:19:52.774584 #3793]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2017-10-08T20:19:52.774838 #3793] DEBUG -- : response-header: date => Sun, 08 Oct 2017 09:19:12 GMT
+D, [2017-10-08T20:19:52.774930 #3793] DEBUG -- : response-header: server => Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+D, [2017-10-08T20:19:52.775003 #3793] DEBUG -- : response-header: x-powered-by => PHP/5.4.33
+D, [2017-10-08T20:19:52.775047 #3793] DEBUG -- : response-header: x-frame-options => SAMEORIGIN
+D, [2017-10-08T20:19:52.775088 #3793] DEBUG -- : response-header: cache-control => max-age=1
+D, [2017-10-08T20:19:52.775130 #3793] DEBUG -- : response-header: expires => Sun, 08 Oct 2017 09:19:13 GMT
+D, [2017-10-08T20:19:52.775176 #3793] DEBUG -- : response-header: vary => User-Agent,Accept-Encoding
+D, [2017-10-08T20:19:52.775241 #3793] DEBUG -- : response-header: x-content-type-options => nosniff
+D, [2017-10-08T20:19:52.775326 #3793] DEBUG -- : response-header: x-xss-protection => 1; mode=block
+D, [2017-10-08T20:19:52.775382 #3793] DEBUG -- : response-header: content-encoding => gzip
+D, [2017-10-08T20:19:52.775450 #3793] DEBUG -- : response-header: keep-alive => timeout=5, max=100
+D, [2017-10-08T20:19:52.775519 #3793] DEBUG -- : response-header: connection => Keep-Alive
+D, [2017-10-08T20:19:52.775591 #3793] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2017-10-08T20:19:52.775655 #3793] DEBUG -- : response-header: content-type => text/html; charset=UTF-8
+D, [2017-10-08T20:19:52.776765 #3793] DEBUG -- : Read 0 bytes (0 total)
+D, [2017-10-08T20:19:52.776895 #3793] DEBUG -- : Read 10 bytes (10 total)
+D, [2017-10-08T20:19:52.879699 #3793] DEBUG -- : Read 8096 bytes (8106 total)
+D, [2017-10-08T20:19:52.880130 #3793] DEBUG -- : Read 0 bytes (8106 total)
+D, [2017-10-08T20:19:52.880331 #3793] DEBUG -- : Read 8096 bytes (16202 total)
+D, [2017-10-08T20:19:52.880506 #3793] DEBUG -- : Read 0 bytes (16202 total)
+D, [2017-10-08T20:19:53.084141 #3793] DEBUG -- : Read 8096 bytes (24298 total)
+D, [2017-10-08T20:19:53.084453 #3793] DEBUG -- : Read 0 bytes (24298 total)
+D, [2017-10-08T20:19:53.182567 #3793] DEBUG -- : Read 8096 bytes (32394 total)
+D, [2017-10-08T20:19:53.182984 #3793] DEBUG -- : Read 0 bytes (32394 total)
+D, [2017-10-08T20:19:53.183333 #3793] DEBUG -- : Read 8096 bytes (40490 total)
+D, [2017-10-08T20:19:53.183640 #3793] DEBUG -- : Read 0 bytes (40490 total)
+D, [2017-10-08T20:19:53.184051 #3793] DEBUG -- : Read 8096 bytes (48586 total)
+D, [2017-10-08T20:19:53.184453 #3793] DEBUG -- : Read 0 bytes (48586 total)
+D, [2017-10-08T20:19:53.184783 #3793] DEBUG -- : Read 8096 bytes (56682 total)
+D, [2017-10-08T20:19:53.185066 #3793] DEBUG -- : Read 0 bytes (56682 total)
+D, [2017-10-08T20:19:53.185302 #3793] DEBUG -- : Read 3274 bytes (59956 total)
+D, [2017-10-08T20:19:53.284406 #3793] DEBUG -- : Read 8096 bytes (68052 total)
+D, [2017-10-08T20:19:53.285374 #3793] DEBUG -- : Read 8096 bytes (76148 total)
+D, [2017-10-08T20:19:53.288867 #3793] DEBUG -- : Read 8096 bytes (84244 total)
+D, [2017-10-08T20:19:53.289107 #3793] DEBUG -- : Read 699 bytes (84943 total)
+D, [2017-10-08T20:19:53.289209 #3793] DEBUG -- : Read 8 bytes (84951 total)
+D, [2017-10-08T20:19:53.289557 #3793] DEBUG -- : gzip response
+I, [2017-10-08T20:27:27.902356 #3793]  INFO -- : Net::HTTP::Get: /drums/cymbals?limit=all
+D, [2017-10-08T20:27:27.902452 #3793] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2017-10-08T20:27:27.902496 #3793] DEBUG -- : request-header: accept => */*
+D, [2017-10-08T20:27:27.902531 #3793] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2017-10-08T20:27:27.902566 #3793] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2017-10-08T20:27:27.902599 #3793] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2017-10-08T20:27:27.902631 #3793] DEBUG -- : request-header: host => www.ghmusic.com.au
+I, [2017-10-08T20:28:13.141606 #3793]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2017-10-08T20:28:13.141800 #3793] DEBUG -- : response-header: date => Sun, 08 Oct 2017 09:27:30 GMT
+D, [2017-10-08T20:28:13.141879 #3793] DEBUG -- : response-header: server => Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+D, [2017-10-08T20:28:13.141955 #3793] DEBUG -- : response-header: x-powered-by => PHP/5.4.33
+D, [2017-10-08T20:28:13.142068 #3793] DEBUG -- : response-header: x-frame-options => SAMEORIGIN
+D, [2017-10-08T20:28:13.142183 #3793] DEBUG -- : response-header: cache-control => max-age=1
+D, [2017-10-08T20:28:13.142297 #3793] DEBUG -- : response-header: expires => Sun, 08 Oct 2017 09:27:31 GMT
+D, [2017-10-08T20:28:13.142416 #3793] DEBUG -- : response-header: vary => User-Agent,Accept-Encoding
+D, [2017-10-08T20:28:13.142494 #3793] DEBUG -- : response-header: x-content-type-options => nosniff
+D, [2017-10-08T20:28:13.142560 #3793] DEBUG -- : response-header: x-xss-protection => 1; mode=block
+D, [2017-10-08T20:28:13.142626 #3793] DEBUG -- : response-header: content-encoding => gzip
+D, [2017-10-08T20:28:13.142687 #3793] DEBUG -- : response-header: keep-alive => timeout=5, max=100
+D, [2017-10-08T20:28:13.142752 #3793] DEBUG -- : response-header: connection => Keep-Alive
+D, [2017-10-08T20:28:13.142813 #3793] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2017-10-08T20:28:13.142900 #3793] DEBUG -- : response-header: content-type => text/html; charset=UTF-8
+D, [2017-10-08T20:28:13.143395 #3793] DEBUG -- : Read 0 bytes (0 total)
+D, [2017-10-08T20:28:13.143624 #3793] DEBUG -- : Read 10 bytes (10 total)
+D, [2017-10-08T20:28:13.217080 #3793] DEBUG -- : Read 8096 bytes (8106 total)
+D, [2017-10-08T20:28:13.217524 #3793] DEBUG -- : Read 0 bytes (8106 total)
+D, [2017-10-08T20:28:13.549921 #3793] DEBUG -- : Read 8096 bytes (16202 total)
+D, [2017-10-08T20:28:13.553484 #3793] DEBUG -- : Read 0 bytes (16202 total)
+D, [2017-10-08T20:28:13.553857 #3793] DEBUG -- : Read 8096 bytes (24298 total)
+D, [2017-10-08T20:28:13.554108 #3793] DEBUG -- : Read 0 bytes (24298 total)
+D, [2017-10-08T20:28:13.862713 #3793] DEBUG -- : Read 8096 bytes (32394 total)
+D, [2017-10-08T20:28:13.863227 #3793] DEBUG -- : Read 0 bytes (32394 total)
+D, [2017-10-08T20:28:13.863539 #3793] DEBUG -- : Read 8096 bytes (40490 total)
+D, [2017-10-08T20:28:13.864544 #3793] DEBUG -- : Read 0 bytes (40490 total)
+D, [2017-10-08T20:28:14.062188 #3793] DEBUG -- : Read 8096 bytes (48586 total)
+D, [2017-10-08T20:28:14.062728 #3793] DEBUG -- : Read 0 bytes (48586 total)
+D, [2017-10-08T20:28:14.230516 #3793] DEBUG -- : Read 8096 bytes (56682 total)
+D, [2017-10-08T20:28:14.230860 #3793] DEBUG -- : Read 0 bytes (56682 total)
+D, [2017-10-08T20:28:14.231134 #3793] DEBUG -- : Read 3274 bytes (59956 total)
+D, [2017-10-08T20:28:14.472591 #3793] DEBUG -- : Read 8096 bytes (68052 total)
+D, [2017-10-08T20:28:14.576157 #3793] DEBUG -- : Read 8096 bytes (76148 total)
+D, [2017-10-08T20:28:14.578497 #3793] DEBUG -- : Read 8096 bytes (84244 total)
+D, [2017-10-08T20:28:14.578823 #3793] DEBUG -- : Read 699 bytes (84943 total)
+D, [2017-10-08T20:28:14.579001 #3793] DEBUG -- : Read 8 bytes (84951 total)
+D, [2017-10-08T20:28:14.579465 #3793] DEBUG -- : gzip response
+I, [2017-10-08T20:32:14.712377 #3793]  INFO -- : Net::HTTP::Get: /drums/cymbals?limit=all
+D, [2017-10-08T20:32:14.712534 #3793] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2017-10-08T20:32:14.712632 #3793] DEBUG -- : request-header: accept => */*
+D, [2017-10-08T20:32:14.712710 #3793] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2017-10-08T20:32:14.712781 #3793] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2017-10-08T20:32:14.712848 #3793] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2017-10-08T20:32:14.713012 #3793] DEBUG -- : request-header: host => www.ghmusic.com.au
+I, [2017-10-08T20:32:57.949204 #3793]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2017-10-08T20:32:57.949741 #3793] DEBUG -- : response-header: date => Sun, 08 Oct 2017 09:32:16 GMT
+D, [2017-10-08T20:32:57.949906 #3793] DEBUG -- : response-header: server => Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+D, [2017-10-08T20:32:57.950064 #3793] DEBUG -- : response-header: x-powered-by => PHP/5.4.33
+D, [2017-10-08T20:32:57.950224 #3793] DEBUG -- : response-header: x-frame-options => SAMEORIGIN
+D, [2017-10-08T20:32:57.950387 #3793] DEBUG -- : response-header: cache-control => max-age=1
+D, [2017-10-08T20:32:57.950657 #3793] DEBUG -- : response-header: expires => Sun, 08 Oct 2017 09:32:17 GMT
+D, [2017-10-08T20:32:57.951207 #3793] DEBUG -- : response-header: vary => User-Agent,Accept-Encoding
+D, [2017-10-08T20:32:57.951366 #3793] DEBUG -- : response-header: x-content-type-options => nosniff
+D, [2017-10-08T20:32:57.951519 #3793] DEBUG -- : response-header: x-xss-protection => 1; mode=block
+D, [2017-10-08T20:32:57.951659 #3793] DEBUG -- : response-header: content-encoding => gzip
+D, [2017-10-08T20:32:57.951798 #3793] DEBUG -- : response-header: keep-alive => timeout=5, max=100
+D, [2017-10-08T20:32:57.951937 #3793] DEBUG -- : response-header: connection => Keep-Alive
+D, [2017-10-08T20:32:57.952077 #3793] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2017-10-08T20:32:57.952218 #3793] DEBUG -- : response-header: content-type => text/html; charset=UTF-8
+D, [2017-10-08T20:32:57.952695 #3793] DEBUG -- : Read 0 bytes (0 total)
+D, [2017-10-08T20:32:57.952919 #3793] DEBUG -- : Read 10 bytes (10 total)
+D, [2017-10-08T20:32:57.953233 #3793] DEBUG -- : Read 8096 bytes (8106 total)
+D, [2017-10-08T20:32:57.953573 #3793] DEBUG -- : Read 0 bytes (8106 total)
+D, [2017-10-08T20:32:58.038993 #3793] DEBUG -- : Read 8096 bytes (16202 total)
+D, [2017-10-08T20:32:58.039369 #3793] DEBUG -- : Read 0 bytes (16202 total)
+D, [2017-10-08T20:32:58.345546 #3793] DEBUG -- : Read 8096 bytes (24298 total)
+D, [2017-10-08T20:32:58.345986 #3793] DEBUG -- : Read 0 bytes (24298 total)
+D, [2017-10-08T20:32:58.346314 #3793] DEBUG -- : Read 8096 bytes (32394 total)
+D, [2017-10-08T20:32:58.346663 #3793] DEBUG -- : Read 0 bytes (32394 total)
+D, [2017-10-08T20:32:58.347060 #3793] DEBUG -- : Read 8096 bytes (40490 total)
+D, [2017-10-08T20:32:58.347354 #3793] DEBUG -- : Read 0 bytes (40490 total)
+D, [2017-10-08T20:32:58.347652 #3793] DEBUG -- : Read 8096 bytes (48586 total)
+D, [2017-10-08T20:32:58.347911 #3793] DEBUG -- : Read 0 bytes (48586 total)
+D, [2017-10-08T20:32:58.348944 #3793] DEBUG -- : Read 8096 bytes (56682 total)
+D, [2017-10-08T20:32:58.349963 #3793] DEBUG -- : Read 0 bytes (56682 total)
+D, [2017-10-08T20:32:58.551146 #3793] DEBUG -- : Read 3274 bytes (59956 total)
+D, [2017-10-08T20:32:58.554928 #3793] DEBUG -- : Read 8096 bytes (68052 total)
+D, [2017-10-08T20:32:58.555288 #3793] DEBUG -- : Read 8096 bytes (76148 total)
+D, [2017-10-08T20:32:58.657354 #3793] DEBUG -- : Read 8096 bytes (84244 total)
+D, [2017-10-08T20:32:58.657684 #3793] DEBUG -- : Read 700 bytes (84944 total)
+D, [2017-10-08T20:32:58.657947 #3793] DEBUG -- : Read 8 bytes (84952 total)
+D, [2017-10-08T20:32:58.658415 #3793] DEBUG -- : gzip response
+I, [2017-10-08T20:33:44.637851 #5049]  INFO -- : Net::HTTP::Get: /drums/cymbals?limit=all
+D, [2017-10-08T20:33:44.637944 #5049] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2017-10-08T20:33:44.637978 #5049] DEBUG -- : request-header: accept => */*
+D, [2017-10-08T20:33:44.638005 #5049] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
+D, [2017-10-08T20:33:44.638033 #5049] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2017-10-08T20:33:44.638060 #5049] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2017-10-08T20:33:44.638087 #5049] DEBUG -- : request-header: host => www.ghmusic.com.au
+I, [2017-10-08T20:34:26.423061 #5049]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2017-10-08T20:34:26.423298 #5049] DEBUG -- : response-header: date => Sun, 08 Oct 2017 09:33:46 GMT
+D, [2017-10-08T20:34:26.423395 #5049] DEBUG -- : response-header: server => Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4
+D, [2017-10-08T20:34:26.423477 #5049] DEBUG -- : response-header: x-powered-by => PHP/5.4.33
+D, [2017-10-08T20:34:26.423558 #5049] DEBUG -- : response-header: x-frame-options => SAMEORIGIN
+D, [2017-10-08T20:34:26.423639 #5049] DEBUG -- : response-header: cache-control => max-age=1
+D, [2017-10-08T20:34:26.423717 #5049] DEBUG -- : response-header: expires => Sun, 08 Oct 2017 09:33:47 GMT
+D, [2017-10-08T20:34:26.423797 #5049] DEBUG -- : response-header: vary => User-Agent,Accept-Encoding
+D, [2017-10-08T20:34:26.423876 #5049] DEBUG -- : response-header: x-content-type-options => nosniff
+D, [2017-10-08T20:34:26.423956 #5049] DEBUG -- : response-header: x-xss-protection => 1; mode=block
+D, [2017-10-08T20:34:26.424046 #5049] DEBUG -- : response-header: content-encoding => gzip
+D, [2017-10-08T20:34:26.424130 #5049] DEBUG -- : response-header: keep-alive => timeout=5, max=100
+D, [2017-10-08T20:34:26.424207 #5049] DEBUG -- : response-header: connection => Keep-Alive
+D, [2017-10-08T20:34:26.424356 #5049] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2017-10-08T20:34:26.424431 #5049] DEBUG -- : response-header: content-type => text/html; charset=UTF-8
+D, [2017-10-08T20:34:26.425318 #5049] DEBUG -- : Read 0 bytes (0 total)
+D, [2017-10-08T20:34:26.425483 #5049] DEBUG -- : Read 10 bytes (10 total)
+D, [2017-10-08T20:34:26.524319 #5049] DEBUG -- : Read 8096 bytes (8106 total)
+D, [2017-10-08T20:34:26.524665 #5049] DEBUG -- : Read 0 bytes (8106 total)
+D, [2017-10-08T20:34:26.524878 #5049] DEBUG -- : Read 8096 bytes (16202 total)
+D, [2017-10-08T20:34:26.623007 #5049] DEBUG -- : Read 0 bytes (16202 total)
+D, [2017-10-08T20:34:26.932897 #5049] DEBUG -- : Read 8096 bytes (24298 total)
+D, [2017-10-08T20:34:26.933270 #5049] DEBUG -- : Read 0 bytes (24298 total)
+D, [2017-10-08T20:34:26.933600 #5049] DEBUG -- : Read 8096 bytes (32394 total)
+D, [2017-10-08T20:34:26.933843 #5049] DEBUG -- : Read 0 bytes (32394 total)
+D, [2017-10-08T20:34:27.032650 #5049] DEBUG -- : Read 8096 bytes (40490 total)
+D, [2017-10-08T20:34:27.032977 #5049] DEBUG -- : Read 0 bytes (40490 total)
+D, [2017-10-08T20:34:27.033206 #5049] DEBUG -- : Read 8096 bytes (48586 total)
+D, [2017-10-08T20:34:27.033384 #5049] DEBUG -- : Read 0 bytes (48586 total)
+D, [2017-10-08T20:34:27.036812 #5049] DEBUG -- : Read 8096 bytes (56682 total)
+D, [2017-10-08T20:34:27.037103 #5049] DEBUG -- : Read 0 bytes (56682 total)
+D, [2017-10-08T20:34:27.037262 #5049] DEBUG -- : Read 3274 bytes (59956 total)
+D, [2017-10-08T20:34:27.139161 #5049] DEBUG -- : Read 8096 bytes (68052 total)
+D, [2017-10-08T20:34:27.339969 #5049] DEBUG -- : Read 8096 bytes (76148 total)
+D, [2017-10-08T20:34:27.342396 #5049] DEBUG -- : Read 8096 bytes (84244 total)
+D, [2017-10-08T20:34:27.342671 #5049] DEBUG -- : Read 699 bytes (84943 total)
+D, [2017-10-08T20:34:27.342826 #5049] DEBUG -- : Read 8 bytes (84951 total)
+D, [2017-10-08T20:34:27.343297 #5049] DEBUG -- : gzip response
