@@ -1,5 +1,6 @@
 # CYMBAL FINDER APP #
 
+
 ###DATABASE SETUP###
 
 1.Create a table to include all cymbals from all manufacturers:
@@ -52,3 +53,4 @@ select maker_id,model,size,kind,retailers.id,link,title from retailers join make
 
 
 "the new del cajon cymbals have been designed to create, together with the cajon, a complete percussive set. these very light cymbals made in cast bronze b20, and completely hand hammered,  are perfect to be played either by hand, mallets or with brushes. splashes and crashes have a fast attack and short decay; the sound is brilliant and dynamic"
+
