@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   get 'retailers/scrape'
   get 'retailers', to: 'retailers#index' 
 
+require 'resque/server'
+mount Resque::Server, at: '/jobs'  
+require 'resque-scheduler'
+require 'resque/scheduler/server'
+
 end

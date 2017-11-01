@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171009113143) do
+ActiveRecord::Schema.define(version: 20171026122037) do
 
   create_table "makers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "brand",                     default: "no brand", null: false
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20171009113143) do
     t.datetime "updated_at",                                  null: false
     t.string   "merchant"
     t.string   "link"
+    t.integer  "dup",                          default: 0
     t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
   end
 

@@ -2951,6 +2951,7 @@ sabian:
     hi hat:
       '14':
       - medium hats
+      - rock hats
     splash:
       '8':
       - splash
@@ -2975,7 +2976,7 @@ sabian:
       - stadium ride
       - metal ride
       - v-ride
-      - xplosion ride
+      - x-plosion ride
       '21':
       - stage ride
       - memphis ride
@@ -2993,8 +2994,8 @@ sabian:
       - metal crash
       - el sabor picante hand crash
       - dark crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       - o-zone
       - v-crash
       - iso crash
@@ -3005,8 +3006,8 @@ sabian:
       - metal crash
       - el sabor picante hand crash
       - dark crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       - o-zone
       - v-crash
       - freq crash
@@ -3014,29 +3015,29 @@ sabian:
       '20':
       - aero crash
       - stage crash
-      - xplosion crash
+      - x-plosion crash
       - v-crash
       - iso crash
       '14':
       - studio crash
       - dark crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       '15':
       - studio crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       '17':
       - studio crash
       - stage crash
       - dark crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       - v-crash
       '19':
       - dark crash
-      - xplosion crash
-      - xplosion fast crash
+      - x-plosion crash
+      - x-plosion fast crash
       - v-crash
     hi hat:
       '14':
@@ -3044,14 +3045,14 @@ sabian:
       - stage hats
       - metal hats
       - x-celerator hats
-      - xplosion hats
+      - x-plosion hats
       - v-hats
       - freq hats
       '13':
       - fusion hats
       - x-celerator hats
       '16':
-      - xplosion hats
+      - x-plosion hats
     splash:
       '8':
       - aero splash
@@ -3072,7 +3073,7 @@ sabian:
       - max splash
       '11':
       - max splash
-      - xplosion splash
+      - x-plosion splash
       '6':
       - splash
     china:
@@ -3117,18 +3118,19 @@ sabian:
     crash:
       '14':
       - studio crash
+      - x-plosion crash
       '16':
       - studio crash
       - stage crash
       - x-treme crash
-      - xplosion crash
+      - x-plosion crash
       - evolution crash
       - evolution o-zone
       '18':
       - studio crash
       - stage crash
       - x-treme crash
-      - xplosion crash
+      - x-plosion crash
       - legacy crash
       - evolution crash
       - evolution o-zone
@@ -3136,17 +3138,17 @@ sabian:
       - fierce crash
       '17':
       - x-treme crash
-      - xplosion crash
+      - x-plosion crash
       - legacy crash
       - evolution effeks crash
       - evolution crash
       '19':
       - x-treme crash
-      - xplosion crash
+      - x-plosion crash
       - evolution crash
       - fierce crash
       '20':
-      - xplosion crash
+      - x-plosion crash
     hi hat:
       '14':
       - stage hats
@@ -3355,6 +3357,27 @@ sabian:
       - stage bell
       '11':
       - alu bell
+  sr2:
+    crash:
+      '18':
+      - thin crash
+      '20':
+      - thin crash
+      '16':
+      - thin crash
+    ride:
+      '21':
+      - thin ride
+    hi hat:
+      '14':
+      - hi hats
+    china:
+      '20':
+      - china
+  b8:
+    crash:
+      '18':
+      - thin crash
 ufip:
   bionic:
     splash:
@@ -5515,7 +5538,3 @@ paiste:
       - hi hat
       '14':
       - hi hat
-no brand:
-  ! '':
-    no type:
-      '99999': []

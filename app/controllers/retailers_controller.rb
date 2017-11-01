@@ -2,6 +2,7 @@ class RetailersController < ApplicationController
 	include RetailersHelper
 	include Scraper
 
+
 @@logs = File.open($log_file,'a+')
 
 def scrape  
@@ -10,26 +11,40 @@ def scrape
 end
 
 def index
-	@retailers = Retailer.where("title LIKE ?", '%sabian%'  )
+	@retailers = Retailer.where("title LIKE ? AND maker_id = ? AND dup = ?", '%ufip%',3604,0)
 	@retailers.each do |r|
-	find_maker r
+
+	find_maker r 
 	end
+
+	Resque.enqueue_in(30.seconds,TestingJob)
+	Resque.enqueue(SleepingJob)
+ Resque.enqueue(CleanupJob,3699)
+ # CleanupJob.perform_later(3699)
+
 end	
 
 private
 
-def find_maker r, *args
+def find_maker r
+	
 	begin
 	brand = get_match $brands,r.title
-	type = get_match $types,r.title 
+	type = get_match $types,r.title,:type
+	
 	size =  if r.title.match(/(\d+)"/)
 	r.title.match(/(\d+)"/)[1]
 	else
 	'null'	
 	end
-	series = get_match $models[brand].keys,r.title
-	model = get_match $models[brand][series],r.title 
-	model_by_size = get_match $sizes[brand][series][type][size],r.title 
+	
+	series = get_match $models[brand].keys.sort_by { |word| word.length*-1},r.title,:series,brand
+	
+	
+	model = get_match $models.dig(brand,series).sort_by { |word| word.length*-1},r.title,:mis,brand
+	
+	model_by_size = get_match $sizes.dig(brand,series,type,size),r.title, :mis,brand
+	
 	
 	return if  find_by_code Maker.where(brand: brand),r 
 	return if find_by_series brand,type,size,series,model,r
@@ -47,9 +62,9 @@ end
 
 
 def find_by_code makers,retailer
-	makers.each do  |m|  
-	if retailer.title.downcase.match(m.code) 
-	retailer.update(maker: m)
+	makers.each do  |m|
+	if m.code && retailer.title.downcase.match("#{m.code}\s") 
+	update_maker retailer,m,@@logs
 	return	m
 	end	
 	end
@@ -60,7 +75,7 @@ def find_by_series brand,type,size,series,model,retailer
 	makers = Maker.where(brand: brand, kind: type,size: size,series: series,model: model)
 	if !makers.empty?
 		if makers.length == 1 
-		retailer.update(maker: makers.first)
+		update_maker retailer,makers.first,@@logs
 		return makers.first
 		else
 		@@logs.write("Retailer: " + retailer.id.to_s + ": has multiple match with id's: #{makers.map {|m| m.id}}\n")
@@ -75,10 +90,10 @@ def find_by_size brand,type,size,series,model,retailer
 	makers = Maker.where(brand: brand, kind: type,size: size,series: series,model: model)
 	if !makers.empty?
 		if makers.length == 1 
-		retailer.update(maker: makers.first)
+		update_maker retailer,makers.first,@@logs
 		return makers.first
 		else
-		@@logs.write("Retailer: " + er.id.to_s + ": has multiple match with id's: #{makers.map {|m| m.id}}\n")	
+		@@logs.write("Retailer: " + retailer.id.to_s + ": has multiple match with id's: #{makers.map {|m| m.id}}\n")	
 		return nil		
 		end
 	else	

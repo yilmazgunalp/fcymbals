@@ -670,7 +670,7 @@ sabian:
   - b8x first pack
   - b8x 2-pack
   - b8x complete set
-  b8p:
+  bxpro:
   - medium ride
   - rock ride
   - thin crash
@@ -684,6 +684,7 @@ sabian:
   - chinese
   - b8 pro performance set
   - b8 pro effects pack
+  - rock hats
   aax:
   - studio ride
   - stage ride
@@ -764,7 +765,7 @@ sabian:
   - hhx evolution performance set
   - hhx effects pack
   - hhx praise & worship pack
-  para:
+  paragon:
   - ride
   - crash
   - hats
@@ -774,7 +775,7 @@ sabian:
   - paragon performance set
   - paragon effects pack
   - paragon complete set-up
-  artis:
+  artisan:
   - light ride
   - medium ride
   - crash
@@ -821,6 +822,13 @@ sabian:
   - becker bow cymbal
   - finger cymbals
   - chopper
+  sr2:
+  - thin crash
+  - thin ride
+  - hi hats
+  - china
+  b8:
+  - thin crash
 ufip:
   bionic:
   - splash

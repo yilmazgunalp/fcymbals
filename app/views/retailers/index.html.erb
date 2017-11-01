@@ -1,9 +1,11 @@
 
 <% @retailers.each do |r| %>
-<% if r.maker.id != 36004 %>
+<% if r.maker.id == 3604 %>
 	
 
+
 <h4 style="color: <%= "red" if r.maker.id == 3604 %>"><%=r.title %></h4>
+<p><%=r.id %></p>
 <a href= <%=r.link %> target = 'blank'>Product Link</a>
 <ul>	
 <li><%=r.maker.brand %></li>
