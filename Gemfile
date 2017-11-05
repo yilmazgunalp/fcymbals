@@ -46,6 +46,7 @@ end
 
 group :production do
    gem 'pg'
+   gem 'mechanize'
 end
 
 group :development do
