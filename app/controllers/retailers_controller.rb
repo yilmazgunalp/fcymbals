@@ -3,7 +3,7 @@ class RetailersController < ApplicationController
 	include Scraper
 
 
-@@logs = File.open($log_file,'a+')
+@@logs = File.open("test_log.txt",'a+')
 
 def scrape  
 	page = Scraper.get_data params['shop']
