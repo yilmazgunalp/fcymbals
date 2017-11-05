@@ -17,7 +17,7 @@ def index
 	find_maker r 
 	end
 
-	Resque.enqueue_in(30.seconds,TestingJob)
+	Resque.enqueue_at(60.seconds.from_now,TestingJob)
 	Resque.enqueue(SleepingJob)
  Resque.enqueue(CleanupJob,3699)
  # CleanupJob.perform_later(3699)
