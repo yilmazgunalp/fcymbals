@@ -45,3 +45,4 @@ Resque.after_fork = Proc.new { ActiveRecord::Base.establish_connection } #this i
 
 desc "Alias for resque:work (To run workers on Heroku)"
 task "jobs:work" => "resque:work"
+task "jobs:work" => "resque:scheduler"
