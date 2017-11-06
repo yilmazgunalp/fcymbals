@@ -30,6 +30,7 @@ log:clear
 middleware
 my_rake:data
 my_rake:git_status
+my_rake:herokup
 notes
 notes:custom
 resque:failures:sort

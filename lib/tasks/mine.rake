@@ -11,4 +11,11 @@ task :git_status do
 sh 'git status' 
 end
 
+desc "heroku update"
+task :herokup do 
+sh 'git add .'
+sh 'git commit'
+sh 'git push heroku master' 
+end
+
 end	
