@@ -28,9 +28,9 @@ initializers
 jobs:work
 log:clear
 middleware
-my_rake:data
-my_rake:git_status
-my_rake:herokup
+myrake:data
+myrake:git_status
+myrake:herokup
 notes
 notes:custom
 resque:failures:sort

@@ -1,5 +1,5 @@
 
-namespace :my_rake do
+namespace :myrake do
 
 desc "writing my own rake:)"
 task :data => 'resque:scheduler' do 
