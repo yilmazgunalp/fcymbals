@@ -14,8 +14,7 @@ namespace :resque do
   end
 
 task :setup_schedule => :setup do
-    require 'resque-scheduler'
-
+    require 'resque-scheduler' 
     # If you want to be able to dynamically change the schedule,
     # uncomment this line.  A dynamic schedule can be updated via the
     # Resque::Scheduler.set_schedule (and remove_schedule) methods.
@@ -45,4 +44,3 @@ Resque.after_fork = Proc.new { ActiveRecord::Base.establish_connection } #this i
 
 desc "Alias for resque:work (To run workers on Heroku)"
 task "jobs:work" => "resque:work"
-task "jobs:work" => "resque:scheduler"
