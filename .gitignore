@@ -12,11 +12,11 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-#/log/*
+/log/*
 /tmp/*
-#!/log/.keep
-#!/tmp/.keep
-
+!/log/.keep
+!/tmp/.keep
+!/log/scrape_log.txt
 # Ignore Byebug command history file.
 .byebug_history
 

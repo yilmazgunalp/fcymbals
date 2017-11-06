@@ -1,5 +1,4 @@
-clear_leaderboards_moderator:
-  every:
-    - "30s"
-  class: "SchJob"
+schedule_test:
+  every: 1h
+  class: SchJob
   description: "This job will check Daemon every 30 seconds after 120 seconds after start"

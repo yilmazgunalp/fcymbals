@@ -3,7 +3,7 @@ require 'resque/scheduler/tasks'
 task "resque:setup" => :environment
 
 namespace :resque do
-  task :setup do
+  task :setup => 'resque:scheduler' do
     require 'resque'
 
     
@@ -13,7 +13,7 @@ namespace :resque do
     
   end
 
-task :setup_schedule => :setup do
+task :setup_schedule  do
     require 'resque-scheduler' 
     # If you want to be able to dynamically change the schedule,
     # uncomment this line.  A dynamic schedule can be updated via the

@@ -25,11 +25,15 @@ db:structure:load
 db:version
 dev:cache
 initializers
+jobs:work
 log:clear
 middleware
+my_rake:data
+my_rake:git_status
 notes
 notes:custom
 resque:failures:sort
+resque:scheduler
 resque:work
 resque:workers
 restart
