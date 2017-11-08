@@ -3,18 +3,15 @@ require 'resque/scheduler/tasks'
 task "resque:setup" => :environment
 
 namespace :resque do
-  task :setup  do
+  task :setup  do 
     require 'resque'
-
-    
     ENV['QUEUE'] = '*'
-
-    Resque.redis = 'localhost:6379' unless Rails.env == 'production'
-    
+    ENV['BACKGROUND'] = 'yes' 
   end
 
 task :setup_schedule => :setup do
     require 'resque-scheduler' 
+    
     # If you want to be able to dynamically change the schedule,
     # uncomment this line.  A dynamic schedule can be updated via the
     # Resque::Scheduler.set_schedule (and remove_schedule) methods.
@@ -22,10 +19,6 @@ task :setup_schedule => :setup do
     # schedule changes and applies them on the fly.
     # Note: This feature is only available in >=2.0.0.
     # Resque::Scheduler.dynamic = true
-
-    # The schedule doesn't need to be stored in a YAML, it just needs to
-    # be a hash.  YAML is usually the easiest.
-    Resque.schedule = YAML.load_file("#{Rails.root}/log/resq_test.yml")
 
     # If your schedule already has +queue+ set for each job, you don't
     # need to require your jobs.  This can be an advantage since it's
@@ -36,8 +29,9 @@ task :setup_schedule => :setup do
   end
 
 
-task :scheduler => :setup_schedule
+task :scheduler => :setup_schedule  do 
 
+end    
 end
 
 Resque.after_fork = Proc.new { ActiveRecord::Base.establish_connection } #this is necessary for production environments, otherwise your background jobs will start to fail when hit from many different connections.

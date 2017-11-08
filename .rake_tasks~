@@ -31,6 +31,7 @@ middleware
 myrake:data
 myrake:git_status
 myrake:herokup
+myrake:param[var]
 notes
 notes:custom
 resque:failures:sort
