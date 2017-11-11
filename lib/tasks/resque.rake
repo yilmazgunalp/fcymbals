@@ -6,7 +6,7 @@ namespace :resque do
   task :setup  do 
     require 'resque'
     ENV['QUEUE'] = '*'
-    ENV['BACKGROUND'] = 'yes' 
+    
   end
 
 task :setup_schedule => :setup do
