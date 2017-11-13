@@ -28,8 +28,7 @@ initializers
 jobs:work
 log:clear
 middleware
-myrake:data
-myrake:git_status
+myrake:exporttable[var]
 myrake:herokup
 myrake:param[var]
 notes
