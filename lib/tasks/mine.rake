@@ -23,9 +23,11 @@ if ENV["RAILS_ENV"] = "development"
 ActiveRecord::Base.establish_connection({"database" => :cymbals, "adapter" => "mysql2","password" => "PJPL2EXX" })
 ActiveRecord::Base.connection.execute("select * from #{args.var} into outfile '/home/yilmazgunalp/Desktop/#{args.var + '_' + Time.now.strftime('%Y%m%d%H%M')}.csv' FIELDS 
 	TERMINATED BY ';' LINES TERMINATED BY '\n'")
-elsif ENV["RAILS_ENV"] = "production"
+end
+if ENV["RAILS_ENV"] = "production"
 puts "noW in PRODUCTION"	
 end
 end	
 
 end	
+
