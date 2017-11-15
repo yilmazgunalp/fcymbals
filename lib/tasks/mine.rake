@@ -35,7 +35,7 @@ puts "...backing up database in DEVELOPMENT ENV..\n..."
 sh "mysqldump -u root -pPJPL2EXX cymbals > #{backup_path}backup_cymbals#{time_stamp}"
 puts "...done!"
 elsif Rails.env == "production"
-sh 'heroku pg:backups:capture'	
+puts "This task is only defined for DEVELOPMENT Environment"	
 end
 end	
 

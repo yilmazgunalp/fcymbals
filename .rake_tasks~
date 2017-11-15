@@ -30,6 +30,7 @@ log:clear
 middleware
 myrake:db:backupdb
 myrake:db:exporttable[var]
+myrake:db:localdbtoproduction
 myrake:herokup
 notes
 notes:custom

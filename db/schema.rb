@@ -12,32 +12,35 @@
 
 ActiveRecord::Schema.define(version: 20171026122037) do
 
-  create_table "makers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "brand",                     default: "no brand", null: false
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "makers", force: :cascade do |t|
+    t.string   "brand",       null: false
     t.string   "code"
     t.string   "series"
     t.string   "model"
-    t.string   "kind",                      default: "no kind",  null: false
+    t.string   "kind",        null: false
     t.string   "size"
-    t.text     "description", limit: 65535
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.index ["code"], name: "index_makers_on_code", using: :btree
   end
 
-  create_table "retailers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "maker_id",                     default: 3604
+  create_table "retailers", force: :cascade do |t|
+    t.integer  "maker_id"
     t.string   "title"
-    t.float    "price",       limit: 24
-    t.float    "s_price",     limit: 24
+    t.float    "price"
+    t.float    "s_price"
     t.boolean  "in_stock"
-    t.text     "description", limit: 16777215
+    t.text     "description"
     t.string   "picture_url"
-    t.datetime "created_at",                                  null: false
-    t.datetime "updated_at",                                  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.string   "merchant"
     t.string   "link"
-    t.integer  "dup",                          default: 0
+    t.integer  "dup",         default: 0
     t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
   end
 
