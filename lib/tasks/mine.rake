@@ -1,7 +1,8 @@
 
-
-
-namespace :myrake do
+namespace :myrake  do
+desktop = '/home/yilmazgunalp/Desktop/' 	
+backup_path = '/home/yilmazgunalp/ygprojects/fcymbals/db/back_up/'
+time_stamp =  '_' + Time.now.strftime('%Y%m%d%H%M')
 
 desc "heroku update"
 task :herokup do 
@@ -10,25 +11,39 @@ sh 'git commit'
 sh 'git push heroku master' 
 end
 
-desc "testing task with parameters"
-task :param, [:var] => :git_status do |task, args|
-puts "var in `second` is #{args.var.inspect}"
-end	
+namespace :db  do
 
-desc "backs up db"
-task :exporttable, [:var] do |task, args|
+desc "exports selected db table (default: makers) to Csv"
+task :exporttable, [:var]  do |task, args|
 args.with_defaults(var: 'makers')	
 
-if ENV["RAILS_ENV"] == "development"
-puts "inside dev if"	
-ActiveRecord::Base.establish_connection({"database" => :cymbals, "adapter" => "mysql2","password" => "PJPL2EXX" })
-ActiveRecord::Base.connection.execute("select * from #{args.var} into outfile '/home/yilmazgunalp/Desktop/#{args.var + '_' + Time.now.strftime('%Y%m%d%H%M')}.csv' FIELDS 
-	TERMINATED BY ';' LINES TERMINATED BY '\n'")
-end
-if ENV["RAILS_ENV"] == "production"
-puts "noW in PRODUCTION"	
+if Rails.env == "development"
+	ActiveRecord::Base.establish_connection({"database" => :cymbals, "adapter" => "mysql2","password" => "PJPL2EXX" })
+	ActiveRecord::Base.connection.execute("select * from #{args.var} into outfile '#{desktop+args.var+time_stamp}.csv' FIELDS 
+		TERMINATED BY ';' LINES TERMINATED BY '\n'")
+cp 	"#{desktop+args.var+time_stamp}.csv", backup_path
+rm "#{desktop+args.var+time_stamp}.csv"
+elsif Rails.env == "production"
+sh 'heroku pg:backups:capture'	
 end
 end	
 
+desc "backs up database"
+task :backupdb do 
+if Rails.env == "development"
+puts "...backing up database in DEVELOPMENT ENV..\n..."	
+sh "mysqldump -u root -pPJPL2EXX cymbals > #{backup_path}backup_cymbals#{time_stamp}"
+puts "...done!"
+elsif Rails.env == "production"
+sh 'heroku pg:backups:capture'	
+end
+end	
+
+desc "uploads local db to production"
+task :localdbtoproduction do 
+
+end
+
+end
 end	
 

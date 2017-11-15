@@ -28,9 +28,9 @@ initializers
 jobs:work
 log:clear
 middleware
-myrake:exporttable[var]
+myrake:db:backupdb
+myrake:db:exporttable[var]
 myrake:herokup
-myrake:param[var]
 notes
 notes:custom
 resque:failures:sort
