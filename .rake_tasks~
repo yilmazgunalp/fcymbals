@@ -28,9 +28,11 @@ initializers
 jobs:work
 log:clear
 middleware
-myrake:db:backupdb
-myrake:db:exporttable[var]
+myrake:db:backupdevdb
+myrake:db:backupprodb
+myrake:db:exporttable[table]
 myrake:db:localdbtoproduction
+myrake:db:restoredevdb[database,backup_file]
 myrake:herokup
 notes
 notes:custom
