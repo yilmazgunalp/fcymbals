@@ -16,11 +16,13 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-!/log/scrape_log.txt
+
 # Ignore Byebug command history file.
 .byebug_history
 
 README.md
-mech.log
 
+
+# Ignore all backup files.
+/db/back_up/*
 

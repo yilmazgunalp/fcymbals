@@ -1,0 +1,12 @@
+scrape:
+  class: "ScrapeJob"
+  cron: "*/15 */2 * * 1"
+  args: kosmic
+scrape2:
+  class: "ScrapeJob"
+  cron: "*/2 * * * 2" 
+  args: gh_music
+scrape3:
+  class: "ScrapeJob"
+  cron: "*/2 * * * 2" 
+  args: gh_music

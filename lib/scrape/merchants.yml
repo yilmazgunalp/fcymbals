@@ -1,2 +1,10 @@
-gh_music:
+ghmusic:
   url: https://www.ghmusic.com.au/drums/cymbals?limit=all
+kosmic:
+  url: https://www.kosmic.com.au/drums/cymbals/
+abh:
+  url: http://www.allansbillyhyde.com.au/prodcat/Drums_and_Percussion/Cymbals.aspx
+ddream:
+  url: https://www.drummersdream.com.au/drums/cymbals.html
+thedrum:
+  url: https://www.thedrumshopnewcastle.com.au/site/index.cfm?module=STORETIGERV2&bit=products&category_code=5463 

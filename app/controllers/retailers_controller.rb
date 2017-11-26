@@ -3,24 +3,19 @@ class RetailersController < ApplicationController
 	include Scraper
 
 
-@@logs = File.open($log_file,'a+')
-
 def scrape  
-	page = Scraper.get_data params['shop']
-	render inline: page.body
+	page = Scraper.scrape params['shop']
+	render inline: "done"
 end
 
 def index
-	@retailers = Retailer.where("title LIKE ? AND maker_id = ? AND dup = ?", '%ufip%',3604,0)
+	@retailers = Retailer.where("title LIKE ?", '%Sabian%')
+	puts @retailers.count
 	@retailers.each do |r|
 
 	find_maker r 
 	end
 
-	Resque.enqueue_at(60.seconds.from_now,TestingJob)
-	Resque.enqueue(SleepingJob)
- Resque.enqueue(CleanupJob,3699)
- # CleanupJob.perform_later(3699)
 
 end	
 

@@ -1,4 +1,4 @@
-gh_music:
+ghmusic:
   product: .item
   title: .pro_title
   price: .price.redprice
@@ -7,4 +7,41 @@ gh_music:
   picture: a.product-image img
   link: a.product-image 
   desc: div.std
+kosmic:
+  product: .thumbnail
+  title: a[class^=prodclick]
+  price: p.price span
+  s_price: 
+  in_stock: 
+  picture: a.thumbnail-image img
+  link: a.thumbnail-image
+  desc: div.productdetails
+abh:
+  product: td.padded5[align='left']
+  title: a.ProdLink div
+  price: .red.price-label
+  s_price: 
+  in_stock: 
+  picture: td img.img-responsive
+  link: a.ProdLink
+  desc: div.padded5TopBorder
+ddream:
+  product: ul.products-grid li.item
+  title: h2.product-name a
+  price: span.price
+  s_price: 
+  in_stock: 
+  picture: a.product-image img
+  link: a.product-image 
+  desc: div.std  
+thedrum:
+  product: td.st-product-cell
+  title: a.st-product-name
+  price: span.product_price.st-price.discounted
+  s_price: 
+  in_stock: 
+  picture: img.st-image
+  link: tr.st-image-row td a
+  desc: div.product_brochure 
+
 
