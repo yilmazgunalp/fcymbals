@@ -43,5 +43,21 @@ thedrum:
   picture: img.st-image
   link: tr.st-image-row td a
   desc: div.product_brochure 
-
-
+dparadise:
+  product: table.productbox>tr[valign='top']+tr
+  title: td.productcolumnitemcode a
+  price: nobr
+  s_price: 
+  in_stock: 
+  picture: img.productimage
+  link: td.productcolumnitemcode a
+  desc: td.contentTableCell span 
+derringers:
+  product: div.item-inner
+  title: h2.product-name
+  price: p.special-price span.price
+  s_price: 
+  in_stock: 
+  picture: div.product-image img
+  link: div.product-image a
+  desc: div.prod-desc-call2action > p

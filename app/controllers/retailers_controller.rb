@@ -4,7 +4,7 @@ class RetailersController < ApplicationController
 
 
 def scrape  
-	page = Scraper.scrape params['shop']
+	Resque.enqueue(ScrapeJob, params["shop"])
 	render inline: "done"
 end
 

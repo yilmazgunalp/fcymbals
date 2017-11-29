@@ -9,7 +9,7 @@ new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w")
 @form = page.form_with(:dom_id => "aspnetForm")
 
 @options = {
-title: ->(text){text.strip}
+
 }
 
 file <<  ["title","price","s_price","picture_url","merchant","link","description"]

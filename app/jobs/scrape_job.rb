@@ -6,7 +6,7 @@ def self.queue
   end	
 
   def self.perform shop
-    Scraper.get_data shop
+    Scraper.scrape shop
     
   end
 end
