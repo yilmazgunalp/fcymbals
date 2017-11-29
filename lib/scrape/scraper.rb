@@ -14,6 +14,7 @@ end
 
 
 def self.scrape klass
+puts "inside Scraper:scrape now"	
 b = Time.now
 log_file << "Scraping #{klass} on #{b}...\n"	
 Object.const_get(self.to_s + "::" + klass.capitalize).scrape
