@@ -14,7 +14,7 @@ file <<  ["title","price","s_price","picture_url","merchant","link","description
 
 def self.scrape 
 puts "inside kosmic scrape now"	
-p File.atime(size)
+p File.size(file)
 param = 1 	
 page = get_page(shop['url'],{"pgnum" => param})
 
@@ -24,7 +24,7 @@ page = get_page(shop['url'],{"pgnum" => param})
 	page = get_page(shop['url'],{"pgnum" => param})
 	end # while	
 p File.atime(file)
-p File.atime(size)
+p File.size(file)
 end #scrape()
 
 
