@@ -16,7 +16,7 @@ def self.scrape
 puts "inside kosmic scrape now"	
 param = 1 	
 page = get_page(shop['url'],{"pgnum" => param})
-p page
+
 	while !page.at_css('div.thumb').nil?
 	extract_data page
 	param += 1
