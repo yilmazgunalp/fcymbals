@@ -35,6 +35,7 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	options = DEFAULT_OPTIONS.merge(opts)
 
 	puts  "On Page #{}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
+	p file
 	 page.css(tags.dig(merchant,"product")).each do |item|
 
 	title =  options[:title].call(item,tags.dig(merchant,'title'))
