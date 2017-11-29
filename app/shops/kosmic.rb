@@ -22,7 +22,7 @@ page = get_page(shop['url'],{"pgnum" => param})
 	param += 1
 	page = get_page(shop['url'],{"pgnum" => param})
 	end # while	
-p file	
+p File.atime(file)	
 end #scrape()
 
 
