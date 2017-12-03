@@ -14,7 +14,6 @@ end
 
 
 def self.scrape klass
-puts "inside Scraper:scrape now"	
 b = Time.now
 log_file << "Scraping #{klass} on #{b}...\n"	
 Object.const_get(self.to_s + "::" + klass.capitalize).scrape
@@ -34,12 +33,12 @@ private
 def self.csv_import page,merchant,shop,file, opts = nil
 	options = DEFAULT_OPTIONS.merge(opts)
 
-	puts  "On Page #{}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
-	p file
+	log_file << "On Page #{}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
 	 page.css(tags.dig(merchant,"product")).each do |item|
 
 	title =  options[:title].call(item,tags.dig(merchant,'title'))
 	
+		#default price=0 added as thedrum shop has an item without price
 		begin
 		price = options[:price].call(item,tags.dig(merchant,'price'))
 		s_price = options[:price].call(item,tags.dig(merchant,'s_price')) unless item.at_css(tags.dig(merchant,'s_price')).nil?
@@ -52,6 +51,7 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	
 	#product page link and description on that page 
 	link_url = options[:link_url].call(item,tags.dig(merchant,'link'))
+		#error handling for invalid links
 		begin
 		link_url.match(/^http/)? link = link_url : link = URI.parse(shop['url'])+link_url
 		rescue => e
@@ -61,10 +61,9 @@ def self.csv_import page,merchant,shop,file, opts = nil
 		end # begin
 	# description = Mechanize::Page::Link.new(item.at_css(@tags[merchant]['link']),
     # @agent,page).click.css(@tags[merchant]['desc']).text
-		 row = []
-	 [title,price,s_price,picture_url,merchant,link].each {|col| row << col.to_s}
+		
+	 file << [title,price,s_price,picture_url,merchant,link].inject([]) {|row,col| row << col.to_s}
 
-	 file << row
 	end	# page.css each
 log_file << "Page completed....\n"
 sleep(2)
