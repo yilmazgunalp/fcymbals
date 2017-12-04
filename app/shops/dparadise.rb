@@ -3,9 +3,6 @@ class Dparadise < Shop
 
 @merchant = "dparadise"
 @shop = Scraper.merchants[@merchant]	
-new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w")
-@file = CSV.open(new_file,'a+',:quote_char => '\'')
-
 @page = Scraper.agent.get shop['url']
 
 
@@ -14,10 +11,11 @@ pic_url: ->(item,selector) {item.previous_element.at_css(selector)['src']},
 title: -> (item,selector) {item.at_css(selector)['href'].match(/\/(([^\/])+$)/)[1].gsub("-"," ")}
 }
 
-file <<  ["title","price","s_price","picture_url","merchant","link","description"]
 
 def self.scrape 
 get_all_links(page).each {|link| extract_data(get_page(link))}
+@file.flush.close
+@file.to_io
 end #scrape()
 
 
@@ -52,6 +50,12 @@ main_links << URI.parse(shop['url']) + element['href']
 end
 main_links
 end # get_main_links
+
+def self.prepare_file 
+new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
+@file = CSV.open(new_file,'a+',:quote_char => '\'')	
+file <<  ["title","price","s_price","picture_url","merchant","link"]
+end	# prepare file
 
 end #class Dparadise
 

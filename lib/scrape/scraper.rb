@@ -16,7 +16,7 @@ end
 def self.scrape klass
 b = Time.now
 log_file << "Scraping #{klass} on #{b}...\n"	
-Object.const_get(self.to_s + "::" + klass.capitalize).scrape
+return Object.const_get(self.to_s + "::" + klass.capitalize).scrape
 log_file << "Scraping completed in  #{Time.now - b}...\n"	
 end
 

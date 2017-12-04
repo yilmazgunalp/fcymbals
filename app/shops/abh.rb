@@ -3,8 +3,6 @@ class Abh < Shop
 
 @merchant = "abh"
 @shop = Scraper.merchants[merchant]	
-new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w")
-@file = CSV.open(new_file,'a+',:quote_char => '\'')
 @page = Scraper.agent.get shop['url']
 @form = page.form_with(:dom_id => "aspnetForm")
 
@@ -12,7 +10,6 @@ new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w")
 
 }
 
-file <<  ["title","price","s_price","picture_url","merchant","link","description"]
 
 def self.extract_data page
 Scraper.csv_import(page,merchant,shop,file,options)
@@ -51,9 +48,18 @@ Nokogiri::HTML(File.open(form.submit.save!("#{Rails.root}/tmp/scrape/#{merchant}
 end
 
 
-def self.scrape 
+def self.scrape
+prepare_file	
 get_all_links(page,form).each {|link| extract_data(get_page(link,form))}
+@file.flush.close
+@file.to_io
 end
+
+def self.prepare_file 
+new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
+@file = CSV.open(new_file,'a+',:quote_char => '\'')	
+file <<  ["title","price","s_price","picture_url","merchant","link"]
+end	
 
 
 

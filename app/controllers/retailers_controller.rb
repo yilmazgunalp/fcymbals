@@ -5,8 +5,10 @@ class RetailersController < ApplicationController
 
 def scrape  
 	# Resque.enqueue(ScrapeJob, params["shop"])
-	Scraper.scrape params["shop"]
-	Retailer.csv_import File.open("#{Rails.root}/db/scraped/#{params['shop']}.csv")
+	# Scraper.scrape params["shop"]
+	# Retailer.csv_import File.open("#{Rails.root}/db/scraped/#{params['shop']}.csv")
+	Retailer.csv_import(File.open(Scraper.scrape(params["shop"])))
+
 	render inline: "Done!!!"
 end
 
