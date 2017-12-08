@@ -12,16 +12,13 @@ title: -> (item,selector) {item.at_css(selector)['href'].match(/\/(([^\/])+$)/)[
 }
 
 
-def self.scrape 
+def self.scrape
+prepare_file 
 get_all_links(page).each {|link| extract_data(get_page(link))}
 @file.flush.close
 @file.to_io
 end #scrape()
 
-
-def self.extract_data page
-Scraper.csv_import(page,merchant,shop,file,options)
-end # extract_data
 
 def self.get_page link
 Scraper.agent.get link
@@ -50,12 +47,6 @@ main_links << URI.parse(shop['url']) + element['href']
 end
 main_links
 end # get_main_links
-
-def self.prepare_file 
-new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
-@file = CSV.open(new_file,'a+',:quote_char => '\'')	
-file <<  ["title","price","s_price","picture_url","merchant","link"]
-end	# prepare file
 
 end #class Dparadise
 

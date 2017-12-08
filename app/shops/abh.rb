@@ -11,11 +11,6 @@ class Abh < Shop
 }
 
 
-def self.extract_data page
-Scraper.csv_import(page,merchant,shop,file,options)
-end
-
-
 def self.get_list_of_links  node_set
 links = node_set.map {|e|  e['id']}
 end
@@ -35,7 +30,7 @@ end
 def self.get_all_links first_page,form
 links = []
 get_node_sets(first_page,form).each do |node_set|
-get_list_of_links(node_set).each{|l| links << l}			
+get_list_of_links(node_set).each {|l| links << l}			
 end
 links.uniq
 end
@@ -54,13 +49,6 @@ get_all_links(page,form).each {|link| extract_data(get_page(link,form))}
 @file.flush.close
 @file.to_io
 end
-
-def self.prepare_file 
-new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
-@file = CSV.open(new_file,'a+',:quote_char => '\'')	
-file <<  ["title","price","s_price","picture_url","merchant","link"]
-end	
-
 
 
 end #class Abh	

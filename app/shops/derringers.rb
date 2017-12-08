@@ -25,18 +25,8 @@ extract_data page
 end #scrape()
 
 
-def self.extract_data page
-Scraper.csv_import(page,merchant,shop,file,options)
-end 
-
 def self.get_page link, param
 page = Scraper.agent.get link, param
 end
-
-def self.prepare_file 
-new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
-@file = CSV.open(new_file,'a+',:quote_char => '\'')	
-file <<  ["title","price","s_price","picture_url","merchant","link"]
-end	
 
 end #class Derringers	
