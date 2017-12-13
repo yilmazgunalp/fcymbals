@@ -21,7 +21,7 @@ every_two_minute_on_29th :
 every_minute_on_november:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "/1 * * 11 *" 
+  cron:  "*/1 * * 11 *" 
   args: thedrum
 every_two_minute_on_thu_to_fri:
   class: "BgshopsJob"
