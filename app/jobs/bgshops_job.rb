@@ -1,8 +1,8 @@
-class BgJob
+class BgshopsJob
 include Scraper	
  
 def self.queue
-    :scraperrr
+    :scrapeshops
   end	
 
   def self.perform shop
