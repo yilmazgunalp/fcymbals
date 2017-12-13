@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171203115045) do
+ActiveRecord::Schema.define(version: 20171212003052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,18 +29,19 @@ ActiveRecord::Schema.define(version: 20171203115045) do
   end
 
   create_table "retailers", force: :cascade do |t|
-    t.integer  "maker_id"
-    t.string   "title"
-    t.float    "price"
+    t.integer  "maker_id",    default: 3604
+    t.string   "title",                      null: false
+    t.float    "price",                      null: false
     t.float    "s_price"
     t.boolean  "in_stock"
     t.text     "description"
     t.string   "picture_url"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.string   "merchant"
-    t.string   "link"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "merchant",                   null: false
+    t.string   "link",                       null: false
     t.integer  "dup",         default: 0
+    t.boolean  "active",      default: true
     t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
   end
 

@@ -3,7 +3,7 @@ class Ghmusic < Shop
 
 @merchant = "ghmusic"
 @shop = Scraper.merchants[merchant]	
-@page = Scraper.agent.get shop['url']
+@page = get_page(shop['url'])
 
 @options = {
 

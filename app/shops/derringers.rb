@@ -24,9 +24,4 @@ extract_data page
 @file.to_io		
 end #scrape()
 
-
-def self.get_page link, param
-page = Scraper.agent.get link, param
-end
-
 end #class Derringers	

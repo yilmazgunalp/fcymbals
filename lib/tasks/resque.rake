@@ -7,7 +7,7 @@ namespace :resque do
     require 'resque'
     ENV['QUEUE'] = '*'
     
-  end
+  end #setup
 
 task :setup_schedule => :setup do
     require 'resque-scheduler' 
@@ -26,13 +26,16 @@ task :setup_schedule => :setup do
     # project, it's usually easier to just include you job classes here.
     # So, something like this:
     # require 'jobs'
-  end
+  end #setup_schedule
 
 
-task :scheduler => :setup_schedule  do 
+# task :scheduler => :setup_schedule  do 
 
-end    
-end
+# end #scheduler   
+
+end #resque
+
+
 
 Resque.after_fork = Proc.new { ActiveRecord::Base.establish_connection } #this is necessary for production environments, otherwise your background jobs will start to fail when hit from many different connections.
 

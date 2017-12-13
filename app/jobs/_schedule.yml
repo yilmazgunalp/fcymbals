@@ -1,16 +1,30 @@
-every_minute_on_thursday:
-  class: "ScrapeJob"
-  cron: "*/1 * * * 3" 
-  args: kosmic
-every_two_minute_on_29th :
-  class: "ScrapeJob"
-  cron: "*/2 * 29 * *"
-  args: ghmusic
-every_minute_on_november:
-  class: "ScrapeJob"
-  cron: "/1 * * 11 *" 
-  args: thedrum
-every_two_minute_on_thu_to_fri:
-  class: "ScrapeJob"
-  cron: "*/2 * * * 3,4"  
-  args: abh
+test1:
+  class: "TestJob"
+  queue: "testttt"
+  cron: "*/2 * * * *"  
+  args: "every two minutes"
+test2:
+  class: "TestJob"
+  queue: "testttt"
+  cron: "*/1 * * * *"  
+  args: "every 1 minute"
+# every_minute_on_thursday:
+#   class: "BgJob"
+#   queue: "scraperrr"
+#   cron: "*/1 * * * 3" 
+#   args: kosmic
+# every_two_minute_on_29th :
+#   class: "BgJob"
+#   queue: "scraperrr"
+#   cron: "*/2 * 29 * *"
+#   args: ghmusic
+# every_minute_on_november:
+#   class: "BgJob"
+#   queue: "scraperrr"
+#   cron: "/1 * * 11 *" 
+#   args: thedrum
+# every_two_minute_on_thu_to_fri:
+#   class: "BgJob"
+#   queue: "scraperrr"
+#   cron: "*/2 * * * 3,4"  
+#   args: abh

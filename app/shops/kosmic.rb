@@ -23,9 +23,5 @@ page = get_page(shop['url'],{"pgnum" => param})
 @file.to_io	
 end #scrape()
 
-def self.get_page link, param
-page = Scraper.agent.get link, param
-end
-
 end #class Kosmic	
 

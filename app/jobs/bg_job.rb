@@ -1,12 +1,11 @@
-class ScrapeJob
+class BgJob
 include Scraper	
-
+ 
 def self.queue
-    :scrapeR
+    :scraperrr
   end	
 
   def self.perform shop
     Scraper.scrape shop
-    
   end
 end

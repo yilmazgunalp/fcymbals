@@ -3,7 +3,7 @@ class Dparadise < Shop
 
 @merchant = "dparadise"
 @shop = Scraper.merchants[@merchant]	
-@page = Scraper.agent.get shop['url']
+@page = get_page(shop['url'])
 
 
 @options = {
@@ -19,10 +19,6 @@ get_all_links(page).each {|link| extract_data(get_page(link))}
 @file.to_io
 end #scrape()
 
-
-def self.get_page link
-Scraper.agent.get link
-end # get_page
 
 def self.get_all_links first_page
 all_links = []

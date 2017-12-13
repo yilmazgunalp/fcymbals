@@ -3,7 +3,7 @@ class Abh < Shop
 
 @merchant = "abh"
 @shop = Scraper.merchants[merchant]	
-@page = Scraper.agent.get shop['url']
+@page = get_page(shop['url'])
 @form = page.form_with(:dom_id => "aspnetForm")
 
 @options = {
@@ -22,7 +22,7 @@ page = first_page
 	node_set = page.at_css("td#MainContent_pdlAllProducts_dlProductList_tdLinks").css("a[id^='MainContent_pdlAllProducts_dlProductList_LinkButton']")
 	node_sets << node_set
 	next_link = get_list_of_links(node_set)[-2]
-	page = get_page next_link,form
+	page = get_asp_page next_link,form
 	end
 node_sets
 end
@@ -35,7 +35,7 @@ end
 links.uniq
 end
 
-def self.get_page link,form
+def self.get_asp_page link,form
 link_for_form = "ctl00:" + link.gsub("_",":").gsub("LinkButton","ctl00:LinkButton")
 form['__EVENTTARGET'] = link_for_form
 form['RadAJAXControlID'] = "MainContent_RadAjaxPanel1"
@@ -45,7 +45,7 @@ end
 
 def self.scrape
 prepare_file	
-get_all_links(page,form).each {|link| extract_data(get_page(link,form))}
+get_all_links(page,form).each {|link| extract_data(get_asp_page(link,form))}
 @file.flush.close
 @file.to_io
 end

@@ -37,8 +37,9 @@ ddream:
 thedrum:
   product: td.st-product-cell
   title: a.st-product-name
-  price: span.product_price.st-price.discounted
-  s_price: 
+  price: span.product_price.st-price
+  poa: span.poa_price
+  s_price: span.discount_price.st-price
   in_stock: 
   picture: img.st-image
   link: tr.st-image-row td a
@@ -55,7 +56,7 @@ dparadise:
 derringers:
   product: div.item-inner
   title: h2.product-name
-  price: p.special-price span.price
+  price: div.price-box span.price
   s_price: 
   in_stock: 
   picture: div.product-image img
