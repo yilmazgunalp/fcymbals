@@ -56,3 +56,4 @@ end
 end
 end	
 
+task "jobs:work" => "myrake:bg"
