@@ -556,3 +556,5 @@ Istanbul Xist 4-Pack Cymbals (14” 16” 20”+ 18")
 
 Page completed....
 
+[FATAL]:[ABH]: Could not retrieve webpage at => http://www.allansbillyhyde.com.au/prodcat/Drums_and_Percussion/Cymbals.aspx
+[ERROR]: SocketError [MESSAGE]: Failed to open TCP connection to www.allansbillyhyde.com.au:80 (getaddrinfo: Temporary failure in name resolution)
