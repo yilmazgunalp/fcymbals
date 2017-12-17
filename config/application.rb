@@ -15,13 +15,5 @@ module Fcymbals
     config.active_job.queue_adapter = :resque
     config.time_zone = 'Sydney'
 
- #    config.after_initialize do
- #    fork do	
- #  	Resque.schedule = YAML.load_file("#{Rails.root}/app/jobs/_schedule.yml")
-	# Resque::Scheduler.run
-	# end #fork	
-	# end #after_initialize
-    
-    
     end #class Application
 end #Module Fcymbals

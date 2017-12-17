@@ -11,6 +11,13 @@ sh 'git commit'
 sh 'git push heroku master' 
 end
 
+desc "background scraping"
+task :bg do 
+system "BACKGROUND=yes rake resque:scheduler"
+sleep(3)
+system "QUEUE=* rake resque:work"
+end	
+
 namespace :db  do
 
 

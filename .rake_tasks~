@@ -29,6 +29,7 @@ initializers
 jobs:work
 log:clear
 middleware
+myrake:bg
 myrake:db:backupdevdb
 myrake:db:backupprodb
 myrake:db:exporttable[table]
