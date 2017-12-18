@@ -6,6 +6,7 @@ def self.queue
   end	
 
   def self.perform shop
-    Scraper.scrape shop
-  end
+    Retailer.csv_import(Scraper.scrape(shop))
+    Resque.enqueue_in(1.hour,DeactJob,shop)
+end
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'makers/index'
 
   get 'retailers/scrape'
+  get 'retailers/test'
   get 'retailers', to: 'retailers#index' 
 
 require 'resque/server'

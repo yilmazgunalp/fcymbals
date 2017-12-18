@@ -3,6 +3,11 @@ class RetailersController < ApplicationController
 	include Scraper
 
 
+def test
+Resque.enqueue(BgshopsJob,params["shop"])
+render inline: "Done!!!"
+end	
+
 def scrape  
 	Retailer.csv_import(File.open(Scraper.scrape(params["shop"])))
 	render inline: "Done!!!"

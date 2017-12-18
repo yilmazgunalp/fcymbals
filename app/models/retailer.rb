@@ -32,7 +32,7 @@ end
 
 
 def self.deactivate_records merchant,time
-Retailer.where("merchant = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false);sleep(5) }
+Retailer.where("merchant = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false)}
 end	# deactivate_records
 
 

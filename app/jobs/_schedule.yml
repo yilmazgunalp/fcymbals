@@ -8,23 +8,38 @@ test2:
   queue: "testttt"
   cron: "*/1 * * * *"  
   args: "every 1 minute"
-every_minute_on_thursday:
+kosmic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/1 * * * 3" 
+  cron: "30 10 * * 2" 
   args: kosmic
-every_two_minute_on_29th :
+ghmusic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/2 * 29 * *"
+  cron: "30 10 * * 1"
   args: ghmusic
-every_minute_on_november:
+thedrum:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron:  "*/1 * * 11 *" 
+  cron:  "35 10 * * 1"
   args: thedrum
-every_two_minute_on_thu_to_fri:
+abh:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/2 * * * 3,4"  
+  cron: "40 10 * * 1" 
   args: abh
+derringers:
+  class: "BgshopsJob"
+  queue: "scrapeshops"
+  cron: "45 10 * * 1" 
+  args: derringers
+dparadise:
+  class: "BgshopsJob"
+  queue: "scrapeshops"
+  cron: "30 10 * * 6" 
+  args: dparadise
+ddream:
+  class: "BgshopsJob"
+  queue: "scrapeshops"
+  cron: "30 10 * * 7"
+  args: dddream

@@ -26,7 +26,6 @@ db:structure:load
 db:version
 dev:cache
 initializers
-jobs:work
 log:clear
 middleware
 myrake:bg
