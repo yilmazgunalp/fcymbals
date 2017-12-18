@@ -11,27 +11,27 @@ test2:
 kosmic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "30 10 * * 2" 
+  cron: "30 10 * * 1" 
   args: kosmic
 ghmusic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/2 * * * *"
+  cron: "30 10 * * 2" 
   args: ghmusic
 thedrum:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron:  "42 * * * 1"
+  cron:  "30 10 * * 3" 
   args: thedrum
 abh:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/3 * * * 1" 
+  cron: "30 10 * * 4"  
   args: abh
 derringers:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*/5 * * * 1" 
+  cron: "30 10 * * 5" 
   args: derringers
 dparadise:
   class: "BgshopsJob"
