@@ -11,7 +11,7 @@ log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","a+")
 			if retailer 
 			retailer.check_price(row.field('price').to_i)
 			else	
-			Retailer.create(row.to_h)
+			Retailer.create!(row.to_h)
 			end #if retailer
 		
 		rescue  StandardError => e

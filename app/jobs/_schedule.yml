@@ -16,7 +16,7 @@ kosmic:
 ghmusic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "48 * * * *"
+  cron: "*2 * * * *"
   args: ghmusic
 thedrum:
   class: "BgshopsJob"
@@ -26,12 +26,12 @@ thedrum:
 abh:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "40 * * * 1" 
+  cron: "*/3 * * * 1" 
   args: abh
 derringers:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "45 * * * 1" 
+  cron: "*/5 * * * 1" 
   args: derringers
 dparadise:
   class: "BgshopsJob"

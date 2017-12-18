@@ -15,7 +15,7 @@ desc "background scraping"
 task :bg do 
 system "BACKGROUND=yes rake resque:scheduler"
 sleep(3)
-system "QUEUE=* rake resque:work"
+system "INTERVAL=30 QUEUE=* rake resque:work"
 end	
 
 namespace :db  do
