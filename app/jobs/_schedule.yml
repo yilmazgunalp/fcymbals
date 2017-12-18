@@ -16,7 +16,7 @@ kosmic:
 ghmusic:
   class: "BgshopsJob"
   queue: "scrapeshops"
-  cron: "*2 * * * *"
+  cron: "*/2 * * * *"
   args: ghmusic
 thedrum:
   class: "BgshopsJob"

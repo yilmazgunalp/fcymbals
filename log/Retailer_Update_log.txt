@@ -1,0 +1,36 @@
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian AA Mini Holy China Cymbal 2017,"","",http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-china-cymbal-2017-ca0.jpg,derringers,http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50788, 3604, Sabian AA Mini Holy China Cymbal 2017, null, null, null, null, http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-c..., 2017-12-18 12:11:09.746236, 2017-12-18 12:11:09.746236, derringers, http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian Artisan Elite Cymbals 2017,"","",http://derringers.com.au/media/product/d20/sabian-artisan-elite-cymbals-2017-6a3.png,derringers,http://derringers.com.au/sabian-artisan-elite-cymbals-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50816, 3604, Sabian Artisan Elite Cymbals 2017, null, null, null, null, http://derringers.com.au/media/product/d20/sabian-artisan-elite-..., 2017-12-18 12:11:10.068267, 2017-12-18 12:11:10.068267, derringers, http://derringers.com.au/sabian-artisan-elite-cymbals-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian AA Mini Holy China Cymbal 2017,"","",http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-china-cymbal-2017-ca0.jpg,derringers,http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50948, 3604, Sabian AA Mini Holy China Cymbal 2017, null, null, null, null, http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-c..., 2017-12-18 12:16:02.85108, 2017-12-18 12:16:02.85108, derringers, http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian Artisan Elite Cymbals 2017,"","",http://derringers.com.au/media/product/d20/sabian-artisan-elite-cymbals-2017-6a3.png,derringers,http://derringers.com.au/sabian-artisan-elite-cymbals-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50949, 3604, Sabian Artisan Elite Cymbals 2017, null, null, null, null, http://derringers.com.au/media/product/d20/sabian-artisan-elite-..., 2017-12-18 12:16:03.199795, 2017-12-18 12:16:03.199795, derringers, http://derringers.com.au/sabian-artisan-elite-cymbals-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian AA Mini Holy China Cymbal 2017,"","",http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-china-cymbal-2017-ca0.jpg,derringers,http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50950, 3604, Sabian AA Mini Holy China Cymbal 2017, null, null, null, null, http://derringers.com.au/media/product/c67/sabian-aa-mini-holy-c..., 2017-12-18 12:20:41.019673, 2017-12-18 12:20:41.019673, derringers, http://derringers.com.au/sabian-aa-mini-holy-china-cymbal-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+
+[DERRINGERS]: [UPDATE]: ROW IN ERROR =>
+Sabian Artisan Elite Cymbals 2017,"","",http://derringers.com.au/media/product/d20/sabian-artisan-elite-cymbals-2017-6a3.png,derringers,http://derringers.com.au/sabian-artisan-elite-cymbals-2017
+[ERROR MESSAGE]: PG::NotNullViolation: ERROR:  null value in column "price" violates not-null constraint
+DETAIL:  Failing row contains (50951, 3604, Sabian Artisan Elite Cymbals 2017, null, null, null, null, http://derringers.com.au/media/product/d20/sabian-artisan-elite-..., 2017-12-18 12:20:41.326897, 2017-12-18 12:20:41.326897, derringers, http://derringers.com.au/sabian-artisan-elite-cymbals-2017, 0, t).
+: INSERT INTO "retailers" ("title", "picture_url", "created_at", "updated_at", "merchant", "link") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+

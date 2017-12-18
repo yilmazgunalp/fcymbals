@@ -6,15 +6,18 @@ log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","a+")
 
 	CSV.foreach(file, headers: true, :quote_char => '\'',:col_sep => '~') do |row|
 		begin 
-
+		puts "inside CSV.each"	
 		retailer =  check_for_retailer(row.field('title'), row.field('link'))
 			if retailer 
-			retailer.check_price(row.field('price').to_i)
-			else	
+			puts "inside if"
+				retailer.check_price(row.field('price').to_i)
+			else
+			puts "inside else"	
 			Retailer.create!(row.to_h)
 			end #if retailer
 		
 		rescue  StandardError => e
+		puts e	
 		b = binding
 		log_file << "[#{File.basename(file,'.csv').upcase}]: [UPDATE]: ROW IN ERROR =>\n"	
 		log_file <<  b.eval("row") 
