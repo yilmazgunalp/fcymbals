@@ -1,11 +1,14 @@
 class RetailersController < ApplicationController
 	include RetailersHelper
 	include Scraper
+	require "logmailer_mailer.rb"
 
 
 def test
-Resque.enqueue(BgshopsJob,params["shop"])
-render inline: "Done!!!"
+# Resque.enqueue(BgshopsJob,params["shop"])
+# render inline: "Done!!!"
+LogsMailer.log_email
+render inline: "mail sent"
 end	
 
 def scrape  

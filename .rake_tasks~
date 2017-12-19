@@ -49,6 +49,7 @@ spec
 spec:controllers
 spec:helpers
 spec:jobs
+spec:mailers
 spec:models
 stats
 test
