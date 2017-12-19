@@ -6,7 +6,7 @@ class RetailersController < ApplicationController
 def test
 # Resque.enqueue(BgshopsJob,params["shop"])
 # render inline: "Done!!!"
-p LogsMailer.log_email
+p LogsMailer.log_email.deliver
 render inline: "mail sent"
 end	
 
