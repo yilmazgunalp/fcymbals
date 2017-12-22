@@ -1,11 +1,6 @@
-test1:
-  class: "TestJob"
-  queue: "testttt"
-  cron: "*/2 * * * *"  
-  args: "every two minutes"
 test2:
   class: "TestJob"
-  queue: "testttt"
+  queue: "test"
   cron: "*/1 * * * *"  
   args: "every 1 minute"
 kosmic:

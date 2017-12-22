@@ -16,8 +16,11 @@ end
 def self.scrape klass
 b = Time.now
 log_file << "\n===>\tSCRAPING [#{klass.upcase}] on #{b}...\n\n"	
-return Object.const_get(self.to_s + "::" + klass.capitalize).scrape
-log_file << "Scraping completed in  #{Time.now - b}...\n"	
+result = Object.const_get(self.to_s + "::" + klass.capitalize).scrape
+log_file << "Scraping completed in  #{Time.now - b}...\n"
+log_file.flush
+Resque.enqueue(MaillogJob,File.path(log_file),klass.to_s,:scraped)
+result
 end
 
 DEFAULT_OPTIONS = {

@@ -6,13 +6,10 @@ log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","a+")
 
 	CSV.foreach(file, headers: true, :quote_char => '\'',:col_sep => '~') do |row|
 		begin 
-		puts "inside CSV.each"	
 		retailer =  check_for_retailer(row.field('title'), row.field('link'))
 			if retailer 
-			puts "inside if"
-				retailer.check_price(row.field('price').to_i)
+			retailer.check_price(row.field('price').to_i)
 			else
-			puts "inside else"	
 			Retailer.create!(row.to_h)
 			end #if retailer
 		
@@ -38,6 +35,10 @@ def self.deactivate_records merchant,time
 Retailer.where("merchant = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false)}
 end	# deactivate_records
 
+def to_log
+id.to_s + "\t" + title + "\t" + active.to_s
+
+end	
 
 
 private
