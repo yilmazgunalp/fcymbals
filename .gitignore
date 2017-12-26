@@ -22,7 +22,7 @@
 .byebug_history
 
 README.md
-log/development.log
+/log/development.log
 
 
 # Ignore all backup files.
