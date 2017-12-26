@@ -22,7 +22,7 @@
 .byebug_history
 
 README.md
-/log/development.log
+/config/initializers/local_init.rb
 
 
 # Ignore all backup files.
