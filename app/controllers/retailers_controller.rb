@@ -4,10 +4,10 @@ class RetailersController < ApplicationController
 	
 
 def test
-Resque.enqueue(BgshopsJob,params["shop"])
-render inline: "Done!!!"
-# LogsMailer.log_email.deliver
-# render inline: "mail sent"
+# Resque.enqueue(BgshopsJob,params["shop"])
+# render inline: "Done!!!"
+LogsMailer.log_email("#{Rails.root}/log/Retailer_Scrape_log.txt","mymerchant6000","action63333").deliver
+render inline: "mail sent"
 end	
 
 def scrape  
