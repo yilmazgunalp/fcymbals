@@ -1,14 +1,14 @@
 module RetailersHelper
 
-$models = YAML.load_file("#{Rails.root}/db/models.yml")
-$brands = $models.keys
+# $models = YAML.load_file("#{Rails.root}/db/models.yml")
+# $brands = $models.keys
 $types = Maker.select(:kind).distinct.map {|m| m.kind}
-$types.delete_at($types.index("crash ride"))
+# $types.delete_at($types.index("crash ride"))
 $types.unshift("crash ride")
-$types.delete_at($types.index("flat ride"))
+# $types.delete_at($types.index("flat ride"))
 $types.unshift("flat ride")
 $sizes = YAML.load_file("#{Rails.root}/db/sizes.yml")
-$vars = YAML.load_file("#{Rails.root}/db/vars.yml")
+# $vars = YAML.load_file("#{Rails.root}/db/vars.yml")
 
 
 def get_match  array, text, *args

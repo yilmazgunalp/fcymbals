@@ -36,6 +36,7 @@ myrake:db:localdbtoproduction
 myrake:db:restoredevdb[database,backup_file]
 myrake:herokup
 myrake:redis
+myrake:series
 notes
 notes:custom
 resque:failures:sort
@@ -51,6 +52,7 @@ spec:helpers
 spec:jobs
 spec:mailers
 spec:models
+spec:productmatch
 stats
 test
 test:db

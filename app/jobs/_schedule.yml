@@ -37,4 +37,4 @@ ddream:
   class: "BgshopsJob"
   queue: "scrapeshops"
   cron: "30 10 * * 7"
-  args: dddream
+  args: ddream

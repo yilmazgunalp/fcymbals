@@ -19,10 +19,13 @@ system "INTERVAL=30 QUEUE=* rake resque:work"
 end	
 
 
+
 desc "connect to redis"
 task :redis do 
 system "redis-cli -h grouper.redistogo.com -p 11403 -a 0bb85d0940c51b3cc18334cead512f5c"
 end	
+
+
 
 namespace :db  do
 

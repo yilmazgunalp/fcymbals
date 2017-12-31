@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 	root 'makers#index'	
   get 'makers/index'
 
-  get 'retailers/scrape'
+  get 'retailers/allocate'
   get 'retailers/test'
   get 'retailers', to: 'retailers#index' 
 

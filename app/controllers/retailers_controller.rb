@@ -1,6 +1,7 @@
 class RetailersController < ApplicationController
 	include RetailersHelper
 	include Scraper
+	include Productmatch
 	
 
 def test
@@ -10,20 +11,31 @@ LogsMailer.log_email("#{Rails.root}/log/Retailer_Scrape_log.txt","mymerchant6000
 render inline: "mail sent"
 end	
 
-def scrape  
-	Retailer.csv_import(File.open(Scraper.scrape(params["shop"])))
-	render inline: "Done!!!"
-end
+
+def allocate
+# Resque.enqueue(YamlseriesJob)
+@retailers = Retailer.all
+	@retailers.each do |r|
+	puts r.title	
+	puts Productmatch.match_brand(r.title)
+	puts Productmatch.match_size(r.title)
+	puts Productmatch.match_kind(r.title)
+	puts Productmatch.match_series(r.title)
+	puts "----------------------------------"
+	end
+
+render inline: "allocated"
+end	
+
+
+
 
 def index
 	@retailers = Retailer.where("title LIKE ?", '%Sabian%')
 	puts @retailers.count
 	@retailers.each do |r|
-
 	find_maker r 
 	end
-
-
 end	
 
 private
