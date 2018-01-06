@@ -48,7 +48,7 @@ sh  "pg_dump -U postgres -W -F t cymbals > #{backup_path+"cymbals"+time_stamp}.t
 puts "...DONE!"
 end	
 
-desc "restores a backup file into a new database"
+desc "restores a backup file into a new  DEVELOPMENT database"
 task :restoredevdb, [:database,:backup_file] do |task,args| 
 puts "...restoring CYMBALS DB in DEVELOPMENT ENV..\n..."	
 sh  "pg_restore -U postgres -W --dbname=#{args.database} --verbose #{backup_path+args.backup_file}"
@@ -62,8 +62,22 @@ sleep(7)
 sh "heroku pg:push cymbals postgresql-octagonal-23089"
 end
 
+desc "downloads production db to local db"
+task :productiondbtolocal do
+puts "Dropping local database -cymbals-..."
+sh 'psql -c "DROP DATABASE cymbals"'
+puts "Pulling production db to local -cymbals-..."
+sh 'heroku', 'pg:pull', 'postgresql-octagonal-23089', 'cymbals'
 end
-end	
+
+desc "connects to aws db!!credentials are not permanent. use heroku pg:credentials:url to get the latest"
+task :awsconnect do
+sh "psql -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432"
+end
+
+
+end #db
+end	#myrake
 
 task "jobs:work" => "myrake:bg"
 

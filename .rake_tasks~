@@ -29,10 +29,12 @@ initializers
 log:clear
 middleware
 myrake:bg
+myrake:db:awsconnect
 myrake:db:backupdevdb
 myrake:db:backupprodb
 myrake:db:exporttable[table]
 myrake:db:localdbtoproduction
+myrake:db:productiondbtolocal
 myrake:db:restoredevdb[database,backup_file]
 myrake:herokup
 myrake:redis

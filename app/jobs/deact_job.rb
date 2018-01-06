@@ -1,7 +1,7 @@
 class DeactJob
  
 def self.queue
-    :scrapeshops
+    :deactretailers
   end	
 
   def self.perform merchant

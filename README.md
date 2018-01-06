@@ -26,27 +26,3 @@
 	* google ads
 	* user sign up for updates
 	* API for retailers
-
-
-
-load data local infile  '~/ygprojects/hevna/db/manufacturers/bosphorus/_bosphorus.csv' into table makers fields terminated by ','  ignore 1 lines ;
-
-<!-- SQL MODE CHANGE -->
-SET SESSION sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE' 
-
-
-<!-- reset retailers to default maker -->
-update retailers set maker_id=3604 where maker_id!=3604;
-
-<!-- BACKUP MYSQL DATABASE -->
- mysqldump -u root -p cymbals > backup_cymbals
-
-<!-- LOADING BACKUP DB INTO A NEW DB(back_up_test) -->
- mysql -u root -p back_up_test < backup_cymbals;
-
-<!-- export table data to csv file -->
- select * from makers into outfile '/home/yilmazgunalp/Desktop/exportdb.csv' FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n'
-
-
-<!-- DUPLICATE MAKERS QUERY -->
-select maker_id,model,size,kind,retailers.id,link,title from retailers join makers on maker_id = makers.id  where maker_id in (select makers.id from makers join retailers on (maker_id=makers.id and makers.id!=3604) group by makers.id  having count(retailers.id) > 1) and brand='sabian' order by maker_id;

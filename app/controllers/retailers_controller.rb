@@ -1,7 +1,7 @@
 class RetailersController < ApplicationController
 	include RetailersHelper
 	include Scraper
-	include Productmatch
+	
 	
 
 def test
@@ -15,25 +15,20 @@ end	#test
 def allocate
 # Resque.enqueue(YamlseriesJob)
 # Resque.enqueue(YamlmodelsJob)
-@retailers = Retailer.all
+@retailers = Retailer.where(merchant: 'abh')
 	@retailers.each do |r|
-	puts r.title	
-	puts Productmatch.match_brand(r.title)
-	puts Productmatch.match_size(r.title)
-	puts Productmatch.match_kind(r.title)
-	puts Productmatch.match_series_and_model(r.title)
+	puts r.title
+	puts r.allocate
 	puts "----------------------------------"
 	end
-
 render inline: "allocated"
 end #allocate
-
-
-
 
 def index
 	
 end	#index
+
+private 
 
 end #class RetailersController
 
