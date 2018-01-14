@@ -25,6 +25,7 @@ abh:
   picture: td img.img-responsive
   link: a.ProdLink
   desc: div.padded5TopBorder
+  code: 'div.greyBorders td.padded5 td[style="text-align: left"]'
 ddream:
   product: ul.products-grid li.item
   title: h2.product-name a
@@ -62,3 +63,5 @@ derringers:
   picture: div.product-image img
   link: div.product-image a
   desc: div.prod-desc-call2action > p
+
+

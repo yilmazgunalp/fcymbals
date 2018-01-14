@@ -4,14 +4,20 @@ class Retailer < ApplicationRecord
 
 
 def allocate
+	if m = Maker.find_by(code: code.downcase)
+	m.retailers << self	
+
+	else
 	match_hash = Productmatch.match_maker(title).compact
 	if match_hash.length == 5 
-		find_maker(match_hash).retailers << self	
-	else
-		raise TooManyMatchesError.new(match_hash)
-	end #if	
-	rescue NoMatchError => e 
-		log_error(e)
+			find_maker(match_hash).retailers << self	
+		else
+			raise TooManyMatchesError.new(match_hash)
+		end #if	
+
+	end #if m	
+		rescue NoMatchError => e 
+			log_error(e)
 end #allocate   
 
 def self.csv_import file
@@ -25,7 +31,6 @@ def self.csv_import file
 				else
 				Retailer.create!(row.to_h)
 				end #if retailer
-			
 			rescue  StandardError => e
 			puts e	
 			b = binding

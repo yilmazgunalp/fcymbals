@@ -67,8 +67,12 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	
 	# description = Mechanize::Page::Link.new(item.at_css(@tags[merchant]['link']),
     # @agent,page).click.css(@tags[merchant]['desc']).text
+
+    	if options[:code]
+    		code = options[:code].call(@agent.get(link), tags.dig(merchant,"code"))
+    	end #if options[:code]	
 	
-	file << [title,price,s_price,picture_url,merchant,link].inject([]) {|row,col| row << col.to_s}
+	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
 	
 	end	# page.css each
 log_file << "Page completed....\n\n"

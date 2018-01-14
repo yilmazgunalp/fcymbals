@@ -1,1462 +1,1518 @@
 ---
 paiste:
-  giant beat:
-  - hi hat
-  - giant beat
-  - thin
   alpha:
+  - china
+  - full ride
   - medium crash
+  - medium hats
+  - metal crash
+  - metal edge hats
   - metal ride
+  - metal splash
+  - rock china
+  - rock crash
   - rock hats
+  - rock ride
+  - sound edge hi-hat
   - thin crash
   - thin splash
-  - rock ride
-  - rock china
-  - medium hats
-  - full ride
-  - metal crash
+  pstx:
+  - djs 45 crash
+  - djs 45 hats
+  - djs 45 ride
+  - pure bell
+  - swiss flanger crash
+  - swiss flanger stack
+  - swiss hats
+  - swiss medium crash
+  - swiss splash
+  - swiss thin crash
+  900 series:
   - china
-  - metal splash
-  - metal edge hats
-  - rock crash
+  - crash
+  - heavy crash
+  - heavy hi-hat
+  - heavy ride
+  - hi hat
+  - mega ride
+  - ride
   - sound edge hi-hat
+  - splash
+  pst5:
+  - china
+  - medium crash
+  - medium hats
+  - medium ride
+  - ride crash
+  - rock crash
+  - rock ride
+  - sound edge hats
+  - splash
+  pst7:
+  - china
+  - crash
+  - heavy crash
+  - heavy hi-hat
+  - heavy ride
+  - hi hat
+  - light hi-hat
+  - light ride
+  - ride
+  - splash
+  - thin crash
+  formula 602 modern essentials:
+  - china
+  - crash
+  - hi hat
+  - ride
+  - splash
+  formula 602 classic sounds:
+  - medium flatride
+  - medium hi-hat
+  - medium ride
+  - paperthin
+  - sound edge hi-hat
+  - thin crash
+  pst3:
+  - china
+  - crash
+  - crash ride
+  - hi hat
+  - ride
+  - splash
+  101 brass:
+  - crash
+  - crash ride
+  - hi hat
+  - ride
+  '2002':
+  - accent cymbal
+  - big ride
+  - china
+  - crash
+  - giga bell ride
+  - heavy hi-hat
+  - heavy ride
+  - medium
+  - medium hi-hat
+  - mega bell
+  - novo china
+  - power crash
+  - power ride
+  - ride
+  - sound edge hi-hat
+  - splash
+  - swish ride
+  - thin crash
+  - wild china
+  - wild crash
+  pst8:
+  - cajon crash
+  - cajon hats
+  - reflector china
+  - reflector medium crash
+  - reflector medium hats
+  - reflector medium ride
+  - reflector rock china
+  - reflector rock crash
+  - reflector rock hats
+  - reflector rock ride
+  - reflector rock splash
+  - reflector sound edge hi-hat
+  - reflector thin splash
+  masters:
+  - crisp ride
+  - dark crash
+  - dark crash ride
+  - dark crisp ride
+  - dark dry ride
+  - dark hi-hat
+  - dark ride
+  - deep ride
+  - medium ride
+  - mellow ride
+  - swish
+  - thin
+  - thin hi-hat
+  signature traditionals:
+  - light ride
+  - medium light hi-hat
+  - thin crash
+  signature:
+  - blue bell ride
+  - combo crisp hi-hat
+  - dark crisp hi-hat
+  - dry heavy ride
+  - duo ride
+  - fast crash
+  - fast medium
+  - full crash
+  - full ride
+  - heavy china
+  - medium hi-hat
+  - mega cup chime
+  - power crash
+  - reflector bell ride
+  - reflector heavy full crash
+  - reflector heavy full hi-hat
+  - reflector splash
+  - sound edge hi-hat
+  - splash
+  - thin china
+  giant beat:
+  - giant beat
+  - hi hat
+  - thin
+  color sound 900:
+  - black china
+  - black crash
+  - black heavy crash
+  - black heavy hi-hat
+  - black heavy ride
+  - black hi-hat
+  - black mega ride
+  - black ride
+  - black sound edge hi-hat
+  - black splash
+  - blue china
+  - blue crash
+  - blue heavy crash
+  - blue heavy hi-hat
+  - blue heavy ride
+  - blue hi-hat
+  - blue mega ride
+  - blue ride
+  - blue sound edge hi-hat
+  - blue splash
+  - purple china
+  - purple crash
+  - purple heavy crash
+  - purple heavy hi-hat
+  - purple heavy ride
+  - purple hi-hat
+  - purple mega ride
+  - purple ride
+  - purple sound edge hi-hat
+  - purple splash
+  - red china
+  - red crash
+  - red heavy crash
+  - red heavy hi-hat
+  - red heavy ride
+  - red hi-hat
+  - red mega ride
+  - red ride
+  - red sound edge hi-hat
+  - red splash
+  rude:
+  - basher
+  - blast china
+  - china
+  - crash/ride
+  - hi hat
+  - mega power ride
+  - novo china
+  - power ride
+  - power ride the reign
+  - ride/crash
+  - shred bell
+  - sound edge hi-hat
+  - splash
+  - thin crash
+  - wild china
+  - wild crash
+  2002 black:
+  - big beat 18
+  - big beat 19
+  - big beat 20
+  - big beat 21
+  - big beat 22
+  - big beat 24
+  - big beat hi-hat 15
+  - big beat hi-hat 16
   signature dark energy:
+  - dark energy crash mark i
+  - dark energy hats mark i
   - dark energy ride mark i
   - dark energy ride mark ii
   - dark energy splash mark i
-  - dark energy hats mark i
-  - dark energy crash mark i
-  formula 602 modern essentials:
-  - ride
-  - crash
-  - china
-  - hi hat
-  - splash
-  '2002':
-  - accent cymbal
-  - mega bell
-  - medium hi-hat
-  - thin crash
-  - ride
-  - novo china
-  - giga bell ride
-  - medium
-  - wild china
-  - swish ride
-  - china
-  - heavy ride
-  - splash
-  - power crash
-  - wild crash
-  - power ride
-  - big ride
-  - sound edge hi-hat
-  - heavy hi-hat
-  - crash
-  color sound 900:
-  - red sound edge hi-hat
-  - purple ride
-  - black splash
-  - red heavy ride
-  - red mega ride
-  - red splash
-  - black heavy ride
-  - blue heavy hi-hat
-  - black heavy crash
-  - blue mega ride
-  - black sound edge hi-hat
-  - black china
-  - purple heavy ride
-  - blue sound edge hi-hat
-  - red ride
-  - blue hi-hat
-  - blue heavy ride
-  - red crash
-  - blue china
-  - purple mega ride
-  - blue ride
-  - blue crash
-  - purple heavy hi-hat
-  - purple splash
-  - black ride
-  - black mega ride
-  - black crash
-  - purple crash
-  - blue splash
-  - purple heavy crash
-  - red hi-hat
-  - black heavy hi-hat
-  - purple china
-  - red heavy crash
-  - black hi-hat
-  - red heavy hi-hat
-  - blue heavy crash
-  - purple hi-hat
-  - red china
-  - purple sound edge hi-hat
-  900 series:
-  - heavy hi-hat
-  - crash
-  - china
-  - heavy ride
-  - mega ride
-  - hi hat
-  - splash
-  - ride
-  - sound edge hi-hat
-  - heavy crash
-  pst 3:
-  - ride
-  - crash ride
-  - crash
-  - china
-  - hi hat
-  - splash
-  masters:
-  - medium ride
-  - dark crash ride
-  - dark crash
-  - thin hi-hat
-  - dark dry ride
-  - deep ride
-  - dark crisp ride
-  - swish
-  - crisp ride
-  - dark ride
-  - thin
-  - mellow ride
-  - dark hi-hat
-  formula 602 classic sounds:
-  - medium ride
-  - medium flatride
-  - sound edge hi-hat
-  - medium hi-hat
-  - paperthin
-  - thin crash
-  pst x:
-  - swiss hats
-  - swiss splash
-  - swiss flanger stack
-  - djs 45 ride
-  - djs 45 hats
-  - swiss thin crash
-  - swiss flanger crash
-  - djs 45 crash
-  - pure bell
-  - swiss medium crash
   signature precision:
-  - heavy hi-hat
-  - heavy crash
-  - crash
   - china
+  - crash
+  - heavy crash
+  - heavy hi-hat
   - heavy ride
   - hi hat
-  - splash
   - ride
-  - thin crash
   - sound edge hi-hat
-  101 brass:
-  - hi hat
-  - ride
-  - crash ride
-  - crash
-  pst 7:
-  - heavy hi-hat
-  - crash
-  - china
-  - heavy ride
-  - hi hat
   - splash
-  - ride
-  - light ride
   - thin crash
-  - light hi-hat
-  - heavy crash
-  signature traditionals:
-  - medium light hi-hat
-  - light ride
-  - thin crash
-  rude:
-  - shred bell
-  - crash/ride
-  - hi hat
-  - thin crash
-  - power ride the reign
-  - novo china
-  - basher
-  - wild china
-  - mega power ride
-  - china
-  - splash
-  - ride/crash
-  - wild crash
-  - power ride
-  - sound edge hi-hat
-  - blast china
-  pst 8:
-  - reflector medium ride
-  - reflector medium crash
-  - reflector rock splash
-  - reflector rock crash
-  - reflector medium hats
-  - reflector china
-  - reflector rock ride
-  - reflector rock china
-  - cajon hats
-  - reflector thin splash
-  - reflector rock hats
-  - cajon crash
-  - reflector sound edge hi-hat
-  pst 5:
-  - medium ride
-  - medium crash
-  - sound edge hats
-  - china
-  - ride crash
-  - splash
-  - rock ride
-  - rock crash
-  - medium hats
-  signature:
-  - medium hi-hat
-  - heavy china
-  - fast medium
-  - blue bell ride
-  - combo crisp hi-hat
-  - full ride
-  - reflector bell ride
-  - dark crisp hi-hat
-  - duo ride
-  - dry heavy ride
-  - fast crash
-  - splash
-  - power crash
-  - reflector heavy full crash
-  - reflector splash
-  - sound edge hi-hat
-  - mega cup chime
-  - full crash
-  - thin china
-  - reflector heavy full hi-hat
-  2002 black:
-  - big beat 20
-  - big beat 24
-  - big beat 18
-  - big beat hi-hat 16
-  - big beat 21
-  - big beat hi-hat 15
-  - big beat 19
-  - big beat 22
 zildjian:
-  k kerope:
-  - kerope
-  - kerope medium
-  - kerope hihats
   planet z:
-  - 5 cymbal set-up
   - 3 cymbal set-up
-  - splash
-  - china
-  a custom:
-  - custom splash
-  - custom sizzle ride with 6 rivets
-  - custom medium crash
-  - a custom cymbal set
-  - custom ride
-  - custom medium ride
-  - custom ping ride
-  - custom projection crash
-  - custom china b
-  - custom fast crash
-  - custom efx b
-  - custom projection ride
-  - custom 20th anniversary ride
-  - custom crash
-  - custom hihats
-  - custom mastersound hihats
-  l80:
-  - l80 low volume splash
-  - 3 cymbal set-up
-  - l80 low volume ride
-  - 4 cymbal set-up
-  - l80 low volume crash ride
-  - l80 low volume crash
-  zbt:
-  - 4 cymbal set-up
-  - crash
-  - china
-  - hihats
-  - splash
-  - ride
-  - expander 2 cymbal set
-  - crash ride
-  - zbt band pairs
   - 5 cymbal set-up
-  genre cymbal sets:
-  - rock pack
-  - country pack
-  - worship pack
-  - gospel pack
+  - china
+  - splash
   fx:
+  - china trash
   - crash of doom
-  - zil-bel volcano cup
-  - latin multi-crash hand& stick
-  - zil-bel small
   - dancer zils
   - el sonido multi crash ride
-  - china trash
+  - finger cymbals
+  - latin multi-crash hand& stick
   - metal castanets
   - spiral stacker
-  - trash splash
-  - trashformer
   - spiral trash
+  - trashformer
+  - trash splash
   - zil-bel large
-  - finger cymbals
-  s:
-  - medium ride
-  - trash crash
-  - china splash
-  - rock hihats
-  - thin crash
-  - medium thin crash
-  - rock ride
-  - mastersound hihats
-  - 5 cymbal set-up
-  - china
-  - s band pairs
-  - hihats
-  - mini-hats
-  - splash
-  - rock xl 4 cymbal set-up
-  - rock crash
-  - s suspended
-  k zildjian:
-  - special k/z hihats top- k zildjian top bot.- a dyno beat
-  - mini china
-  - constantinople renaissance ride
-  - ride
-  - constantinople medium ride
-  - efx
-  - constantinople crash
-  - k constantinople-medium light pr
-  - k constantinople-medium light pairs
-  - china
-  - heavy ride
-  - dark crash thin
-  - hihats
-  - constantinople medium thin ride high
-  - splash
-  - light ride
-  - k constantinople-vintage medium light pairs
-  - dark crash medium thin
-  - constantinople hihats
-  - k zildjian cymbal set
-  - dark medium ride
-  - light hihatshi hats
-  - light flat ride
-  - crash ride
-  - constantinople thin ride overhammered
-  - mastersound hihats
-  - constantinople crash ride
-  - k constantinople suspended
-  - constantinople bounce ride
-  - k constantinople-vintage medium heavy pairs
-  - k constantinople- special selection medium heavy pairs
-  - light hihats
-  - constantinople medium thin ride low
-  gen16:
-  - 480ds buffed bronze
-  - crash
-  - china
-  - hihats
-  - splash
-  - 38ds buffed bronze
-  - ride
-  - crash ride
-  - 368ds buffed bronze
-  k custom:
-  - custom dark ride
-  - custom dark china
-  - custom special dry ride
-  - custom hybrid splash
-  - custom dark hihats
-  - custom hybrid trash smash
-  - custom session crash
-  - custom special dry splash
-  - k custom hybrid cymbal set
-  - custom dark splash
-  - custom medium ride
-  - custom hybrid ride
-  - custom special dry china trash
-  - custom session ride
-  - custom hybrid china
-  - custom fast crash
-  - custom special dry trash crash
-  - custom high definition ride
-  - custom organic ride
-  - custom dark complex ride
-  - custom flat top ride
-  - custom session hihats
-  - custom special dry crash
-  - custom ride
-  - custom left side ride with 3 rivets
-  - custom dry ride
-  - custom special dry hihats
-  - k custom dark cymbal set
-  - custom dark crash
-  - custom hybrid crash
-  - custom hybrid hihats
-  a avedis:
-  - a avedis hihats
-  - a avedis
-  - a avedis ihats
-  a zildjian:
-  - medium ride
-  - swish knocker with 20 rivets
-  - stadium medium heavy pairs
-  - new beat hihats
-  - china low
-  - z-mac pairs
-  - mega bell ride
-  - heavy crash
-  - heavy hihats
-  - medium-heavy ride
-  - splash
-  - classic orchestral selection medium light pairs
-  - rock crash
-  - ultra hammered china
-  - classic orchestral selection suspended
-  - medium crash
-  - ping ride
-  - flash splash
-  - rock hihats
-  - symphonic viennese tone pairs
-  - china high
-  - thin crash
-  - medium thin crash
-  - stadium medium pairs
-  - rock ride
-  - crash ride
-  - special recording hihats
-  - armand ride with 3 rivets
-  - mastersound hihats
-  - dyno beat hihats
-  - classic orchestral selection medium heavy pairs
-  - sweet ride
-  - fast crash
-  - a zildjian cymbal set
-  - quick beat hihats
-  - symphonic french tone pairs
-  - symphonic german tone pairs
-  - pocket hihats
-  - concert stage pairs
-  - classic orchestral selection medium pairs
+  - zil-bel small
+  - zil-bel volcano cup
   k:
   - 20x24
   - high octave (13 notes) w/o bar
-  - low octave-single note (specify note)
-  - traditional gong
-  - table-top gong stand
+  - high octave-single note (specify note)
   - k symphonic light brilliant pairs
   - k symphonic  pairs
   - 'low octave (13 notes) w/o bar '
+  - low octave-single note (specify note)
+  - table-top gong stand
+  - traditional gong
   - traditional gong and table-top stand set
-  - high octave-single note (specify note)
+  zbt:
+  - 4 cymbal set-up
+  - 5 cymbal set-up
+  - china
+  - crash
+  - crash ride
+  - expander 2 cymbal set
+  - hihats
+  - ride
+  - splash
+  - zbt band pairs
+  a zildjian:
+  - armand ride with 3 rivets
+  - a zildjian cymbal set
+  - china high
+  - china low
+  - classic orchestral selection medium heavy pairs
+  - classic orchestral selection medium light pairs
+  - classic orchestral selection medium pairs
+  - classic orchestral selection suspended
+  - concert stage pairs
+  - crash ride
+  - dyno beat hihats
+  - fast crash
+  - flash splash
+  - heavy crash
+  - heavy hihats
+  - mastersound hihats
+  - medium crash
+  - medium-heavy ride
+  - medium ride
+  - medium thin crash
+  - mega bell ride
+  - new beat hihats
+  - ping ride
+  - pocket hihats
+  - quick beat hihats
+  - rock crash
+  - rock hihats
+  - rock ride
+  - special recording hihats
+  - splash
+  - stadium medium heavy pairs
+  - stadium medium pairs
+  - sweet ride
+  - swish knocker with 20 rivets
+  - symphonic french tone pairs
+  - symphonic german tone pairs
+  - symphonic viennese tone pairs
+  - thin crash
+  - ultra hammered china
+  - z-mac pairs
+  genre cymbal sets:
+  - country pack
+  - gospel pack
+  - rock pack
+  - worship pack
+  s:
+  - 5 cymbal set-up
+  - china
+  - china splash
+  - hihats
+  - mastersound hihats
+  - medium ride
+  - medium thin crash
+  - mini-hats
+  - rock crash
+  - rock hihats
+  - rock ride
+  - rock xl 4 cymbal set-up
+  - s band pairs
+  - splash
+  - s suspended
+  - thin crash
+  - trash crash
+  k custom:
+  - custom dark china
+  - custom dark complex ride
+  - custom dark crash
+  - custom dark hihats
+  - custom dark ride
+  - custom dark splash
+  - custom dry ride
+  - custom fast crash
+  - custom flat top ride
+  - custom high definition ride
+  - custom hybrid china
+  - custom hybrid crash
+  - custom hybrid hihats
+  - custom hybrid ride
+  - custom hybrid splash
+  - custom hybrid trash smash
+  - custom left side ride with 3 rivets
+  - custom medium ride
+  - custom organic ride
+  - custom ride
+  - custom session crash
+  - custom session hihats
+  - custom session ride
+  - custom special dry china trash
+  - custom special dry crash
+  - custom special dry hihats
+  - custom special dry ride
+  - custom special dry splash
+  - custom special dry trash crash
+  - k custom dark cymbal set
+  - k custom hybrid cymbal set
+  k kerope:
+  - kerope
+  - kerope hihats
+  - kerope medium
+  a custom:
+  - a custom cymbal set
+  - custom 20th anniversary ride
+  - custom china b
+  - custom crash
+  - custom efx b
+  - custom fast crash
+  - custom hihats
+  - custom mastersound hihats
+  - custom medium crash
+  - custom medium ride
+  - custom ping ride
+  - custom projection crash
+  - custom projection ride
+  - custom ride
+  - custom sizzle ride with 6 rivets
+  - custom splash
+  l80:
+  - 3 cymbal set-up
+  - 4 cymbal set-up
+  - l80 low volume crash
+  - l80 low volume crash ride
+  - l80 low volume ride
+  - l80 low volume splash
+  gen16:
+  - 368ds buffed bronze
+  - 38ds buffed bronze
+  - 480ds buffed bronze
+  - china
+  - crash
+  - crash ride
+  - hihats
+  - ride
+  - splash
+  a avedis:
+  - a avedis
+  - a avedis hihats
+  - a avedis ihats
+  k zildjian:
+  - china
+  - constantinople bounce ride
+  - constantinople crash
+  - constantinople crash ride
+  - constantinople hihats
+  - constantinople medium ride
+  - constantinople medium thin ride high
+  - constantinople medium thin ride low
+  - constantinople renaissance ride
+  - constantinople thin ride overhammered
+  - crash ride
+  - dark crash medium thin
+  - dark crash thin
+  - dark medium ride
+  - efx
+  - heavy ride
+  - hihats
+  - k constantinople-medium light pairs
+  - k constantinople-medium light pr
+  - k constantinople- special selection medium heavy pairs
+  - k constantinople suspended
+  - k constantinople-vintage medium heavy pairs
+  - k constantinople-vintage medium light pairs
+  - k zildjian cymbal set
+  - light flat ride
+  - light hihats
+  - light hihatshi hats
+  - light ride
+  - mastersound hihats
+  - mini china
+  - ride
+  - special k/z hihats top- k zildjian top bot.- a dyno beat
+  - splash
 istanbul:
+  xist:
+  - china
+  - crash
+  - hi hat
+  - marching
+  - msx
+  - orchestra
+  - ride
+  - splash
+  - xist
+  - xist brilliant
+  - xist power
+  msx:
+  - msx
+  gong:
+  - gong
   30 th anniversary:
   - 30 th anniversary
   - band & orcheteral
   signature:
-  - mel lewis
-  - joey waronker
   - agop
-  - mantra
   - epoch
   - idris muhammad
+  - joey waronker
+  - mantra
+  - mel lewis
   - om
-  xist:
-  - marching
-  - crash
-  - xist brilliant
-  - orchestra
-  - hi hat
-  - splash
-  - ride
-  - msx
-  - xist
-  - xist power
-  - china
-  traditional:
-  - medium ride
-  - flat ride
-  - marching
-  - mini china
-  - dark crash
-  - medium hi-hat
-  - light hi-hat
-  - dark ride
-  - original ride
-  - mini hi-hat
-  - traditional
-  - paper thin crash
-  - heavy crash
-  - trash hit
-  - china
-  - super symphonic
-  - heavy ride
-  - orchestra
-  - splash
-  - heavy hi-hat
-  - bell
-  - medium crash
-  - thin crash
-  - crash ride
-  gong:
-  - gong
   custom:
-  - turk
-  - sultan
   - special edition
-  msx:
-  - msx
-istanbul mehmet:
-  effect:
-  - therapium bell
-  custom:
-  - vezir
-  - turk
-  - emirhan
   - sultan
-  - onurhan
-  - empire
+  - turk
+  traditional:
+  - bell
+  - china
+  - crash ride
+  - dark crash
+  - dark ride
+  - flat ride
+  - heavy crash
+  - heavy hi-hat
+  - heavy ride
+  - light hi-hat
+  - marching
+  - medium crash
+  - medium hi-hat
+  - medium ride
+  - mini china
+  - mini hi-hat
+  - orchestra
+  - original ride
+  - paper thin crash
+  - splash
+  - super symphonic
+  - thin crash
+  - traditional
+  - trash hit
+istanbul mehmet:
   xperience:
   - x-cast
-  - x-metal
   - x-fx
   - x-jazz
+  - x-metal
   symphonic:
   - "\\N"
   - super symphonic
+  effect:
+  - therapium bell
   signature:
-  - horacio el negro hernandez
-  - sahra
-  - 61st anniversary
   - 60th anniversary
-  - kiko freitas
+  - 61st anniversary
+  - ab bermudez
   - carmine appice
   - erik smith
-  - ab bermudez
-  - snowy shaw
+  - horacio el negro hernandez
+  - kiko freitas
   - kirkor kucukyan
+  - sahra
+  - snowy shaw
+  custom:
+  - emirhan
+  - empire
+  - onurhan
+  - sultan
+  - turk
+  - vezir
   jazz line:
-  - origin dark
-  - mikael z
-  - mehmet legend
   - legend dark
   - mc jazz
+  - mehmet legend
+  - mikael z
   - nostalgia
+  - origin dark
   traditional:
+  - custom dry
   - dark
   - flat
+  - flat hole bottom
+  - flat sizzle
   - hat trio w/ rivets
-  - custom dry
-  - paper thin
-  - traditional
-  - thin
+  - heavy
+  - light
   - medium
   - original
-  - flat hole bottom
-  - heavy
+  - paper thin
   - ping
-  - flat sizzle
   - reverse cup
-  - light
+  - thin
+  - traditional
   modern:
-  - samatya
-  - session
-  - funky
   - blackbell
-  - radiant
+  - funky
   - murathan
   - origin
+  - radiant
+  - samatya
+  - session
 sabian:
-  hh:
-  - medium ride
-  - x-celerator hats brilliant finish
-  - pandora
-  - dark hats
-  - medium-thin crash brilliant finish
-  - medium hats
-  - rock ride brilliant finish
-  - vanguard
-  - china kang
-  - king
-  - hh performance set
-  - duo ride
-  - splash
-  - raw bell dry ride
-  - mid max stax
-  - vanguard hats
-  - medium-thin crash
-  - medium crash
-  - x-celerator hats
-  - nova
-  - power bell ride
-  - fusion hats
-  - leopard ride
-  - vintage ride
-  - thin crash
-  - rock ride
-  - duo splash
-  - splash brilliant finish
-  - china kang brilliant finish
-  - alien disc
-  - chinese
-  - radia cup chime
-  - o-zone
-  - low max stax
-  - duo ride brilliant finish
-  - garage ride
-  - high max stax
   sbr:
-  - hats
   - crash
-  - sbr first pack
-  - splash
+  - crash ride
+  - hats
+  - ride
   - sbr 2-pack
-  - ride
+  - sbr first pack
   - sbr performance set
-  - crash ride
-  hhx:
-  - stage crash brilliant finish
-  - x-celerator hats brilliant finish
-  - groove hats
-  - studio crash
-  - manhattan jazz crash
-  - hhx effects pack
-  - manhattan jazz ride
-  - 3-point ride
   - splash
-  - studio crash brilliant finish
-  - raw bell dry ride
-  - stage ride
-  - fierce ride
-  - x-plosion crash
-  - fierce crash
-  - evolution hats
-  - x-celerator hats
-  - hhx performance set
-  - legacy crash
-  - grrove ride brilliant finish
-  - groove ride
-  - evolution o-zone
-  - hhx praise & worship pack
-  - legacy ride
-  - stage hats
-  - legacy heavy ride
-  - evolution ride
-  - hhx evolution performance set
-  - legacy hats
-  - evolution splash
-  - evolution mini chinese
-  - zen china
-  - chinese
-  - evolution effeks crash
-  - fierce hats
-  - x-treme crash
-  - evolution crash
-  - omni
-  - stage crash
-  - phoenix
-  - click hats
-  paragon:
-  - crash
-  - diamondback chinese
-  - splash
-  - paragon complete set-up
-  - ride
-  - chinese
-  - paragon performance set
-  - hats
-  - paragon effects pack
-  effects:
-  - alu bell
-  - chopper
-  - symphonic gong
-  - thundersheet
-  - stage bell
-  - hoop crasher
-  - finger cymbals
-  - ice bell
-  - becker bow cymbal
-  - zodiac gong
-  - chinese gong
   xsr:
-  - x-celerator hats
-  - monarch hats
-  - rock hats
-  - xsr first pack
-  - monarch
-  - ride
-  - xsr performance set
-  - rock ride
-  - hats
-  - xsr rock performance set
-  - xsr complete set
-  - splash
+  - chinese
   - fast crash
-  - chinese
-  - rock crash
-  - xsr effects pack
   - fast stax
-  b8x:
-  - china splash
-  - rock hats
-  - ride
-  - thin crash
-  - mini chinese
-  - crash ride
-  - rock ride
-  - ballistic crash
   - hats
-  - b8x effects pack
-  - splash
-  - chinese
+  - monarch
+  - monarch hats
+  - ride
   - rock crash
-  - b8x first pack
-  - b8x performance set
-  - b8x 2-pack
-  - medium crash
-  - b8x complete set
+  - rock hats
+  - rock ride
+  - splash
+  - x-celerator hats
+  - xsr complete set
+  - xsr effects pack
+  - xsr first pack
+  - xsr performance set
+  - xsr rock performance set
   bxpro:
-  - medium ride
-  - medium crash
-  - o-zone
+  - b8 pro effects pack
   - b8 pro performance set
   - china splash
-  - rock hats
-  - thin crash
-  - mini chinese
   - chinese
-  - rock ride
-  - rock crash
+  - medium crash
   - medium hats
-  - b8 pro effects pack
-  - splash
-  aax:
-  - x-plosion fast crash
-  - max splash brilliant finish
-  - stage crash brilliant finish
-  - metal ride
-  - x-treme chinese
-  - studio ride
-  - fusion hats brilliant finish
-  - v-ride
-  - air splash
-  - studio crash
-  - metal crash
-  - aax stage performance set
-  - v-crash
-  - aero splash
-  - metal crash brilliant finish
-  - freq crash
-  - el sabor picante hand crash
-  - splash
-  - studio ride brilliant finish
-  - aax effects pack
-  - stage ride
-  - memphis ride
-  - x-plosion crash
-  - saturation crash
-  - x-celerator hats
-  - v-hats
-  - stage hats
-  - max splash
-  - x-plosion splash
-  - splash brilliant finish
-  - air splash brilliant finish
-  - metal ride brilliant finish
-  - chinese brilliant finish
-  - aax praise & worship pack
-  - iso crash
-  - chinese
-  - freq hats
-  - o-zone
-  - studio hats
-  - stadium ride
-  - omni
-  - dark crash
-  - aero crash brilliant finish
-  - stage crash
-  - x-plosion ride
-  - raw bell dry ride
-  - studio hats brilliant finish
-  - max splash set
-  - dark crash brilliant finish
-  - aero crash
-  - metal hats
-  - fusion hats
-  - x-plosion hats
-  - o-zone brilliant finish
+  - medium ride
   - mini chinese
+  - o-zone
+  - rock crash
+  - rock hats
+  - rock ride
+  - splash
+  - thin crash
+  hhx:
+  - 3-point ride
+  - chinese
+  - click hats
+  - evolution crash
+  - evolution effeks crash
+  - evolution hats
+  - evolution mini chinese
+  - evolution o-zone
+  - evolution ride
+  - evolution splash
+  - fierce crash
+  - fierce hats
+  - fierce ride
+  - groove hats
+  - groove ride
+  - grrove ride brilliant finish
+  - hhx effects pack
+  - hhx evolution performance set
+  - hhx performance set
+  - hhx praise & worship pack
+  - legacy crash
+  - legacy hats
+  - legacy heavy ride
+  - legacy ride
+  - manhattan jazz crash
+  - manhattan jazz ride
+  - omni
+  - phoenix
+  - raw bell dry ride
+  - splash
+  - stage crash
+  - stage crash brilliant finish
+  - stage hats
+  - stage ride
+  - studio crash
+  - studio crash brilliant finish
+  - x-celerator hats
+  - x-celerator hats brilliant finish
+  - x-plosion crash
+  - x-treme crash
+  - zen china
+  b8x:
+  - b8x 2-pack
+  - b8x complete set
+  - b8x effects pack
+  - b8x first pack
+  - b8x performance set
+  - ballistic crash
+  - china splash
+  - chinese
+  - crash ride
+  - hats
+  - medium crash
+  - mini chinese
+  - ride
+  - rock crash
+  - rock hats
+  - rock ride
+  - splash
+  - thin crash
   b8:
   - thin crash
-  artisan:
+  effects:
+  - alu bell
+  - becker bow cymbal
+  - chinese gong
+  - chopper
+  - finger cymbals
+  - hoop crasher
+  - ice bell
+  - stage bell
+  - symphonic gong
+  - thundersheet
+  - zodiac gong
+  hh:
+  - alien disc
+  - china kang
+  - china kang brilliant finish
+  - chinese
+  - dark hats
+  - duo ride
+  - duo ride brilliant finish
+  - duo splash
+  - fusion hats
+  - garage ride
+  - hh performance set
+  - high max stax
+  - king
+  - leopard ride
+  - low max stax
+  - medium crash
+  - medium hats
   - medium ride
-  - elite
-  - hats
-  - crash brilliant finish
+  - medium-thin crash
+  - medium-thin crash brilliant finish
+  - mid max stax
+  - nova
+  - o-zone
+  - pandora
+  - power bell ride
+  - radia cup chime
+  - raw bell dry ride
+  - rock ride
+  - rock ride brilliant finish
+  - splash
+  - splash brilliant finish
+  - thin crash
+  - vanguard
+  - vanguard hats
+  - vintage ride
+  - x-celerator hats
+  - x-celerator hats brilliant finish
+  aax:
+  - aax effects pack
+  - aax praise & worship pack
+  - aax stage performance set
+  - aero crash
+  - aero crash brilliant finish
+  - aero splash
+  - air splash
+  - air splash brilliant finish
+  - chinese
+  - chinese brilliant finish
+  - dark crash
+  - dark crash brilliant finish
+  - el sabor picante hand crash
+  - freq crash
+  - freq hats
+  - fusion hats
+  - fusion hats brilliant finish
+  - iso crash
+  - max splash
+  - max splash brilliant finish
+  - max splash set
+  - memphis ride
+  - metal crash
+  - metal crash brilliant finish
+  - metal hats
+  - metal ride
+  - metal ride brilliant finish
+  - mini chinese
+  - omni
+  - o-zone
+  - o-zone brilliant finish
+  - raw bell dry ride
+  - saturation crash
+  - splash
+  - splash brilliant finish
+  - stadium ride
+  - stage crash
+  - stage crash brilliant finish
+  - stage hats
+  - stage ride
+  - studio crash
+  - studio hats
+  - studio hats brilliant finish
+  - studio ride
+  - studio ride brilliant finish
+  - v-crash
+  - v-hats
+  - v-ride
+  - x-celerator hats
+  - x-plosion crash
+  - x-plosion fast crash
+  - x-plosion hats
+  - x-plosion ride
+  - x-plosion splash
+  - x-treme chinese
+  artisan:
   - crash
+  - crash brilliant finish
+  - elite
   - elite hats
-  - light ride
+  - hats
   - light hats
+  - light ride
+  - medium ride
   sr2:
+  - china
   - hi hats
   - thin crash
   - thin ride
-  - china
-  aa:
-  - medium ride
-  - metal ride
-  - holy china brilliant finish
-  - el sabor crash brilliant finish
-  - sick hats
-  - medium-thin crash brilliant finish
-  - medium hats
-  - metal chinese
-  - rock ride brilliant finish
-  - metal crash
-  - el sabor crash
-  - apollo hats
-  - splash
-  - raw bell dry ride
-  - raw bell crash
-  - aa performance set
-  - rock crash
-  - mini holy china
-  - medium-thin crash
-  - medium crash
-  - bash ride
-  - china splash
-  - rock hats
-  - metal hats
-  - rock crash brilliant finish
-  - el sabor salsa splash
-  - thin crash
-  - mini chinese
-  - bash ride brilliant finish
-  - rock ride
-  - holy china
-  - chinese brilliant finish
-  - metal splash
+  paragon:
   - chinese
-  - raw bell crash brilliant finish
+  - crash
+  - diamondback chinese
+  - hats
+  - paragon complete set-up
+  - paragon effects pack
+  - paragon performance set
+  - ride
+  - splash
+  aa:
+  - aa performance set
   - apollo
+  - apollo hats
+  - bash ride
+  - bash ride brilliant finish
+  - china splash
+  - chinese
+  - chinese brilliant finish
+  - el sabor crash
+  - el sabor crash brilliant finish
+  - el sabor salsa splash
+  - holy china
+  - holy china brilliant finish
+  - medium crash
+  - medium hats
+  - medium ride
+  - medium-thin crash
+  - medium-thin crash brilliant finish
+  - metal chinese
+  - metal crash
+  - metal hats
+  - metal ride
+  - metal splash
+  - mini chinese
+  - mini holy china
+  - raw bell crash
+  - raw bell crash brilliant finish
+  - raw bell dry ride
+  - rock crash
+  - rock crash brilliant finish
+  - rock hats
+  - rock ride
+  - rock ride brilliant finish
+  - sick hats
+  - splash
+  - thin crash
 meinl:
-  symphonic cymbals:
-  - 20' suspended cymbal
-  - 22' symphonic thin cymbal pair
-  - 17' suspended cymbal
-  - 20' symphonic thin cymbal pair
-  - 19' symphonic medium heavy cymbal pair
-  - 18' symphonic medium cymbal pair
-  - 22' symphonic medium cymbal pair
-  - 22' symphonic extra heavy cymbal pair
-  - 18' symphonic thin cymbal pair
-  - 16' suspended cymbal
-  - 16' symphonic thin cymbal pair
-  - 14' suspended cymbal
-  - 16' symphonic heavy cymbal pair
-  - 16' symphonic medium cymbal pair
-  - 20' symphonic medium cymbal pair
-  - 20' symphonic extra heavy cymbal pair
-  - 22' symphonic heavy cymbal pair
-  - 22' suspended cymbal
-  - 20' symphonic heavy cymbal pair
-  - 18' suspended cymbal
-  - 18' symphonic heavy cymbal pair
   classics:
-  - 20' medium ride
-  - classics standard set
-  - 18' thin crash
-  - 17' powerful crash
-  - 8' low bell
-  - 21' medium ride
-  - 12' china
-  - 14' powerful soundwave hihat pair
-  - 16' medium crash
-  - 8' high bell
-  - 16' china
-  - 14' medium soundwave hihat pair
-  - 8' splash
-  - 14' powerful hihat pair
   - 10' china splash
-  - 14' medium hihat pair
-  - 20' powerful ride
   - 10' mini hihat pair
-  - 12' splash
   - 10' splash
-  - 14' china
-  - 20' medium crash
-  - 22' medium ride
-  - 18' china
-  - 15' medium crash
-  - 17' medium crash
-  - 16' thin crash
-  - 14' medium crash
-  - 16' powerful crash
-  - 8' medium bell
-  - 18' powerful crash
-  - 18' medium crash
-  hcs:
-  - cymbal set up
-  - 8' bell
-  - 14' trash stack
-  - 13' hihat pair
   - 12' china
-  - 14' hihat pair
+  - 12' splash
   - 14' china
+  - 14' medium crash
+  - 14' medium hihat pair
+  - 14' medium soundwave hihat pair
+  - 14' powerful hihat pair
+  - 14' powerful soundwave hihat pair
+  - 15' medium crash
+  - 16' china
+  - 16' medium crash
+  - 16' powerful crash
+  - 16' thin crash
+  - 17' medium crash
+  - 17' powerful crash
+  - 18' china
+  - 18' medium crash
+  - 18' powerful crash
+  - 18' thin crash
+  - 20' medium crash
+  - 20' medium ride
+  - 20' powerful ride
+  - 21' medium ride
+  - 22' medium ride
+  - 8' high bell
+  - 8' low bell
+  - 8' medium bell
+  - 8' splash
+  - classics standard set
+  classics custom extreme metal:
+  - 10' splash
+  - 14' hihat pair
+  - 16'/18' stack
+  - 16' china
+  - 16' crash
+  - 17' crash
   - 18' china
   - 18' crash
-  - 20' crash
-  - 18' crash ride
-  - 16' china
+  - 19' crash
   - 20' ride
-  - 8' splash
-  - 12' trash stack
-  - 18' trash stack
-  - 16' trash crash
-  - 16' trash stack
-  - 16' crash
-  - 14' crash
-  - 12' splash
+  - extreme metal cymbal set
+  byzance jazz:
+  - 10' jazz splash
+  - 13' jazz thin hihat pair
+  - 14' jazz thin hihat pair
+  - 14' tradition hihat pair
+  - 16' jazz extra thin crash
+  - 16' jazz medium thin crash
+  - 16' jazz thin crash
+  - 17' jazz extra thin crash
+  - 17' jazz medium thin crash
+  - 17' jazz thin crash
+  - 18' jazz extra thin crash
+  - 18' jazz medium thin crash
+  - 18' jazz thin crash
+  - 18' tradition light crash
+  - 20' jazz big apple ride
+  - 20' jazz club ride
+  - 20' jazz extra thin ride
+  - 20' jazz flat ride
+  - 20' jazz medium ride
+  - 20' jazz medium thin crash
+  - 20' jazz medium thin ride
+  - 20' jazz thin crash
+  - 20' jazz thin ride
+  - 20' tradition light ride
+  - 20' tradition ride
+  - 21' nuance ride with sizzles
+  - 22' jazz big apple ride
+  - 22' jazz china ride
+  - 22' jazz club ride
+  - 22' jazz extra thin ride
+  - 22' jazz medium ride
+  - 22' jazz medium thin ride
+  - 22' jazz thin ride
+  - 22' symmetry ride
+  - 22' tradition flat ride
+  - 22' tradition light ride
+  - 22' tradition ride
+  generation x:
+  - 10'/12' electro stack
+  - 10' filter china
+  - 10' filter china with jingles
+  - 10' fx hat pair
+  - 10' johnny rabb drumbal
+  - 12/14' trash hat pair
+  - 12'/14' x-treme stack
+  - 12' filter china
+  - 12' filter china with jingles
+  - 14' filter china
+  - 14' filter china with jingles
+  - 15' china crash
+  - 16' filter china
+  - 17' china crash
+  - 19' china crash
+  - 8'/10' electro stack
+  - 8' filter china
+  - 8' fx hat pair
+  - 8' johnny rabb drumbal
+  candela:
+  - 10' percussion hiha
+  - 10' percussion splash
+  - 14' percussion crash
+  - 14' percussion jingle bell
+  - 16' percussion crash
+  - 18' percussion crash-ride
+  mcs:
   - 10' splash
+  - 14' medium crash
+  - 14' medium hihat pair
+  - 16' medium crash
+  - 18' china
+  - 18' crash ride
+  - 18' medium crash
+  - 20' medium ride
+  - cymbal set up
   pure alloy:
   - 14' medium crash
-  - 20' medium ride
-  - 20' medium crash
-  - 22' medium ride
   - 14' medium hihat
   - 15' medium hihat
   - 18' medium crash
+  - 20' medium crash
+  - 20' medium ride
+  - 22' medium ride
   byzance extra dry:
+  - 10' dual splash
+  - 10' extra dry splash
+  - 12' extra dry splash
+  - 13' extra dry medium hihat pair
+  - 14' extra dry medium hihat pair
+  - 15' dual hihat pair
   - 15' extra dry medium thin hihat pair
   - 16' dual crash
-  - 18' dual crash
-  - 20' extra dry china
-  - 16' extra dry thin crash
-  - 19' extra dry thin crash
-  - 20' extra dry thin ride
-  - 10' extra dry splash
-  - 20' dual crash-ride
-  - 10' dual splash
-  - 22' dual crash-ride
-  - 17' extra dry thin crash
-  - 22' extra dry medium ride
-  - 18' extra dry china
-  - 21' transition ride
-  - 14' extra dry medium hihat pair
-  - 13' extra dry medium hihat pair
   - 16' extra dry china
-  - 20' extra dry medium ride
   - 16' extra dry medium thin hihat pair
-  - 12' extra dry splash
+  - 16' extra dry thin crash
+  - 17' extra dry thin crash
+  - 18' dual crash
+  - 18' extra dry china
   - 18' extra dry thin crash
+  - 19' extra dry thin crash
+  - 20' dual crash-ride
+  - 20' extra dry china
+  - 20' extra dry medium ride
   - 20' extra dry thin crash
+  - 20' extra dry thin ride
+  - 21' transition ride
+  - 22' dual crash-ride
+  - 22' extra dry medium ride
   - 22' extra dry thin ride
-  - 15' dual hihat pair
-  byzance vintage:
-  - 16' vintage crash
-  - 22' vintage pure light ride
-  - 18' sand thin crash
-  - 10' vintage splash
-  - 14' sand hihat pair
-  - 18' sand medium crash
-  - 10' trash splash
-  - 18' trash crash
-  - 14' vintage pure hihat pair
-  - 22' sand crash ride
-  - 22' vintage pure ride
-  - 16' trash crash
-  - 20' vintage pure ride
-  - 22' sand ride
-  - 20' vintage pure crash
-  - 18' vintage crash
-  - 22' vintage crash
-  - 16' vintage pure hihat pair
-  - 'cymbal set including:'
-  - 18' vintage pure crash
-  - 20' sand ride
-  - 20' vintage crash
-  - 20' trash crash
-  - 15' vintage pure hihat pair
-  - 20' vintage pure light ride
-  marching cymbals:
-  - 16' brass marching cymbal pair
-  - 20' b10 marching cymbal pair
-  - 14' bronze marching cymbal pair
-  - 18' bronze marching cymbal pair
-  - 13' brass marching cymbal pair
-  - 18' arena hand cymbals pair
-  - 14' brass marching cymbal pair
-  - 20' b12 marching cymbal pair
-  - 16' bronze marching cymbal pair
-  - 18' brass marching cymbal pair
-  - 16' b12 marching cymbal pair
-  - 18' b12 marching cymbal pair
-  - 18' b10 marching cymbal pair
-  - 16' arena hand cymbals pair
-  - 16' b10 marching cymbal pair
-  classics custom:
-  - 16' trash china
-  - 20' dark ride
-  - 20' medium ride
-  - 16' dark crash
-  - 16' medium crash
-  - 21' ghost ride
-  - 15' dark hihat pair
-  - 16' china
-  - 18' trash crash
-  - 14' dark hihat pair
-  - 8' splash
-  - 18' trash china
-  - 14' powerful hihat pair
-  - 16' trash crash
-  - 14' medium hihat pair
-  - 20' powerful ride
-  - 22' dark ride
-  - 12' splash
-  - 12' trash splash
+  hcs:
   - 10' splash
-  - 22' powerful ride
-  - classics custom standard set
-  - 20' dark crash
-  - 18' dark china
-  - 18' china
-  - 15' medium crash
-  - 17' medium crash
-  - 15' medium hihat pair
-  - 14' medium crash
-  - 16' powerful crash
-  - 21' dark crash
-  - 18' powerful crash
-  - 19' dark crash
+  - 12' china
+  - 12' splash
   - 12' trash stack
-  - 18' medium crash
-  - 22' dark crash-ride
-  - 16' trash stack
-  - 10' dark splash
-  - 8' bell
-  - 18' dark crash
-  - classics custom dark set
-  byzance jazz:
-  - 22' tradition flat ride
-  - 17' jazz extra thin crash
-  - 18' jazz extra thin crash
-  - 22' jazz club ride
-  - 21' nuance ride with sizzles
-  - 16' jazz thin crash
-  - 18' jazz medium thin crash
-  - 17' jazz medium thin crash
-  - 20' jazz medium thin ride
-  - 22' tradition ride
-  - 16' jazz extra thin crash
-  - 22' tradition light ride
-  - 22' symmetry ride
-  - 10' jazz splash
-  - 17' jazz thin crash
-  - 20' jazz big apple ride
-  - 18' tradition light crash
-  - 20' tradition ride
-  - 20' tradition light ride
-  - 20' jazz thin crash
-  - 14' tradition hihat pair
-  - 20' jazz extra thin ride
-  - 20' jazz club ride
-  - 14' jazz thin hihat pair
-  - 20' jazz thin ride
-  - 18' jazz thin crash
-  - 22' jazz thin ride
-  - 22' jazz big apple ride
-  - 20' jazz medium thin crash
-  - 22' jazz china ride
-  - 22' jazz extra thin ride
-  - 16' jazz medium thin crash
-  - 20' jazz medium ride
-  - 20' jazz flat ride
-  - 22' jazz medium ride
-  - 13' jazz thin hihat pair
-  - 22' jazz medium thin ride
-  generation x:
-  - 12/14' trash hat pair
-  - 19' china crash
-  - 10' filter china
-  - 17' china crash
-  - 12' filter china with jingles
-  - 8'/10' electro stack
-  - 16' filter china
-  - 8' fx hat pair
-  - 15' china crash
-  - 14' filter china with jingles
-  - 10' fx hat pair
-  - 12' filter china
-  - 14' filter china
-  - 12'/14' x-treme stack
-  - 10' filter china with jingles
-  - 8' johnny rabb drumbal
-  - 8' filter china
-  - 10' johnny rabb drumbal
-  - 10'/12' electro stack
-  byzance traditional:
-  - 22' medium crash
-  - 20' medium ride
-  - 24' medium ride
-  - 19' medium thin crash
-  - 20' china
-  - 21' medium ride
-  - 14' thin crash
-  - 16' medium crash
-  - 18' extra thin hammered crash
-  - 16' medium hihat pair
-  - 22' heavy ride
-  - 8' splash
-  - 21' heavy ride
-  - 20' medium ride with sizzles
-  - 16' flat china
-  - 15' thin crash
-  - 14' medium hihat pair
-  - 10' mini hihat pair
-  - 20' heavy ride
-  - 12' splash
-  - 10' splash
-  - 17' medium thin crash
+  - 13' hihat pair
   - 14' china
-  - 17' thin crash
-  - 20' medium crash
-  - 22' medium ride
-  - 6' splash
-  - 18' china
-  - 15' medium hihat pair
-  - 16' thin crash
-  - 20' extra thin hammered crash
-  - 22' china
-  - 13' medium hihat pair
-  - 16' medium thin crash
-  - 18' medium crash
-  - 23' heavy ride
-  - 18' medium thin crash
-  - 14' heavy hihat pair
-  - 18' thin crash
-  - 23' medium ride
-  - 21' medium crash
-  - 18' flat china
-  - 14' thin hihat pair
-  - 16' china
-  candela:
-  - 10' percussion splash
-  - 14' percussion crash
-  - 10' percussion hiha
-  - 16' percussion crash
-  - 18' percussion crash-ride
-  - 14' percussion jingle bell
-  byzance brilliant:
-  - 20' heavy hammered china brilliant
-  - 21' serpents ride brilliant
-  - 13' fast hihat pair brilliant
-  - 14' heavy hihat pair brilliant
-  - 22' heavy hammered crash brilliant
-  - 14' china brilliant
-  - 20' china brilliant
-  - 14' fast hihat pair brilliant
-  - 18' medium thin crash brilliant
-  - 14' medium hihat pair brilliant
-  - 17' thin crash brilliant
-  - 17' medium thin crash brilliant
-  - 10' splash brilliant
-  - 14' thin crash brilliant
-  - 14' serpents hihat brillant
-  - 16' medium thin crash brilliant
-  - 20' medium ride brilliant
-  - 22' heavy ride brilliant
-  - 18' china brilliant
-  - 22' medium ride brilliant
-  - 18' heavy hammered china brilliant
-  - 22' heavy hammered ride brilliant
-  - 15' thin crash brilliant
-  - 24' medium ride brilliant
-  - 16' medium crash brilliant
-  - 20' heavy hammered crash brilliant
-  - 20' medium crash brilliant
-  - 21' medium ride brilliant
-  - 13' serpents hihat brillant
-  - 18' medium crash brilliant
-  - 16' china brilliant
-  - 8' splash brilliant
-  - 18' thin crash brilliant
-  - 6' splash brilliant
-  - 16' thin crash brilliant
-  - 20' heavy ride brilliant
-  - 24' pure metal ride brilliant
-  - 13' medium hihat pair brilliant
-  - 19' medium thin crash brilliant
-  byzance dark:
-  - 20' dark ride
-  - 24' big apple dark ride
-  - 19' sky ride
-  - 16' dark crash
-  - 18' dark crash
-  - 22' raw bell ride
-  - 18' dark china
-  - 15' dark hihat pair
-  - 17' dark crash
-  - 20' raw bell ride
-  - 8' dark splash
-  - 22' big apple dark ride
-  - 14' dark hihat pair
-  - 13' dark hihat pair
-  - 13' spectrum hihat pair
-  - 22' spectrum ride
-  - 10' dark splash
-  - 20' big apple dark ride
-  - 21' dark ride
-  - 14' spectrum hihat pair
-  - 22' dark ride
-  - 20' dark crash
-  mcs:
-  - 14' medium crash
-  - 18' crash ride
-  - 20' medium ride
-  - cymbal set up
-  - 10' splash
-  - 18' medium crash
-  - 16' medium crash
-  - 14' medium hihat pair
-  - 18' china
-  classics custom extreme metal:
-  - 19' crash
-  - extreme metal cymbal set
-  - 16'/18' stack
-  - 10' splash
+  - 14' crash
   - 14' hihat pair
-  - 17' crash
+  - 14' trash stack
+  - 16' china
   - 16' crash
+  - 16' trash crash
+  - 16' trash stack
   - 18' china
   - 18' crash
-  - 16' china
+  - 18' crash ride
+  - 18' trash stack
+  - 20' crash
   - 20' ride
+  - 8' bell
+  - 8' splash
+  - cymbal set up
+  marching cymbals:
+  - 13' brass marching cymbal pair
+  - 14' brass marching cymbal pair
+  - 14' bronze marching cymbal pair
+  - 16' arena hand cymbals pair
+  - 16' b10 marching cymbal pair
+  - 16' b12 marching cymbal pair
+  - 16' brass marching cymbal pair
+  - 16' bronze marching cymbal pair
+  - 18' arena hand cymbals pair
+  - 18' b10 marching cymbal pair
+  - 18' b12 marching cymbal pair
+  - 18' brass marching cymbal pair
+  - 18' bronze marching cymbal pair
+  - 20' b10 marching cymbal pair
+  - 20' b12 marching cymbal pair
+  classics custom:
+  - 10' dark splash
+  - 10' splash
+  - 12' splash
+  - 12' trash splash
+  - 12' trash stack
+  - 14' dark hihat pair
+  - 14' medium crash
+  - 14' medium hihat pair
+  - 14' powerful hihat pair
+  - 15' dark hihat pair
+  - 15' medium crash
+  - 15' medium hihat pair
+  - 16' china
+  - 16' dark crash
+  - 16' medium crash
+  - 16' powerful crash
+  - 16' trash china
+  - 16' trash crash
+  - 16' trash stack
+  - 17' medium crash
+  - 18' china
+  - 18' dark china
+  - 18' dark crash
+  - 18' medium crash
+  - 18' powerful crash
+  - 18' trash china
+  - 18' trash crash
+  - 19' dark crash
+  - 20' dark crash
+  - 20' dark ride
+  - 20' medium ride
+  - 20' powerful ride
+  - 21' dark crash
+  - 21' ghost ride
+  - 22' dark crash-ride
+  - 22' dark ride
+  - 22' powerful ride
+  - 8' bell
+  - 8' splash
+  - classics custom dark set
+  - classics custom standard set
+  byzance traditional:
+  - 10' mini hihat pair
+  - 10' splash
+  - 12' splash
+  - 13' medium hihat pair
+  - 14' china
+  - 14' heavy hihat pair
+  - 14' medium hihat pair
+  - 14' thin crash
+  - 14' thin hihat pair
+  - 15' medium hihat pair
+  - 15' thin crash
+  - 16' china
+  - 16' flat china
+  - 16' medium crash
+  - 16' medium hihat pair
+  - 16' medium thin crash
+  - 16' thin crash
+  - 17' medium thin crash
+  - 17' thin crash
+  - 18' china
+  - 18' extra thin hammered crash
+  - 18' flat china
+  - 18' medium crash
+  - 18' medium thin crash
+  - 18' thin crash
+  - 19' medium thin crash
+  - 20' china
+  - 20' extra thin hammered crash
+  - 20' heavy ride
+  - 20' medium crash
+  - 20' medium ride
+  - 20' medium ride with sizzles
+  - 21' heavy ride
+  - 21' medium crash
+  - 21' medium ride
+  - 22' china
+  - 22' heavy ride
+  - 22' medium crash
+  - 22' medium ride
+  - 23' heavy ride
+  - 23' medium ride
+  - 24' medium ride
+  - 6' splash
+  - 8' splash
+  symphonic cymbals:
+  - 14' suspended cymbal
+  - 16' suspended cymbal
+  - 16' symphonic heavy cymbal pair
+  - 16' symphonic medium cymbal pair
+  - 16' symphonic thin cymbal pair
+  - 17' suspended cymbal
+  - 18' suspended cymbal
+  - 18' symphonic heavy cymbal pair
+  - 18' symphonic medium cymbal pair
+  - 18' symphonic thin cymbal pair
+  - 19' symphonic medium heavy cymbal pair
+  - 20' suspended cymbal
+  - 20' symphonic extra heavy cymbal pair
+  - 20' symphonic heavy cymbal pair
+  - 20' symphonic medium cymbal pair
+  - 20' symphonic thin cymbal pair
+  - 22' suspended cymbal
+  - 22' symphonic extra heavy cymbal pair
+  - 22' symphonic heavy cymbal pair
+  - 22' symphonic medium cymbal pair
+  - 22' symphonic thin cymbal pair
+  byzance vintage:
+  - 10' trash splash
+  - 10' vintage splash
+  - 14' sand hihat pair
+  - 14' vintage pure hihat pair
+  - 15' vintage pure hihat pair
+  - 16' trash crash
+  - 16' vintage crash
+  - 16' vintage pure hihat pair
+  - 18' sand medium crash
+  - 18' sand thin crash
+  - 18' trash crash
+  - 18' vintage crash
+  - 18' vintage pure crash
+  - 20' sand ride
+  - 20' trash crash
+  - 20' vintage crash
+  - 20' vintage pure crash
+  - 20' vintage pure light ride
+  - 20' vintage pure ride
+  - 22' sand crash ride
+  - 22' sand ride
+  - 22' vintage crash
+  - 22' vintage pure light ride
+  - 22' vintage pure ride
+  - 'cymbal set including:'
+  byzance brilliant:
+  - 10' splash brilliant
+  - 13' fast hihat pair brilliant
+  - 13' medium hihat pair brilliant
+  - 13' serpents hihat brillant
+  - 14' china brilliant
+  - 14' fast hihat pair brilliant
+  - 14' heavy hihat pair brilliant
+  - 14' medium hihat pair brilliant
+  - 14' serpents hihat brillant
+  - 14' thin crash brilliant
+  - 15' thin crash brilliant
+  - 16' china brilliant
+  - 16' medium crash brilliant
+  - 16' medium thin crash brilliant
+  - 16' thin crash brilliant
+  - 17' medium thin crash brilliant
+  - 17' thin crash brilliant
+  - 18' china brilliant
+  - 18' heavy hammered china brilliant
+  - 18' medium crash brilliant
+  - 18' medium thin crash brilliant
+  - 18' thin crash brilliant
+  - 19' medium thin crash brilliant
+  - 20' china brilliant
+  - 20' heavy hammered china brilliant
+  - 20' heavy hammered crash brilliant
+  - 20' heavy ride brilliant
+  - 20' medium crash brilliant
+  - 20' medium ride brilliant
+  - 21' medium ride brilliant
+  - 21' serpents ride brilliant
+  - 22' heavy hammered crash brilliant
+  - 22' heavy hammered ride brilliant
+  - 22' heavy ride brilliant
+  - 22' medium ride brilliant
+  - 24' medium ride brilliant
+  - 24' pure metal ride brilliant
+  - 6' splash brilliant
+  - 8' splash brilliant
+  byzance dark:
+  - 10' dark splash
+  - 13' dark hihat pair
+  - 13' spectrum hihat pair
+  - 14' dark hihat pair
+  - 14' spectrum hihat pair
+  - 15' dark hihat pair
+  - 16' dark crash
+  - 17' dark crash
+  - 18' dark china
+  - 18' dark crash
+  - 19' sky ride
+  - 20' big apple dark ride
+  - 20' dark crash
+  - 20' dark ride
+  - 20' raw bell ride
+  - 21' dark ride
+  - 22' big apple dark ride
+  - 22' dark ride
+  - 22' raw bell ride
+  - 22' spectrum ride
+  - 24' big apple dark ride
+  - 8' dark splash
 dream:
-  jing:
+  han:
   - effect
+  ignition:
+  - 3 piece set
+  - 4 piece set
+  bliss:
+  - crash
+  - crash ride
+  - gorilla ride
+  - hi hat
+  - paper thin
+  - paper thin crash
+  - ride
+  - small bell flat ride
+  - splash
+  - trihat
+  contact:
+  - crash
+  - crash ride
+  - heavy ride
+  - hi hat
+  - orchestral pair
+  - ride
+  - small bell flat ride
+  - splash
+  - trihat
+  dark matter:
+  - crash
+  - eclipse ride
+  - flat ride
+  - hi hat
+  - moon ride
+  - ride
+  finger cymbals:
+  - effect
+  re-fx:
+  - bell
+  - crop circle
+  - han fx
   pang:
   - china
   - pang stacker
   lion:
   - china
-  han:
+  jing:
   - effect
-  bliss:
-  - crash
-  - gorilla ride
-  - trihat
-  - small bell flat ride
-  - hi hat
-  - splash
-  - ride
-  - crash ride
-  - paper thin
-  - paper thin crash
   vintage bliss:
   - crash ride
-  dark matter:
-  - eclipse ride
-  - moon ride
-  - flat ride
-  - crash
-  - hi hat
-  - ride
-  contact:
-  - crash
-  - trihat
-  - heavy ride
-  - small bell flat ride
-  - hi hat
-  - splash
-  - orchestral pair
-  - ride
-  - crash ride
-  finger cymbals:
-  - effect
-  ignition:
-  - 3 piece set
-  - 4 piece set
-  re-fx:
-  - bell
-  - han fx
-  - crop circle
   energy:
   - crash
-  - trihat
-  - splash
+  - crash ride
   - hi hat
   - orchestral pair
   - ride
-  - crash ride
+  - splash
+  - trihat
 ufip:
-  marching:
-  - brass marching series
-  - b20 professional marching
-  - light bronze marching cymbals
-  'gong ':
-  - gong b8 with border tiger finish
-  supernova:
-  - swish china
-  - ride
-  - crash
-  - splash
-  - hi hat
-  symphonic:
-  - symphonic
-  rough:
-  - medium ride
-  - crash
-  - china
-  - heavy ride
-  - splash
-  - hi hat
-  - wave hi hat
-  - crash ride
-  tam tams:
-  - tam tams b8
-  - tam tams b11
-  - tam tams b13
-  - tam tams b9
-  - tam tams b10
-  - tam tams b12
-  - cast bronze tam tams
-  - tam tams brass
-  class:
-  - medium ride
-  - light crash
-  - medium hi hat
-  - crash ride
-  - medium splash
-  - light hi hat
-  - light splash
-  - heavy crash
-  - sizzle ride
-  - heavy splash
-  - heavy ride
-  - fast crash
-  - wave hi hat
-  - light ride
-  - heavy hi hat
-  - medium crash
-  - fast china
-  - china splash
-  bionic:
-  - medium ride
-  - crash
-  - china
-  - heavy ride
-  - splash
-  - hi hat
-  - crash ride
-  m8:
-  - splash
-  - hi hat
-  - ride
-  - crash
-  experience:
-  - flat ride
-  - blast hi hats
-  - bell crash
-  - samba splash
-  - collector ride natural
-  - real china tiger
-  - hand cymbal
-  - real china cast bronze
-  - collector ride class
-  - del cajon
-  - blast crashes
-  natural:
-  - medium ride
-  - crash
-  - china
-  - splash
-  - light ride
-  - medium hi hat
-  - crash ride
-  - light hi hat
   sounds&percussion:
-  - small ximbau
+  - bell tree
   - burna bells
-  - medium ximbau
-  - tibeatian bells
-  - small brass tube
+  - ice bells
+  - large brass tube
   - large ximbau
+  - medium brass tube
+  - medium ximbau
+  - six tree
+  - small brass tube
+  - small ximbau
   - three bell
   - three disc
-  - bell tree
-  - large brass tube
-  - ice bells
-  - six tree
-  - medium brass tube
+  - tibeatian bells
   - wind chimes
+  symphonic:
+  - symphonic
+  m8:
+  - crash
+  - hi hat
+  - ride
+  - splash
+  experience:
+  - bell crash
+  - blast crashes
+  - blast hi hats
+  - collector ride class
+  - collector ride natural
+  - del cajon
+  - flat ride
+  - hand cymbal
+  - real china cast bronze
+  - real china tiger
+  - samba splash
+  class brilliant finish:
+  - crash
+  - fast china
+  - hi hat
+  - ride
+  - splash
+  natural:
+  - china
+  - crash
+  - crash ride
+  - light hi hat
+  - light ride
+  - medium hi hat
+  - medium ride
+  - splash
   gong:
   - brass symphonic gong
-  tiger:
-  - ride
-  - crash
-  - china
-  - splash
-  - hi hat
-  class brilliant finish:
-  - fast china
-  - ride
-  - crash
-  - splash
-  - hi hat
-  extatic:
-  - medium ride
-  - swish china
-  - medium crash
-  - extra light ride
-  - splash
-  - light crash
-  - hi hat
-  - light ride
-  - light hi hat
   tuned instruments:
   - crotales
-  - tubular bells
   - flat bells
+  - tubular bells
+  rough:
+  - china
+  - crash
+  - crash ride
+  - heavy ride
+  - hi hat
+  - medium ride
+  - splash
+  - wave hi hat
+  tam tams:
+  - cast bronze tam tams
+  - tam tams b10
+  - tam tams b11
+  - tam tams b12
+  - tam tams b13
+  - tam tams b8
+  - tam tams b9
+  - tam tams brass
+  class:
+  - china splash
+  - crash ride
+  - fast china
+  - fast crash
+  - heavy crash
+  - heavy hi hat
+  - heavy ride
+  - heavy splash
+  - light crash
+  - light hi hat
+  - light ride
+  - light splash
+  - medium crash
+  - medium hi hat
+  - medium ride
+  - medium splash
+  - sizzle ride
+  - wave hi hat
+  bionic:
+  - china
+  - crash
+  - crash ride
+  - heavy ride
+  - hi hat
+  - medium ride
+  - splash
+  extatic:
+  - extra light ride
+  - hi hat
+  - light crash
+  - light hi hat
+  - light ride
+  - medium crash
+  - medium ride
+  - splash
+  - swish china
+  'gong ':
+  - gong b8 with border tiger finish
+  marching:
+  - b20 professional marching
+  - brass marching series
+  - light bronze marching cymbals
+  supernova:
+  - crash
+  - hi hat
+  - ride
+  - splash
+  - swish china
+  tiger:
+  - china
+  - crash
+  - hi hat
+  - ride
+  - splash
 bosphorus:
+  ari hoenig:
+  - lyric
+  master:
+  - black pearl
+  - latin
+  - master
+  - master vintage
+  - samba
+  oracle:
+  - crash
+  - hi hat
+  - ride
+  antique:
+  - bright hi hat
+  - china
+  - crisp hi hat
+  - dark hi hat
+  - flat ride
+  - medium crash
+  - medium ride
+  - medium thin crash
+  - medium thin ride
+  - paper thin crash
+  - splash
+  - thin crash
+  - thin ride
+  20th anniversary:
+  - 20th anniversary
   ebc series:
-  - ebc series
+  - bright ride
+  - full crash
+  - fx china
+  - glassy ride
+  - noisy hats
+  - rough ride
+  - sibilant crash
   xt edition:
   - xt edition
   hammer series:
   - hammer series
-  ari hoenig:
-  - lyric
-  20th anniversary:
-  - 20th anniversary
-  master:
-  - master vintage
-  - samba
-  - master
-  - latin
-  - black pearl
+  turk:
+  - bright hi hat
+  - crisp hi hat
+  - dark hi hat
+  - medium crash
+  - medium ride
+  - medium thin crash
+  - medium thin ride
+  - paper thin crash
+  - thin crash
+  - thin ride
+  - turk
   jazz masters:
   - jazz masters
-  basics:
-  - traditional
-  - turk
-  - gold
-  - antique
-  - new orleans
   groove:
   - groove
+  gold:
+  - china
+  - fast crash
+  - full crash
+  - hi hat
+  - power crash
+  - ride
+  - splash
+  traditional:
+  - bright hi hat
+  - china
+  - crisp hi hat
+  - dark hi hat
+  - flat ride
+  - marching
+  - medium crash
+  - medium ride
+  - medium thin crash
+  - medium thin ride
+  - paper thin crash
+  - splash
+  - symphonic
+  - thin crash
+  - thin ride
+  new orleans:
+  - new orleans
 no brand:
   "\\N":
   - "\\N"

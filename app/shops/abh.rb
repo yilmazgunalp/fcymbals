@@ -7,7 +7,7 @@ class Abh < Shop
 @form = page.form_with(:dom_id => "aspnetForm")
 
 @options = {
-
+code:  -> (page,selector) {page.at_css(selector).text.match(/Code:\s+.(\w+)/)[1]}
 }
 
 

@@ -7,7 +7,7 @@ end
 def self.prepare_file 
 new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w") 
 @file = CSV.open(new_file,'a+',:quote_char => '\'', :col_sep => '~')	
-@file <<  ["title","price","s_price","picture_url","merchant","link"]
+@file <<  ["title","price","s_price","picture_url","merchant","link","code"]
 end	
 
 def self.extract_data page

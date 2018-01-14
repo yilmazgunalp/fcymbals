@@ -38,3 +38,11 @@ ddream:
   queue: "scrapeshops"
   cron: "30 10 * * 7"
   args: ddream
+models:
+  class: "YamlmodelsJob"
+  queue: "yaml"
+  cron: "30 10 1 * *"
+series:
+  class: "YamlseriesJob"
+  queue: "yaml"
+  cron: "30 11 1 * *"

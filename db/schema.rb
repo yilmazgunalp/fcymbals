@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171212003052) do
+ActiveRecord::Schema.define(version: 20180110120822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,8 +40,9 @@ ActiveRecord::Schema.define(version: 20171212003052) do
     t.datetime "updated_at",                 null: false
     t.string   "merchant",                   null: false
     t.string   "link",                       null: false
-    t.integer  "dup",         default: 0
+    t.integer  "duplicate",   default: 0
     t.boolean  "active",      default: true
+    t.string   "code"
     t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
   end
 
