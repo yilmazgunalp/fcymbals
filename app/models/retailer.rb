@@ -4,7 +4,7 @@ class Retailer < ApplicationRecord
 
 
 def allocate
-	if m = Maker.find_by(code: code.downcase)
+	if code && m = Maker.find_by(code: code.downcase)
 	m.retailers << self	
 
 	else
