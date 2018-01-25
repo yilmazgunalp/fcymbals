@@ -15,5 +15,6 @@ brands.each do |brand|
 	data[brand] = Maker.where(brand: brand).select(:model).distinct.map {|m| m.model}
 end	
 file.write(data.to_yaml)
+file.flush
 end
 end

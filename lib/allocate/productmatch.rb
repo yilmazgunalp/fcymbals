@@ -1,11 +1,11 @@
 module Productmatch
 	class << self 
-	attr_accessor :brands,:types,:series,:models,:log_file
+	attr_accessor :brands,:types,:series,:models,:setmodels,:log_file
 	def match_maker(product_title)
 		result = {}
 		result[:brand] = match_brand(product_title)
-		result[:size] = match_size(product_title)
-		result[:kind] = match_kind(product_title)
+		result[:kind] = match_kind(product_title) 
+		result[:size] = match_size(product_title) unless result[:kind] == "set"
 		result[:series] = match_series_and_model(product_title)[0]
 		result[:model] = match_series_and_model(product_title)[1]
 		result
@@ -47,13 +47,21 @@ module Productmatch
 		product_title.downcase!	
 		series[match_brand(product_title)].keys.each do |s| 
 		return s if product_title.match(s)
+		return s if Textobj.new(s,vars: true).match(product_title,multi: true)
 		end #each 
 		nil
 	end #match_series	
 	def match_model_by_series(product_title,brand,serie)
-		series.dig(brand,serie).each do |m|
-			return m if product_title.match(m)
-		end #each 
+		if match_kind(product_title) == "set" && setmodels.dig(brand,serie)
+			setmodels.dig(brand,serie).each do |sm|
+				return sm if Textobj.new(sm,vars: true).match(product_title,multi: true)
+			end #each setmodel	
+		else
+			series.dig(brand,serie).each do |m|
+				return m if product_title.match(m)
+				return m if Textobj.new(m,vars: true).match(product_title,multi: true)
+			end #each
+		end #if  
 		nil
 	end #match_model_by_series
 	def match_model_by_brand(product_title,brand)
@@ -74,4 +82,4 @@ Maker.select(:kind).distinct.map {|m| m.kind}.sort{|a,b| b.split(" ").length <=>
 Productmatch.series = YAML.load_file("#{Rails.root}/lib/allocate/series.yml")
 Productmatch.models = YAML.load_file("#{Rails.root}/lib/allocate/models.yml")
 Productmatch.log_file = File.new("#{Rails.root}/log/Retailer_Allocate_log.txt","w")
-
+Productmatch.setmodels = YAML.load_file("#{Rails.root}/lib/allocate/setmodels.yml")

@@ -6,16 +6,15 @@ class Retailer < ApplicationRecord
 def allocate
 	if code && m = Maker.find_by(code: code.downcase)
 	m.retailers << self	
-
 	else
 	match_hash = Productmatch.match_maker(title).compact
-	if match_hash.length == 5 
+		if match_hash.length == 5 || (match_hash.length == 4 && match_hash[:kind] == "set")
 			find_maker(match_hash).retailers << self	
-		else
+		else	
 			raise TooManyMatchesError.new(match_hash)
 		end #if	
 
-	end #if m	
+	end #if code && m	
 		rescue NoMatchError => e 
 			log_error(e)
 end #allocate   

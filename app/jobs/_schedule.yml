@@ -46,3 +46,7 @@ series:
   class: "YamlseriesJob"
   queue: "yaml"
   cron: "30 11 1 * *"
+setmodels:
+  class: "YamlsetmodelsJob"
+  queue: "yaml"
+  cron: "30 08 1 * *"  

@@ -22,6 +22,7 @@
 .byebug_history
 
 README.md
+CHEATSHEET.md
 /config/initializers/local_init.rb
 
 
