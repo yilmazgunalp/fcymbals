@@ -45,8 +45,11 @@ desc "pushes makers table from local to production"
 		
 		if lines.to_i == makers_count.to_i+1
 			puts "PREPARING TO PUSH MAKERS TO PRODUCTION.."
-			system "psql -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 -c 'delete from makers ;'"
-			system "psql -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 -c \"\\copy makers from \'#{push_table_file}\' with delimiter as '~' csv header;\""
+			File.open("#{Rails.root}/lib/tasks/copy_sql.sql", "w") do |f|
+			f << "\\copy table77 from  \'#{push_table_file}\' with delimiter as '~' csv header;"
+			end	
+
+			system "psql  -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 -f ./lib/tasks/push_makers.sql"
 		else
 			puts "WARNING! \n Makers table was not completely exported. Can not push table to production!"
 		end	
