@@ -1,5 +1,5 @@
-# require './textobj.rb'
-# require './strobj.rb'
+require 'textobj.rb'
+require 'strobj.rb'
 module Productmatch
 	class << self 
 	attr_accessor :brands,:types,:series,:models,:setmodels,:log_file
