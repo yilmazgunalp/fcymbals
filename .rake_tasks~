@@ -35,6 +35,7 @@ myrake:db:backupprodb
 myrake:db:exporttable[table]
 myrake:db:localdbtoproduction
 myrake:db:productiondbtolocal
+myrake:db:pushmerchant[merchant]
 myrake:db:pushtable
 myrake:db:restoredevdb[database,backup_file]
 myrake:herokup

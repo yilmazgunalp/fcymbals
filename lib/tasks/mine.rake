@@ -2,9 +2,9 @@
 namespace :myrake  do
 desktop = '/home/yilmazgunalp/Desktop/' 	
 backup_path = "/home/yilmazgunalp/ygprojects/fcymbals/db/back_up/"
+dump_path = "/home/yilmazgunalp/ygprojects/fcymbals/tmp/dbdumps/"
 time_stamp =  '_' + Time.now.strftime('%Y%m%d%H%M')
 push_table_file = nil
-
 
 desc "heroku update"
 	task :herokup do 
@@ -28,6 +28,34 @@ desc "connect to redis"
 
 namespace :db  do
 
+desc "pushes selected merchant from retailers to production database"
+	task :pushmerchant, [:merchant] do |task,args|
+		file_name = dump_path+ args.merchant+".csv"
+		system "psql -d cymbals -c \"\\copy (select * from retailers where merchant='#{args.merchant}') to 
+		\'#{file_name}\' with delimiter as \'~\' csv header ;\""
+		File.open("#{Rails.root}/lib/tasks/copy_sql.sql", "w") do |f|
+			f << "\\copy table88 from  \'#{file_name}\' with delimiter as '~' csv header;"
+			end	
+		system "psql  -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 
+			-f ./lib/tasks/push_merchant.sql"	
+
+	end	
+
+desc "pulls selected merchant from retailers in production to local db"
+	task :pullmerchant,[:merchant] do |task,args|
+		file_name = dump_path+ args.merchant+"_pulled"+".csv"
+		puts "Importing records from production to local csv file"
+		system "psql  -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 -c \"\\copy (select * from retailers where  merchant='#{args.merchant}') to \'#{file_name}\' with delimiter as \'~\' csv header ; \""			
+		puts "Deleting relevant records from local database"
+		system "psql -d cymbals -c \" delete from retailers where merchant='#{args.merchant}';\""
+		File.open("#{Rails.root}/lib/tasks/copy_sql.sql", "w") do |f|
+			f << "\\copy table99 from  \'#{file_name}\' with delimiter as '~' csv header;"
+			end	
+		puts "loading csv into local databse..."	
+		system "psql -d cymbals -f ./lib/tasks/pull_merchant.sql"		
+			
+	end	
+
 desc "exports selected db table (default: makers) to Csv"
 	task :exporttable, [:table]  do |task, args|
 		args.with_defaults(table: 'makers')
@@ -49,7 +77,8 @@ desc "pushes makers table from local to production"
 			f << "\\copy table77 from  \'#{push_table_file}\' with delimiter as '~' csv header;"
 			end	
 
-			system "psql  -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 -f ./lib/tasks/push_makers.sql"
+			system "psql  -h ec2-54-163-232-171.compute-1.amazonaws.com -d d540c41u721f1g -U njfxzqdlfhanit -p 5432 
+			-f ./lib/tasks/push_makers.sql"
 		else
 			puts "WARNING! \n Makers table was not completely exported. Can not push table to production!"
 		end	
