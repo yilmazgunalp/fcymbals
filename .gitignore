@@ -23,7 +23,7 @@
 
 README.md
 CHEATSHEET.md
-/config/initializers/local_init.rb
+/config/local_env.yml
 
 
 # Ignore all backup files.

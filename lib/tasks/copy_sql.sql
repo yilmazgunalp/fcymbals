@@ -1,1 +1,1 @@
-\copy table99 from  '/home/yilmazgunalp/ygprojects/fcymbals/tmp/dbdumps/abh_pulled.csv' with delimiter as '~' csv header;
+\copy table99 from  '/home/yilmazgunalp/ygprojects/fcymbals/tmp/dbdumps/thedrum_pulled.csv' with delimiter as '~' csv header;
