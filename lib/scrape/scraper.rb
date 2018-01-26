@@ -72,12 +72,13 @@ def self.csv_import page,merchant,shop,file, opts = nil
     	end #if options[:code]	
 	
 	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
-	
+	GC.start
+	sleep(1)
 	end	# page.css each
 	
 log_file << "Page completed....\n\n"
 log_file.flush
-sleep(1)
+#sleep(1)
 end # csv_import()
 
 

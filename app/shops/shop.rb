@@ -12,7 +12,6 @@ end
 
 def self.extract_data page
 Scraper.csv_import(page,merchant,shop,file,options)
-GC.start
 end # extract_data
 
 def self.get_page link, param = nil 
