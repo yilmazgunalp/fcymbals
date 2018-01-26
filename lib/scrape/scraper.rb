@@ -2,25 +2,25 @@ module Scraper
 require 'csv'
 
 class << self 
-attr_accessor :agent,:tags,:merchants,:log_file
+attr_accessor :agent,:tags,:merchants,:LOG_FILE
 end	
 
 @agent = Mechanize.new
 @agent.user_agent_alias = 'Mac Safari'
 
-@log_file = File.open("#{Rails.root}/log/Retailer_Scrape_log.txt","a+")
+LOG_FILE = File.open("#{Rails.root}/log/Retailer_Scrape_log.txt","a+")
 @tags = YAML.load_file("#{Rails.root}/lib/scrape/css_tags.yml")
 @merchants = YAML.load_file("#{Rails.root}/lib/scrape/merchants.yml")
 
 
 def self.scrape klass
-b = Time.now
-log_file << "\n===>\tSCRAPING [#{klass.upcase}] on #{b}...\n\n"	
-result = Object.const_get(self.to_s + "::" + klass.capitalize).scrape
-log_file << "Scraping completed in  #{Time.now - b}...\n"
-log_file.flush
-Resque.enqueue(MaillogJob,File.path(log_file),klass.to_s,:scraped)
-result
+B = Time.now
+LOG_FILE << "\n===>\tSCRAPING [#{klass.upcase}] on #{b}...\n\n"	
+RESULT = Object.const_get(self.to_s + "::" + klass.capitalize).scrape
+LOG_FILE << "Scraping completed in  #{Time.now - b}...\n"
+LOG_FILE.flush
+Resque.enqueue(MaillogJob,File.path(LOG_FILE),klass.to_s,:scraped)
+RESULT 
 end
 
 DEFAULT_OPTIONS = {
@@ -37,7 +37,7 @@ private
 def self.csv_import page,merchant,shop,file, opts = nil
 	options = DEFAULT_OPTIONS.merge(opts)
 	page_address = defined?(page.uri) ? page.uri.to_s : page.url
-	log_file << "On Page #{page_address}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
+	LOG_FILE << "On Page #{page_address}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
 		page.css(tags.dig(merchant,"product")).each do |item|
 	
 		title =  options[:title].call(item,tags.dig(merchant,'title'))
@@ -76,21 +76,21 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	sleep(1)
 	end	# page.css each
 	
-log_file << "Page completed....\n\n"
-log_file.flush
+LOG_FILE << "Page completed....\n\n"
+LOG_FILE.flush
 #sleep(1)
 end # csv_import()
 
 
 
 def self.log_error(binding,error_type)
-		log_file << "[#{binding.eval("merchant").upcase}]: [SCRAPE::#{error_type.upcase}]: ITEM IN ERROR =>\n"	
-		log_file <<  binding.eval("title") 
-		log_file << "\n[ERROR MESSAGE]: #{binding.eval("e").message}\n"
-		log_file << "[STACK TRACE]:\n" 
-		binding.eval("e").backtrace.select {|e| e.match(/^#{Rails.root}/)}.each {|e| log_file << e +"\n"}
-		log_file << "\n"
-		log_file.flush
+		LOG_FILE << "[#{binding.eval("merchant").upcase}]: [SCRAPE::#{error_type.upcase}]: ITEM IN ERROR =>\n"	
+		LOG_FILE <<  binding.eval("title") 
+		LOG_FILE << "\n[ERROR MESSAGE]: #{binding.eval("e").message}\n"
+		LOG_FILE << "[STACK TRACE]:\n" 
+		binding.eval("e").backtrace.select {|e| e.match(/^#{Rails.root}/)}.each {|e| LOG_FILE << e +"\n"}
+		LOG_FILE << "\n"
+		LOG_FILE.flush
 end #log_error()
 
 
