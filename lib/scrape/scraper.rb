@@ -24,12 +24,12 @@ result
 end
 
 DEFAULT_OPTIONS = {
-title: -> (item,selector) {item.at_css(selector).text.strip.downcase},
+title: -> (item,selector) {item.at_css(selector).text.strip!.downcase!},
 picture_url: ->(pic_url,base_url) {pic_url.match(/^http/) ? pic_url : URI.parse(base_url) + pic_url},
 pic_url: -> (item,selector) {item.at_css(selector)['src']},
 link_url: -> (item,selector) {item.at_css(selector)['href']},
-price: -> (item,selector) {item.at_css(selector).text.gsub(/,/,"").match(/\d+/)[0].to_i},
-effective_price: ->(price,s_price) { [price,s_price].compact.min }  
+price: -> (item,selector) {item.at_css(selector).text.gsub!(/,/,"").match(/\d+/)[0].to_i},
+effective_price: ->(price,s_price) { [price,s_price].compact!.min }  
 }
 
 
