@@ -1,6 +1,5 @@
 module Scraper 
 require 'csv'
-require 'objspace'
 
 class << self 
 attr_accessor :agent,:tags,:merchants,:log_file
@@ -73,9 +72,9 @@ def self.csv_import page,merchant,shop,file, opts = nil
     	end #if options[:code]	
 	
 	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
-	
-	end	# page.css each
 	GC.start
+	end	# page.css each
+	
 log_file << "Page completed....\n\n"
 log_file.flush
 sleep(1)
