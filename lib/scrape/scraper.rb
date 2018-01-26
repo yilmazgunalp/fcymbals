@@ -14,7 +14,7 @@ LOG_FILE = File.open("#{Rails.root}/log/Retailer_Scrape_log.txt","a+")
 
 
 def self.scrape klass
-B = Time.now
+b = Time.now
 LOG_FILE << "\n===>\tSCRAPING [#{klass.upcase}] on #{b}...\n\n"	
 RESULT = Object.const_get(self.to_s + "::" + klass.capitalize).scrape
 LOG_FILE << "Scraping completed in  #{Time.now - b}...\n"
