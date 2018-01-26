@@ -1,5 +1,6 @@
 module Scraper 
 require 'csv'
+require 'objspace'
 
 class << self 
 attr_accessor :agent,:tags,:merchants,:log_file
@@ -38,8 +39,7 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	options = DEFAULT_OPTIONS.merge(opts)
 	page_address = defined?(page.uri) ? page.uri.to_s : page.url
 	log_file << "On Page #{page_address}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
-	
-	page.css(tags.dig(merchant,"product")).each do |item|
+		page.css(tags.dig(merchant,"product")).each do |item|
 	
 		title =  options[:title].call(item,tags.dig(merchant,'title'))
 			
@@ -70,14 +70,12 @@ def self.csv_import page,merchant,shop,file, opts = nil
 
     	if options[:code]
     		code = options[:code].call(@agent.get(link), tags.dig(merchant,"code"))
-    		puts link
-    		puts code
-    		puts 
     	end #if options[:code]	
 	
 	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
 	
 	end	# page.css each
+	GC.start
 log_file << "Page completed....\n\n"
 log_file.flush
 sleep(1)
