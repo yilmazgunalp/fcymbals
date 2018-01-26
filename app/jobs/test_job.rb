@@ -5,6 +5,6 @@ def self.queue
   end	
 
   def self.perform x
-	puts "this is job #{x}"        
+	puts "...TEST...THIS JOB IS SCHEDULED TO RUN  #{x}"        
   end
 end

@@ -17,7 +17,7 @@ desc "background scraping"
 	task :bg do 
 		system "BACKGROUND=yes rake resque:scheduler"
 		sleep(3)
-		system "INTERVAL=3 QUEUE=* rake resque:work"
+		system "INTERVAL=30 QUEUE=* rake resque:work"
 	end	
 
 desc "connect to redis"
