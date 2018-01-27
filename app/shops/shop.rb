@@ -11,7 +11,8 @@ new_file = File.open("#{Rails.root}/db/scraped/#{merchant}.csv","w")
 end	
 
 def self.extract_data page
-Scraper.csv_import(page,merchant,shop,file,options)
+OPT = Scraper::DEFAULT_OPTIONS.merge(options)
+Scraper.csv_import(page,merchant,shop,file,OPT)
 end # extract_data
 
 def self.get_page link, param = nil 
