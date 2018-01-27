@@ -31,8 +31,8 @@ effective_price: ->(price,s_price) { [price,s_price].compact.min }
 
 
 private
-def self.csv_import page,merchant,shop,file, options
-	# options = DEFAULT_OPTIONS.merge(opts)
+def self.csv_import page,merchant,shop,file, opts = nil
+	options = DEFAULT_OPTIONS.merge(opts)
 	page_address = defined?(page.uri) ? page.uri.to_s : page.url
 	LOG_FILE << "On Page #{page_address}...\n ..Found #{page.css(TAGS[merchant]['product']).length} products..\n"
 		page.css(TAGS.dig(merchant,"product")).each do |item|
@@ -72,7 +72,7 @@ def self.csv_import page,merchant,shop,file, options
 	
 	end	# page.css each
 GC.start
-	sleep(1)	
+	sleep(10)	
 LOG_FILE << "Page completed....\n\n"
 LOG_FILE.flush
 #sleep(1)
