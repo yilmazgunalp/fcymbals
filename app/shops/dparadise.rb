@@ -2,7 +2,7 @@ class Dparadise < Shop
 
 
 @merchant = "dparadise"
-@shop = Scraper.merchants[@merchant]	
+@shop = Scraper::MERCHANTS[merchant]	
 @page = get_page(shop['url'])
 
 

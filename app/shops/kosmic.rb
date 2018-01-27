@@ -2,7 +2,7 @@ class Kosmic < Shop
 
 
 @merchant = "kosmic"
-@shop = Scraper.merchants[@merchant]	
+@shop = Scraper::MERCHANTS[merchant]	
 
 @options = {
 

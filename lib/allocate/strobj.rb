@@ -1,10 +1,10 @@
 class Strobj
-	@@variants = YAML.load_file("#{Rails.root}/lib/allocate/vars.yml")
+	VARS = YAML.load_file("#{Rails.root}/lib/allocate/vars.yml")
 	attr_reader :string,:alternatives
 
 	def initialize(string)
 		@string = string
-		@alternatives = @@variants[string] 	
+		@alternatives = VARS[string] 	
 	end #initialize()
 
 	def match(text)

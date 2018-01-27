@@ -15,7 +15,7 @@ Scraper.csv_import(page,merchant,shop,file,options)
 end # extract_data
 
 def self.get_page link, param = nil 
-Scraper.agent.get link, param 
+Scraper::AGENT.get link, param 
 rescue Mechanize::Error,SocketError => e
 Scraper.log_file << "[FATAL]:[#{self.to_s.upcase}]: Could not retrieve webpage at => #{link}
 [ERROR]: #{e.class} [MESSAGE]: #{e.message}\n"

@@ -2,7 +2,7 @@ class Ddream < Shop
 
 
 @merchant = "ddream"
-@shop = Scraper.merchants[@merchant]	
+@shop = Scraper::MERCHANTS[merchant]	
 
 @options = {
 

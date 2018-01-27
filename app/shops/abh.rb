@@ -2,7 +2,7 @@ class Abh < Shop
 
 
 @merchant = "abh"
-@shop = Scraper.merchants[merchant]	
+@shop = Scraper::MERCHANTS[merchant]
 @page = get_page(shop['url'])
 @form = page.form_with(:dom_id => "aspnetForm")
 

@@ -1,5 +1,5 @@
 class Textobj
-	@@variants = YAML.load_file("#{Rails.root}/lib/allocate/vars.yml")
+	VARIANTS = YAML.load_file("#{Rails.root}/lib/allocate/vars.yml")
 	attr_reader :text,:tokens,:alternatives
 	include Allocatehelper
 
@@ -30,7 +30,7 @@ class Textobj
 	def tokenize(text)
 	 strobjs = []
 		i = 0
-		@@variants.keys.each do |varskey|
+		VARIANTS.keys.each do |varskey|
 		  if text.match(varskey)
 				strobjs << Strobj.new(varskey)
 				amend_text(text,varskey,i)
@@ -38,10 +38,10 @@ class Textobj
 			end #if text.match
 		end #each variants.keys	
 
-		@@variants.values.each do |varsvalue|
+		VARIANTS.values.each do |varsvalue|
 			varsvalue.each do |v|
 				if text.match(v)
-				strobjs << Strobj.new(@@variants.key(varsvalue))
+				strobjs << Strobj.new(VARIANTS.key(varsvalue))
 				amend_text(text,v,i)
 				i += 1 
 				end #if text.match

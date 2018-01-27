@@ -6,7 +6,7 @@ def self.queue
   end	
 
   def self.perform 
-    brands = Maker.select(:brand).distinct.map {|m| m.brand}
+    brands = Maker.select(:brand).distinct.map(&:brand)
 # # Brand > Series > Model mapping
 File.open("#{Rails.root}/lib/allocate/series.yml", "w")
 file = File.open("#{Rails.root}/lib/allocate/series.yml", "a+")

@@ -1,12 +1,11 @@
 class Retailer < ApplicationRecord
 	include Productmatch
   belongs_to :maker, :inverse_of => :retailers
-GC::Profiler.enable
 
 def allocate
-	GC::Profiler.report
-	puts title
+	puts "#{id}: #{title}"
 	if code && m = Maker.find_by(code: code.downcase)
+	puts "inside code"	
 	m.retailers << self	
 	else
 	match_hash = Productmatch.match_maker(title).compact
@@ -83,17 +82,17 @@ Maker.where(hash).take(n)
 end	
 
 def log_error(e)
-	Productmatch.log_file.puts "#{id} : #{title}"
-	Productmatch.log_file.puts "#{e}  : #{e.h}"
-	Productmatch.log_file.puts  e.cause.class unless e.instance_of?(TooManyMatchesError)
+	Productmatch::LOG_FILE.puts "#{id} : #{title}"
+	Productmatch::LOG_FILE.puts "#{e}  : #{e.h}"
+	Productmatch::LOG_FILE.puts  e.cause.class unless e.instance_of?(TooManyMatchesError)
 	if e.instance_of?(TooManyMatchesError)
-			Productmatch.log_file.puts "#{find_makers(e.h,50000).length} many possible matches"
+			Productmatch::LOG_FILE.puts "#{find_makers(e.h,50000).length} many possible matches"
 			find_makers(e.h).each_with_index do |e,i|
-				Productmatch.log_file.puts "#{i+1}: #{e.to_hash}"
+				Productmatch::LOG_FILE.puts "#{i+1}: #{e.to_hash}"
 			end #each 
 	end #if
-	Productmatch.log_file.puts 
-	Productmatch.log_file.flush
+	Productmatch::LOG_FILE.puts 
+	Productmatch::LOG_FILE.flush
 end #to_log
 
 end # Retailer
