@@ -24,12 +24,12 @@ result
 end
 
 DEFAULT_OPTIONS = {
-title: -> (item,selector) {item.at_css(selector).text.strip!.downcase!},
+title: -> (item,selector) {item.at_css(selector).text.strip.downcase!},
 picture_url: ->(pic_url,base_url) {pic_url.match(/^http/) ? pic_url : URI.parse(base_url) + pic_url},
 pic_url: -> (item,selector) {item.at_css(selector)['src']},
 link_url: -> (item,selector) {item.at_css(selector)['href']},
 price: -> (item,selector) {item.at_css(selector).text.gsub!(/,/,"").match(/\d+/)[0].to_i},
-effective_price: ->(price,s_price) { [price,s_price].compact!.min }  
+effective_price: ->(price,s_price) { [price,s_price].compact.min }  
 }
 
 
@@ -39,9 +39,9 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	page_address = defined?(page.uri) ? page.uri.to_s : page.url
 	LOG_FILE << "On Page #{page_address}...\n ..Found #{page.css(@tags[merchant]['product']).length} products..\n"
 		page.css(tags.dig(merchant,"product")).each do |item|
-	
+		
 		title =  options[:title].call(item,tags.dig(merchant,'title'))
-			
+
 		begin # begin rescue block for price	
 		price = options[:price].call(item,tags.dig(merchant,'price')) unless item.at_css(tags.dig(merchant,'price')).nil?
 		s_price = options[:price].call(item,tags.dig(merchant,'s_price')) unless item.at_css(tags.dig(merchant,'s_price')).nil?
@@ -72,10 +72,10 @@ def self.csv_import page,merchant,shop,file, opts = nil
     	end #if options[:code]	
 	
 	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
-	GC.start
-	sleep(1)
-	end	# page.css each
 	
+	end	# page.css each
+GC.start
+	sleep(1)	
 LOG_FILE << "Page completed....\n\n"
 LOG_FILE.flush
 #sleep(1)

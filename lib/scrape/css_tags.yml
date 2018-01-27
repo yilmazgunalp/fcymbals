@@ -37,7 +37,7 @@ ddream:
   desc: div.std  
 thedrum:
   product: td.st-product-cell
-  title: a.st-product-name
+  title: 'a.st-product-name'
   price: span.product_price.st-price
   poa: span.poa_price
   s_price: span.discount_price.st-price

@@ -1,9 +1,11 @@
 class Retailer < ApplicationRecord
 	include Productmatch
   belongs_to :maker, :inverse_of => :retailers
-
+GC::Profiler.enable
 
 def allocate
+	GC::Profiler.report
+	puts title
 	if code && m = Maker.find_by(code: code.downcase)
 	m.retailers << self	
 	else
@@ -15,7 +17,7 @@ def allocate
 		end #if	
 
 	end #if code && m	
-		rescue NoMatchError => e 
+		rescue NoMatchError,StandardError => e 
 			log_error(e)
 end #allocate   
 
