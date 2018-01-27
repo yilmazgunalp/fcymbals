@@ -21,6 +21,7 @@ def allocate
 end #allocate   
 
 def self.csv_import file
+	puts "inside Retailer CSV import the culprit !!"
 	log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","a+")
 
 		CSV.foreach(file, headers: true, :quote_char => '\'',:col_sep => '~') do |row|
