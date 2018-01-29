@@ -17,3 +17,14 @@ set:
   - pack
 swiss:
   - swish
+pstx:
+  - pst-x
+  - pst x
+pst5:
+  - pst 5 
+pst3:
+  - pst 3
+pst7:
+  - pst 7
+pst8:
+  - pst 8   

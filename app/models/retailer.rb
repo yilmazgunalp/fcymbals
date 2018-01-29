@@ -16,14 +16,18 @@ def allocate
 		end #if	
 
 	end #if code && m	
-		rescue NoMatchError,StandardError => e 
-			log_error(e)
+		rescue NoMatchError => e
+			if e.cause.instance_of?(Productmatch::NoBrandError)
+			update!(active: false)
+			log_no_brand(e)
+			else
+			log_error(e)	
+			end # if 
 end #allocate   
 
 def self.csv_import file
-	puts "inside Retailer CSV import the culprit !!"
-	log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","a+")
-
+	log_file = File.new("#{Rails.root}/log/Retailer_Update_log.txt","w")
+	File.open(log_file,"a+")
 		CSV.foreach(file, headers: true, :quote_char => '\'',:col_sep => '~') do |row|
 			begin 
 			retailer =  check_for_retailer(row.field('title'), row.field('link'))
@@ -44,7 +48,7 @@ def self.csv_import file
 end #csv_import	
 
 def check_price new_price
-	new_price != price ? price = new_price : touch
+	new_price != price ? update(price: new_price) : touch
 end #check_price
 
 def self.deactivate_records merchant,time
@@ -95,5 +99,12 @@ def log_error(e)
 	Productmatch::LOG_FILE.puts 
 	Productmatch::LOG_FILE.flush
 end #to_log
+
+def log_no_brand(e)
+	Productmatch::NO_BRANDS.puts "#{id} : #{title}"
+	Productmatch::NO_BRANDS.puts "#{e}  : #{e.h}"
+	Productmatch::NO_BRANDS.puts 
+	Productmatch::NO_BRANDS.flush
+end #log_no_brand	
 
 end # Retailer

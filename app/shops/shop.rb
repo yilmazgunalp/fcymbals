@@ -17,7 +17,7 @@ end # extract_data
 def self.get_page link, param = nil 
 Scraper::AGENT.get link, param 
 rescue Mechanize::Error,SocketError => e
-Scraper.log_file << "[FATAL]:[#{self.to_s.upcase}]: Could not retrieve webpage at => #{link}
+Scraper::LOG_FILE << "[FATAL]:[#{self.to_s.upcase}]: Could not retrieve webpage at => #{link}
 [ERROR]: #{e.class} [MESSAGE]: #{e.message}\n"
 end # get_page
 

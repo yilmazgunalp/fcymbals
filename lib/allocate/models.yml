@@ -12,20 +12,19 @@ paiste:
 - black ride
 - dry heavy ride
 - reflector rock crash
-- big beat hi-hat 15
 - purple sound edge hi-hat
 - djs 45 crash
 - big ride
 - reflector rock splash
 - reflector universal
 - dark energy ride mark i
+- 'big beat hi-hat '
 - swiss splash
 - custom full ride
 - dark ride
 - reflector bell ride
 - splash
 - power ride
-- big beat 18
 - crash/ride
 - thin
 - blue crash
@@ -36,6 +35,7 @@ paiste:
 - reflector sound edge hi-hat
 - full crash
 - purple heavy ride
+- deco gong
 - medium ride
 - shred bell
 - ride
@@ -48,14 +48,15 @@ paiste:
 - swiss medium crash
 - medium crash
 - crash
+- custom metal crash
 - purple splash
 - black mega ride
 - black heavy hi-hat
+- big beat
 - swiss hats
 - red heavy hi-hat
 - swiss flanger stack
 - metal edge hats
-- big beat 22
 - reflector heavy full hi-hat
 - reflector rock ride
 - thin crash
@@ -67,9 +68,7 @@ paiste:
 - blast china
 - paperthin
 - red ride
-- medium
 - blue splash
-- big beat hi-hat 16
 - heavy china
 - dark crash
 - hi hat
@@ -115,7 +114,6 @@ paiste:
 - giga bell ride
 - light ride
 - black sound edge hi-hat
-- big beat 21
 - swiss flanger crash
 - blue heavy ride
 - black crash
@@ -125,9 +123,9 @@ paiste:
 - dark crisp ride
 - metal crash
 - universal
+- reflector rock
 - black heavy crash
 - rock hats
-- big beat 19
 - blue china
 - blue ride
 - sound edge hats
@@ -136,10 +134,9 @@ paiste:
 - red china
 - dark energy hats mark i
 - combo crisp hi-hat
+- gong
 - blue sound edge hi-hat
-- big beat 20
 - red sound edge hi-hat
-- big beat 24
 - blue bell ride
 - red splash
 - duo ride
@@ -147,11 +144,13 @@ paiste:
 - medium light hi-hat
 - full ride
 - red hi-hat
+- sweet ride
 - purple hi-hat
 - fast medium
 - crisp ride
 - power ride the reign
 - session
+- medium crash ride
 - dark hi-hat
 - mega cup chime
 - black china
@@ -247,6 +246,7 @@ zildjian:
 - country pack
 - rock ride
 - traditional gong and table-top stand set
+- metal splash
 - custom hybrid hihats
 - stadium medium heavy pairs
 - a custom cymbal set
@@ -375,21 +375,48 @@ istanbul:
 - xist power
 istanbul mehmet:
 - samatya
+- carmine appice
 - blackbell
+- custom dry
 - x-cast
 - flat hole bottom
+- reverse cup
+- nostalgia
 - kirkor kucukyan
+- thin
 - super symphonic
 - 60th anniversary
+- murathan
+- paper thin
+- traditional
+- "\\N"
+- medium ride
+- radiant
+- medium crash
+- empire
 - vezir
+- flat sizzle
+- kiko freitas
+- hat trio w/ rivets
+- medium hi hat
 - snowy shaw
+- x-jazz
+- horacio el negro hernandez
 - onurhan
+- origin dark
 - 61st anniversary
+- ab bermudez
 - emirhan
 - funky
 - therapium bell
 - turk
+- mc jazz
+- light
+- flat
+- sultan
 - mikael z
+- ping
+- erik smith
 - x-metal
 - origin
 - x-fx
@@ -399,31 +426,6 @@ istanbul mehmet:
 - session
 - legend dark
 - sahra
-- carmine appice
-- custom dry
-- reverse cup
-- nostalgia
-- thin
-- murathan
-- paper thin
-- traditional
-- "\\N"
-- radiant
-- empire
-- flat sizzle
-- kiko freitas
-- hat trio w/ rivets
-- medium
-- x-jazz
-- horacio el negro hernandez
-- origin dark
-- ab bermudez
-- mc jazz
-- light
-- flat
-- sultan
-- ping
-- erik smith
 - dark
 sabian:
 - light hats
@@ -608,305 +610,141 @@ sabian:
 - iso crash
 - evolution effeks crash
 meinl:
-- 20' dark ride
-- 19' crash
-- 14' trash stack
-- 22' jazz club ride
-- 10' filter china
-- 10' fx hat pair
-- 20' crash
+- 12/14' trash hat
+- medium ride with sizzles
+- trash stack
+- china
 - 12'/14' x-treme stack
-- 17' jazz thin crash
-- 16' flat china
-- 22' sand ride
-- 20' heavy ride
-- 22' vintage crash
-- 14' filter china with jingles
-- 20' jazz thin ride
-- 10' dual splash
-- 22' jazz big apple ride
-- 16' vintage crash
+- symphonic extra heavy cymbal pair
+- jazz extra thin crash
+- vintage pure crash
+- jazz china ride
+- extra dry medium thin hihat
+- percussion crash-ride
+- suspended cymbal
 - classics standard set
-- 17' powerful crash
-- 8' bell
-- 23' medium ride
-- 18' dual crash
-- 13' hihat pair
-- 18' sand medium crash
-- 20' raw bell ride
-- 18' trash china
-- 13' spectrum hihat pair
-- 20' powerful ride
-- 8' filter china
-- 10' percussion hiha
-- 22' suspended cymbal
-- 22' heavy ride brilliant
+- thin hihat
+- china crash
+- jazz splash
+- medium hihat
+- jazz thin hihat
+- medium bell
 - 10'/12' electro stack
-- 20' jazz medium thin crash
-- 16' symphonic medium cymbal pair
-- 6' splash brilliant
-- 24' pure metal ride brilliant
-- 22' vintage pure light ride
-- 13' fast hihat pair brilliant
-- 15' medium hihat
-- 21' medium ride
-- 22' raw bell ride
-- 15' dark hihat pair
-- 16' filter china
-- 10' extra dry splash
-- 8' fx hat pair
-- 22' heavy ride
-- 18' b10 marching cymbal pair
-- 20' tradition light ride
-- 10' johnny rabb drumbal
-- 12' extra dry splash
-- 22' heavy hammered ride brilliant
-- 17' medium thin crash
-- 16' powerful crash
-- 13' medium hihat pair
-- 12' trash stack
-- 18' percussion crash-ride
-- 16' crash
-- 16' dual crash
-- 14' percussion jingle bell
-- 14' powerful soundwave hihat pair
-- 18' flat china
-- 17' extra dry thin crash
-- 22' extra dry medium ride
-- 14' medium hihat pair brilliant
-- 17' thin crash brilliant
-- 20' medium ride with sizzles
-- 18' tradition light crash
-- 15' thin crash
-- 20' vintage pure crash
-- 10' mini hihat pair
-- 18' extra dry thin crash
-- 16' percussion crash
-- 18' symphonic thin cymbal pair
-- 16' b12 marching cymbal pair
-- 20' heavy hammered china brilliant
-- 22' medium crash
-- 15' extra dry medium thin hihat pair
-- 20' china
-- 16' medium crash
-- 19' extra dry thin crash
-- 17' jazz medium thin crash
-- 18' medium thin crash brilliant
-- 15' china crash
-- 16' medium hihat pair
-- 16' symphonic heavy cymbal pair
-- 10' trash splash
-- 12' filter china
-- 8' medium bell
-- 22' jazz china ride
-- 22' jazz extra thin ride
-- 18' thin crash brilliant
-- 12/14' trash hat pair
-- 20' extra dry china
-- 16' china
-- 14' extra dry medium hihat pair
-- 20' jazz thin crash
-- 20' big apple dark ride
-- 10' china splash
-- 20' extra dry thin crash
-- 20' sand ride
-- 24' medium ride brilliant
-- 17' china crash
-- 17' medium crash
-- 18' crash
-- 13' serpents hihat brillant
-- 18' medium crash brilliant
-- 16' b10 marching cymbal pair
-- 10' dark splash
-- 20' medium ride
+- pure metal ride brilliant
+- jazz medium thin ride
+- tradition light crash
+- trash splash
+- dark ride
+- spectrum ride
+- splash
+- jazz medium ride
+- dark splash
+- sand crash ride
+- extra dry medium hihat
+- brass marching cymbal pair
+- medium ride
+- china brilliant
+- sky ride
+- heavy hihat brilliant
+- ride
+- extra dry thin ride
+- transition ride
+- medium crash
+- crash
+- fx hat
+- mini hihat
+- sand medium crash
+- vintage pure light ride
+- powerful soundwave hihat
+- b12 marching cymbal pair
+- big apple dark ride
+- tradition ride
+- vintage pure hihat
+- medium ride brilliant
+- dual crash
+- vintage pure ride
+- trash crash
+- symphonic heavy cymbal pair
+- thin crash
+- jazz big apple ride
+- vintage crash
 - extreme metal cymbal set
-- 10' vintage splash
-- 17' jazz extra thin crash
-- 18' jazz extra thin crash
-- 18' extra thin hammered crash
-- 14' fast hihat pair brilliant
-- 14' dark hihat pair
-- 14' vintage pure hihat pair
-- 10' jazz splash
-- 14' powerful hihat pair
-- 14' thin crash brilliant
-- 21' dark ride
-- 14' crash
+- jazz club ride
+- dark hihat
+- serpents ride brilliant
+- extra dry splash
+- spectrum hihat
+- symphonic medium cymbal pair
+- hihat
+- symphonic thin cymbal pair
+- sand thin crash
 - classics custom standard set
-- 22' symphonic medium cymbal pair
-- 18' dark china
-- 20' heavy hammered crash brilliant
-- 20' trash crash
-- 18' brass marching cymbal pair
-- 8' dark splash
-- 22' jazz thin ride
-- 18' medium thin crash
-- 16' trash stack
-- 13' jazz thin hihat pair
-- 17' suspended cymbal
-- 20' b10 marching cymbal pair
-- 18' bronze marching cymbal pair
-- 16' extra dry thin crash
-- 18' dark crash
-- 19' symphonic medium heavy cymbal pair
-- 20' china brilliant
-- 14' filter china
-- 16' symphonic thin cymbal pair
-- 21' transition ride
-- 20' vintage pure ride
-- 22' symphonic heavy cymbal pair
+- extra dry china
+- low bell
+- dark crash
+- symphonic medium heavy cymbal pair
+- percussion crash
+- medium hihat brilliant
+- heavy ride
 - 'cymbal set including:'
-- 20' dark crash
-- 17' thin crash
-- 20' medium crash
-- 20' medium crash brilliant
-- 16' thin crash
-- 18' jazz thin crash
-- 16' medium thin crash
-- 18' extra dry china
-- 20' symphonic medium cymbal pair
-- 20' jazz flat ride
-- 20' heavy ride brilliant
-- 14' percussion crash
-- 19' sky ride
-- 16' brass marching cymbal pair
-- 18' sand thin crash
-- 16' dark crash
-- 8' low bell
-- 8' high bell
-- 18' trash crash
-- 8' splash
-- 16' trash crash
-- 20' b12 marching cymbal pair
-- 14' bronze marching cymbal pair
-- 18' vintage pure crash
-- 22' extra dry thin ride
-- 15' thin crash brilliant
-- 14' medium crash
-- 22' china
-- 16' china brilliant
-- 22' dark crash-ride
-- 13' brass marching cymbal pair
-- 22' jazz medium thin ride
-- 19' medium thin crash brilliant
-- 18' jazz medium thin crash
-- 22' tradition light ride
-- 20' jazz big apple ride
-- 20' vintage pure light ride
-- 15' medium crash
-- 16' trash china
-- 24' medium ride
-- 24' big apple dark ride
-- 21' serpents ride brilliant
-- 22' heavy hammered crash brilliant
-- 14' hihat pair
-- 18' symphonic medium cymbal pair
-- 20' dual crash-ride
-- 17' dark crash
-- 18' crash ride
-- 8' johnny rabb drumbal
-- 18' symphonic heavy cymbal pair
-- 16' medium crash brilliant
-- 12' filter china with jingles
-- 20' ride
-- 18' trash stack
-- 20' suspended cymbal
+- jazz medium thin crash
+- johnny rabb drumbal
+- jazz extra thin ride
+- dual hihat
+- tradition light ride
+- heavy hammered china brilliant
+- medium thin crash brilliant
+- raw bell ride
+- powerful hihat
+- dark crash-ride
+- jazz thin crash
+- jazz thin ride
+- powerful ride
+- filter china with jingles
+- extra thin hammered crash
+- serpents hihat brillant
+- percussion hiha
+- sand hihat
+- ghost ride
+- fast hihat brilliant
+- flat china
+- thin crash brilliant
+- symmetry ride
+- percussion jingle bell
+- filter china
+- powerful crash
+- bell
+- percussion splash
+- vintage splash
+- crash ride
+- medium soundwave hihat
+- splash brilliant
+- tradition flat ride
 - cymbal set up
-- 13' medium hihat pair brilliant
-- 19' china crash
-- 20' jazz medium thin ride
-- 22' dual crash-ride
-- 21' heavy ride
-- 17' crash
-- 20' jazz extra thin ride
+- dark china
 - 16'/18' stack
-- 20' symphonic heavy cymbal pair
-- 12' trash splash
-- 18' heavy hammered china brilliant
-- 20' symphonic thin cymbal pair
-- 14' brass marching cymbal pair
-- 22' medium ride
-- 6' splash
-- 10' percussion splash
-- 14' medium hihat
-- 22' tradition flat ride
-- 22' symphonic thin cymbal pair
-- 14' thin crash
-- 16' jazz thin crash
-- 14' china brilliant
-- 16' jazz extra thin crash
-- 22' big apple dark ride
-- 14' suspended cymbal
-- 16' arena hand cymbals pair
-- 14' medium hihat pair
-- 14' tradition hihat pair
-- 16' extra dry medium thin hihat pair
-- 20' medium ride brilliant
-- 20' vintage crash
-- 14' china
-- 20' extra thin hammered crash
-- 18' powerful crash
-- 18' medium crash
-- 8' splash brilliant
-- 20' symphonic extra heavy cymbal pair
-- 16' extra dry china
-- 14' heavy hihat pair
-- 18' thin crash
-- 21' medium crash
+- dual splash
+- dual crash-ride
+- trash china
+- heavy hammered crash brilliant
+- medium crash brilliant
+- heavy hihat
+- nuance ride with sizzles
 - classics custom dark set
-- 14' thin hihat pair
-- 18' b12 marching cymbal pair
-- 22' symmetry ride
-- 22' sand crash ride
-- 20' tradition ride
-- 10' filter china with jingles
-- 12' splash
-- 22' medium ride brilliant
-- 10' splash
-- 18' china
-- 21' dark crash
-- 16' jazz medium thin crash
-- 20' jazz medium ride
-- 19' medium thin crash
-- 18' arena hand cymbals pair
-- 14' heavy hihat pair brilliant
-- 21' ghost ride
-- 22' tradition ride
-- 14' medium soundwave hihat pair
-- 17' medium thin crash brilliant
-- 22' vintage pure ride
-- 10' splash brilliant
-- 18' vintage crash
-- 16' medium thin crash brilliant
-- 16' vintage pure hihat pair
-- 14' jazz thin hihat pair
-- 18' china brilliant
-- 15' vintage pure hihat pair
-- 21' medium ride brilliant
-- 16' bronze marching cymbal pair
-- 15' medium hihat pair
-- 23' heavy ride
-- 13' extra dry medium hihat pair
-- 13' dark hihat pair
-- 22' spectrum ride
-- 14' sand hihat pair
-- 21' nuance ride with sizzles
-- 12' china
-- 20' extra dry thin ride
+- heavy hammered ride brilliant
+- china splash
+- extra dry medium ride
+- sand ride
+- extra dry thin crash
+- tradition hihat
+- heavy ride brilliant
+- high bell
+- medium thin crash
+- bronze marching cymbal pair
 - 8'/10' electro stack
-- 22' symphonic extra heavy cymbal pair
-- 14' spectrum hihat pair
-- 22' dark ride
-- 14' serpents hihat brillant
-- 20' jazz club ride
-- 18' suspended cymbal
-- 22' powerful ride
-- 15' dual hihat pair
-- 16' suspended cymbal
-- 19' dark crash
-- 16' thin crash brilliant
-- 22' jazz medium ride
-- 20' extra dry medium ride
+- jazz flat ride
+- arena hand cymbals pair
+- b10 marching cymbal pair
 dream:
 - china
 - effect
@@ -1000,6 +838,7 @@ ufip:
 - small ximbau
 - del cajon
 bosphorus:
+- gold cymbal pack
 - china
 - noisy hats
 - dark hi hat
@@ -1009,6 +848,7 @@ bosphorus:
 - splash
 - bright hi hat
 - latin
+- traditional cymbal pack
 - full crash
 - new orleans
 - medium ride
@@ -1023,6 +863,7 @@ bosphorus:
 - xt edition
 - jazz masters
 - flat ride
+- dark crash
 - hi hat
 - crisp hi hat
 - glassy ride

@@ -44,9 +44,8 @@ end
 
 
 def self.scrape
-puts "inside ABH scrape"	
 prepare_file	
-get_all_links(page,form).each {|link| extract_data(get_asp_page(link,form));puts "inside ABH extract data"}
+get_all_links(page,form).each {|link| extract_data(get_asp_page(link,form))}
 @file.flush.close
 @file.to_io
 end

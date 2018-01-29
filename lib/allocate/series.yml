@@ -85,14 +85,10 @@ paiste:
   - hi hat
   - thin
   2002 black:
-  - big beat hi-hat 15
-  - big beat hi-hat 16
-  - big beat 18
-  - big beat 19
-  - big beat 20
-  - big beat 21
-  - big beat 22
-  - big beat 24
+  - 'big beat hi-hat '
+  - big beat
+  deco gong:
+  - deco gong
   signature precision:
   - sound edge hi-hat
   - heavy crash
@@ -131,6 +127,8 @@ paiste:
   - pure bell
   - swiss hats
   - swiss splash
+  symphonic:
+  - gong
   pst5:
   - sound edge hats
   - medium crash
@@ -162,8 +160,10 @@ paiste:
   - crash
   - ride
   - splash
+  - universal
   '2002':
   - giga bell ride
+  - medium crash ride
   - sound edge hi-hat
   - accent cymbal
   - big ride
@@ -180,7 +180,6 @@ paiste:
   - wild crash
   - china
   - crash
-  - medium
   - ride
   - splash
   pst8:
@@ -254,6 +253,11 @@ paiste:
   twenty:
   - custom full crash
   - custom full ride
+  - custom metal crash
+  - metal ride
+  - metal splash
+  - sweet ride
+  - china
 zildjian:
   genre cymbal sets:
   - country pack
@@ -391,6 +395,7 @@ zildjian:
   - light hihats
   - light ride
   - mastersound hihats
+  - metal splash
   - mini china
   - china
   - efx
@@ -565,15 +570,17 @@ istanbul mehmet:
   traditional:
   - hat trio w/ rivets
   - flat hole bottom
+  - medium hi hat
   - custom dry
   - flat sizzle
+  - medium crash
+  - medium ride
   - paper thin
   - reverse cup
   - dark
   - flat
   - heavy
   - light
-  - medium
   - original
   - ping
   - thin
@@ -862,395 +869,197 @@ sabian:
 meinl:
   classics custom extreme metal:
   - extreme metal cymbal set
-  - 14' hihat pair
-  - 10' splash
   - 16'/18' stack
-  - 16' china
-  - 16' crash
-  - 17' crash
-  - 18' china
-  - 18' crash
-  - 19' crash
-  - 20' ride
+  - china
+  - crash
+  - hihat
+  - ride
+  - splash
   byzance extra dry:
-  - 15' extra dry medium thin hihat pair
-  - 16' extra dry medium thin hihat pair
-  - 13' extra dry medium hihat pair
-  - 14' extra dry medium hihat pair
-  - 16' extra dry thin crash
-  - 17' extra dry thin crash
-  - 18' extra dry thin crash
-  - 19' extra dry thin crash
-  - 20' extra dry medium ride
-  - 20' extra dry thin crash
-  - 20' extra dry thin ride
-  - 22' extra dry medium ride
-  - 22' extra dry thin ride
-  - 10' extra dry splash
-  - 12' extra dry splash
-  - 15' dual hihat pair
-  - 16' extra dry china
-  - 18' extra dry china
-  - 20' extra dry china
-  - 10' dual splash
-  - 16' dual crash
-  - 18' dual crash
-  - 20' dual crash-ride
-  - 21' transition ride
-  - 22' dual crash-ride
+  - extra dry medium thin hihat
+  - extra dry medium hihat
+  - extra dry medium ride
+  - extra dry thin crash
+  - extra dry thin ride
+  - extra dry china
+  - extra dry splash
+  - dual crash
+  - dual crash-ride
+  - dual hihat
+  - dual splash
+  - transition ride
   byzance jazz:
-  - 13' jazz thin hihat pair
-  - 14' jazz thin hihat pair
-  - 16' jazz extra thin crash
-  - 16' jazz medium thin crash
-  - 17' jazz extra thin crash
-  - 17' jazz medium thin crash
-  - 18' jazz extra thin crash
-  - 18' jazz medium thin crash
-  - 20' jazz big apple ride
-  - 20' jazz extra thin ride
-  - 20' jazz medium thin crash
-  - 20' jazz medium thin ride
-  - 21' nuance ride with sizzles
-  - 22' jazz big apple ride
-  - 22' jazz extra thin ride
-  - 22' jazz medium thin ride
-  - 14' tradition hihat pair
-  - 16' jazz thin crash
-  - 17' jazz thin crash
-  - 18' jazz thin crash
-  - 18' tradition light crash
-  - 20' jazz club ride
-  - 20' jazz flat ride
-  - 20' jazz medium ride
-  - 20' jazz thin crash
-  - 20' jazz thin ride
-  - 20' tradition light ride
-  - 22' jazz china ride
-  - 22' jazz club ride
-  - 22' jazz medium ride
-  - 22' jazz thin ride
-  - 22' tradition flat ride
-  - 22' tradition light ride
-  - 10' jazz splash
-  - 20' tradition ride
-  - 22' symmetry ride
-  - 22' tradition ride
+  - jazz big apple ride
+  - jazz extra thin crash
+  - jazz extra thin ride
+  - jazz medium thin crash
+  - jazz medium thin ride
+  - nuance ride with sizzles
+  - jazz china ride
+  - jazz club ride
+  - jazz flat ride
+  - jazz medium ride
+  - jazz thin crash
+  - jazz thin hihat
+  - jazz thin ride
+  - tradition flat ride
+  - tradition light crash
+  - tradition light ride
+  - jazz splash
+  - symmetry ride
+  - tradition hihat
+  - tradition ride
   generation x:
-  - 10' filter china with jingles
-  - 12' filter china with jingles
-  - 14' filter china with jingles
-  - 10' fx hat pair
-  - 10' johnny rabb drumbal
-  - 12/14' trash hat pair
-  - 8' fx hat pair
-  - 8' johnny rabb drumbal
+  - filter china with jingles
   - 10'/12' electro stack
-  - 10' filter china
+  - 12/14' trash hat
   - 12'/14' x-treme stack
-  - 12' filter china
-  - 14' filter china
-  - 15' china crash
-  - 16' filter china
-  - 17' china crash
-  - 19' china crash
   - 8'/10' electro stack
-  - 8' filter china
+  - johnny rabb drumbal
+  - china crash
+  - filter china
+  - fx hat
   pure alloy:
-  - 14' medium crash
-  - 14' medium hihat
-  - 15' medium hihat
-  - 18' medium crash
-  - 20' medium crash
-  - 20' medium ride
-  - 22' medium ride
+  - medium crash
+  - medium hihat
+  - medium ride
   marching cymbals:
-  - 13' brass marching cymbal pair
-  - 14' brass marching cymbal pair
-  - 14' bronze marching cymbal pair
-  - 16' arena hand cymbals pair
-  - 16' b10 marching cymbal pair
-  - 16' b12 marching cymbal pair
-  - 16' brass marching cymbal pair
-  - 16' bronze marching cymbal pair
-  - 18' arena hand cymbals pair
-  - 18' b10 marching cymbal pair
-  - 18' b12 marching cymbal pair
-  - 18' brass marching cymbal pair
-  - 18' bronze marching cymbal pair
-  - 20' b10 marching cymbal pair
-  - 20' b12 marching cymbal pair
+  - arena hand cymbals pair
+  - b10 marching cymbal pair
+  - b12 marching cymbal pair
+  - brass marching cymbal pair
+  - bronze marching cymbal pair
   classics custom:
-  - 14' dark hihat pair
-  - 14' medium hihat pair
-  - 14' powerful hihat pair
-  - 15' dark hihat pair
-  - 15' medium hihat pair
   - classics custom dark set
   - classics custom standard set
-  - 10' dark splash
-  - 12' trash splash
-  - 12' trash stack
-  - 14' medium crash
-  - 15' medium crash
-  - 16' dark crash
-  - 16' medium crash
-  - 16' powerful crash
-  - 16' trash china
-  - 16' trash crash
-  - 16' trash stack
-  - 17' medium crash
-  - 18' dark china
-  - 18' dark crash
-  - 18' medium crash
-  - 18' powerful crash
-  - 18' trash china
-  - 18' trash crash
-  - 19' dark crash
-  - 20' dark crash
-  - 20' dark ride
-  - 20' medium ride
-  - 20' powerful ride
-  - 21' dark crash
-  - 21' ghost ride
-  - 22' dark crash-ride
-  - 22' dark ride
-  - 22' powerful ride
-  - 10' splash
-  - 12' splash
-  - 16' china
-  - 18' china
-  - 8' bell
-  - 8' splash
+  - dark china
+  - dark crash
+  - dark crash-ride
+  - dark hihat
+  - dark ride
+  - dark splash
+  - ghost ride
+  - medium crash
+  - medium hihat
+  - medium ride
+  - powerful crash
+  - powerful hihat
+  - powerful ride
+  - trash china
+  - trash crash
+  - trash splash
+  - trash stack
+  - bell
+  - china
+  - splash
   byzance traditional:
-  - 18' extra thin hammered crash
-  - 20' extra thin hammered crash
-  - 20' medium ride with sizzles
-  - 10' mini hihat pair
-  - 13' medium hihat pair
-  - 14' heavy hihat pair
-  - 14' medium hihat pair
-  - 14' thin hihat pair
-  - 15' medium hihat pair
-  - 16' medium hihat pair
-  - 16' medium thin crash
-  - 17' medium thin crash
-  - 18' medium thin crash
-  - 19' medium thin crash
-  - 14' thin crash
-  - 15' thin crash
-  - 16' flat china
-  - 16' medium crash
-  - 16' thin crash
-  - 17' thin crash
-  - 18' flat china
-  - 18' medium crash
-  - 18' thin crash
-  - 20' heavy ride
-  - 20' medium crash
-  - 20' medium ride
-  - 21' heavy ride
-  - 21' medium crash
-  - 21' medium ride
-  - 22' heavy ride
-  - 22' medium crash
-  - 22' medium ride
-  - 23' heavy ride
-  - 23' medium ride
-  - 24' medium ride
-  - 10' splash
-  - 12' splash
-  - 14' china
-  - 16' china
-  - 18' china
-  - 20' china
-  - 22' china
-  - 6' splash
-  - 8' splash
+  - extra thin hammered crash
+  - medium ride with sizzles
+  - medium thin crash
+  - flat china
+  - heavy hihat
+  - heavy ride
+  - medium crash
+  - medium hihat
+  - medium ride
+  - mini hihat
+  - thin crash
+  - thin hihat
+  - china
+  - splash
   symphonic cymbals:
-  - 19' symphonic medium heavy cymbal pair
-  - 20' symphonic extra heavy cymbal pair
-  - 22' symphonic extra heavy cymbal pair
-  - 16' symphonic heavy cymbal pair
-  - 16' symphonic medium cymbal pair
-  - 16' symphonic thin cymbal pair
-  - 18' symphonic heavy cymbal pair
-  - 18' symphonic medium cymbal pair
-  - 18' symphonic thin cymbal pair
-  - 20' symphonic heavy cymbal pair
-  - 20' symphonic medium cymbal pair
-  - 20' symphonic thin cymbal pair
-  - 22' symphonic heavy cymbal pair
-  - 22' symphonic medium cymbal pair
-  - 22' symphonic thin cymbal pair
-  - 14' suspended cymbal
-  - 16' suspended cymbal
-  - 17' suspended cymbal
-  - 18' suspended cymbal
-  - 20' suspended cymbal
-  - 22' suspended cymbal
+  - symphonic extra heavy cymbal pair
+  - symphonic medium heavy cymbal pair
+  - symphonic heavy cymbal pair
+  - symphonic medium cymbal pair
+  - symphonic thin cymbal pair
+  - suspended cymbal
   byzance vintage:
-  - 14' vintage pure hihat pair
-  - 15' vintage pure hihat pair
-  - 16' vintage pure hihat pair
-  - 20' vintage pure light ride
-  - 22' vintage pure light ride
-  - 14' sand hihat pair
-  - 18' sand medium crash
-  - 18' sand thin crash
-  - 18' vintage pure crash
-  - 20' vintage pure crash
-  - 20' vintage pure ride
-  - 22' sand crash ride
-  - 22' vintage pure ride
-  - 10' trash splash
-  - 10' vintage splash
-  - 16' trash crash
-  - 16' vintage crash
-  - 18' trash crash
-  - 18' vintage crash
-  - 20' sand ride
-  - 20' trash crash
-  - 20' vintage crash
-  - 22' sand ride
-  - 22' vintage crash
+  - vintage pure light ride
   - 'cymbal set including:'
+  - sand crash ride
+  - sand medium crash
+  - sand thin crash
+  - vintage pure crash
+  - vintage pure hihat
+  - vintage pure ride
+  - sand hihat
+  - sand ride
+  - trash crash
+  - trash splash
+  - vintage crash
+  - vintage splash
   byzance brilliant:
-  - 13' fast hihat pair brilliant
-  - 13' medium hihat pair brilliant
-  - 14' fast hihat pair brilliant
-  - 14' heavy hihat pair brilliant
-  - 14' medium hihat pair brilliant
-  - 16' medium thin crash brilliant
-  - 17' medium thin crash brilliant
-  - 18' heavy hammered china brilliant
-  - 18' medium thin crash brilliant
-  - 19' medium thin crash brilliant
-  - 20' heavy hammered china brilliant
-  - 20' heavy hammered crash brilliant
-  - 22' heavy hammered crash brilliant
-  - 22' heavy hammered ride brilliant
-  - 24' pure metal ride brilliant
-  - 13' serpents hihat brillant
-  - 14' serpents hihat brillant
-  - 14' thin crash brilliant
-  - 15' thin crash brilliant
-  - 16' medium crash brilliant
-  - 16' thin crash brilliant
-  - 17' thin crash brilliant
-  - 18' medium crash brilliant
-  - 18' thin crash brilliant
-  - 20' heavy ride brilliant
-  - 20' medium crash brilliant
-  - 20' medium ride brilliant
-  - 21' medium ride brilliant
-  - 21' serpents ride brilliant
-  - 22' heavy ride brilliant
-  - 22' medium ride brilliant
-  - 24' medium ride brilliant
-  - 10' splash brilliant
-  - 14' china brilliant
-  - 16' china brilliant
-  - 18' china brilliant
-  - 20' china brilliant
-  - 6' splash brilliant
-  - 8' splash brilliant
+  - heavy hammered china brilliant
+  - heavy hammered crash brilliant
+  - heavy hammered ride brilliant
+  - medium thin crash brilliant
+  - pure metal ride brilliant
+  - fast hihat brilliant
+  - heavy hihat brilliant
+  - heavy ride brilliant
+  - medium crash brilliant
+  - medium hihat brilliant
+  - medium ride brilliant
+  - serpents hihat brillant
+  - serpents ride brilliant
+  - thin crash brilliant
+  - china brilliant
+  - splash brilliant
   byzance dark:
-  - 20' big apple dark ride
-  - 22' big apple dark ride
-  - 24' big apple dark ride
-  - 13' dark hihat pair
-  - 13' spectrum hihat pair
-  - 14' dark hihat pair
-  - 14' spectrum hihat pair
-  - 15' dark hihat pair
-  - 20' raw bell ride
-  - 22' raw bell ride
-  - 10' dark splash
-  - 16' dark crash
-  - 17' dark crash
-  - 18' dark china
-  - 18' dark crash
-  - 19' sky ride
-  - 20' dark crash
-  - 20' dark ride
-  - 21' dark ride
-  - 22' dark ride
-  - 22' spectrum ride
-  - 8' dark splash
+  - big apple dark ride
+  - raw bell ride
+  - dark china
+  - dark crash
+  - dark hihat
+  - dark ride
+  - dark splash
+  - sky ride
+  - spectrum hihat
+  - spectrum ride
   classics:
-  - 14' medium soundwave hihat pair
-  - 14' powerful soundwave hihat pair
-  - 10' mini hihat pair
-  - 14' medium hihat pair
-  - 14' powerful hihat pair
-  - 10' china splash
-  - 14' medium crash
-  - 15' medium crash
-  - 16' medium crash
-  - 16' powerful crash
-  - 16' thin crash
-  - 17' medium crash
-  - 17' powerful crash
-  - 18' medium crash
-  - 18' powerful crash
-  - 18' thin crash
-  - 20' medium crash
-  - 20' medium ride
-  - 20' powerful ride
-  - 21' medium ride
-  - 22' medium ride
-  - 8' high bell
-  - 8' low bell
-  - 8' medium bell
   - classics standard set
-  - 10' splash
-  - 12' china
-  - 12' splash
-  - 14' china
-  - 16' china
-  - 18' china
-  - 8' splash
+  - medium soundwave hihat
+  - powerful soundwave hihat
+  - china splash
+  - high bell
+  - low bell
+  - medium bell
+  - medium crash
+  - medium hihat
+  - medium ride
+  - mini hihat
+  - powerful crash
+  - powerful hihat
+  - powerful ride
+  - thin crash
+  - china
+  - splash
   candela:
-  - 14' percussion jingle bell
-  - 10' percussion hiha
-  - 10' percussion splash
-  - 14' percussion crash
-  - 16' percussion crash
-  - 18' percussion crash-ride
+  - percussion jingle bell
+  - percussion crash
+  - percussion crash-ride
+  - percussion hiha
+  - percussion splash
   mcs:
-  - 14' medium hihat pair
-  - 14' medium crash
-  - 16' medium crash
-  - 18' crash ride
-  - 18' medium crash
-  - 20' medium ride
   - cymbal set up
-  - 10' splash
-  - 18' china
+  - crash ride
+  - medium crash
+  - medium hihat
+  - medium ride
+  - china
+  - splash
   hcs:
-  - 12' trash stack
-  - 13' hihat pair
-  - 14' hihat pair
-  - 14' trash stack
-  - 16' trash crash
-  - 16' trash stack
-  - 18' crash ride
-  - 18' trash stack
   - cymbal set up
-  - 10' splash
-  - 12' china
-  - 12' splash
-  - 14' china
-  - 14' crash
-  - 16' china
-  - 16' crash
-  - 18' china
-  - 18' crash
-  - 20' crash
-  - 20' ride
-  - 8' bell
-  - 8' splash
+  - crash ride
+  - trash crash
+  - trash stack
+  - bell
+  - china
+  - crash
+  - hihat
+  - ride
+  - splash
 dream:
   dark matter:
   - eclipse ride
