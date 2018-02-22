@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	root 'makers#index'	
+  root 'makers#index'	
   get 'makers/index'
 
   get 'retailers/allocate'

@@ -23,7 +23,7 @@ module Productmatch
 		rescue NoBrandError,NoKindError => e
 		raise Retailer::NoMatchError.new(result)
 	end #match_maker   
-	private
+	# private
 	def match_brand(product_title)
 		BRANDS.each do |b|
 			return b if product_title.downcase.match(b)

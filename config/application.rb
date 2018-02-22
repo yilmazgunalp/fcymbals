@@ -10,7 +10,8 @@ module Fcymbals
   class Application < Rails::Application
   	config.autoload_paths += %W(#{config.root}/lib/allocate/)
   	config.autoload_paths += %W(#{config.root}/lib/scrape/)
-  	# Settings in config/environments/* take precedence over those specified here.
+    config.autoload_paths += %W(#{config.root}/lib/findmatch/)
+   	# Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.active_job.queue_adapter = :resque
