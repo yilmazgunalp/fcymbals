@@ -1,26 +1,35 @@
-
 <h1>  <%=params[:merchant] %>  </h1>
 <% @rsp.each do |r,makers| %>
-
-<h3><%=r.title %></h4>
-<p><%=r.id %></p>
-<a href= <%=r.link %> target = 'blank'>Product Link</a>
-<div class="makers">
-<% makers.each do |m|  %>
-	<div class="maker">
-		<ul>
-			<% m.each do |k,v|  %>
-				<li> <span class="key"><%= k %></span>	: <span class="val"> <%= v %></span>	</li>
-			<% end %>
-		</ul>
-
-		<button>Allocate</button>
-
-	</div>
-<% end %>
-
+	<header class="retailer">
+		<h3><%=r.title %></h4>
+		<p><%=r.id %></p>
+		<a href= <%=r.link %> target = 'blank'>Product Link</a>
+	</header>
+<div class="makers" id=<%= "#{r.id}" %>>
+	<% if makers.empty? %>
+			<h4>NO RESULT FOUND</h4>
+		<% else %>
+			<% makers.each do |m|  %>
+				<div class="maker" >
+					<ul>
+						<% m.each do |k,v|  %>
+							<li> <span class="key"><%= k %></span>	: <span class="val"> <%= v %></span>	</li>
+						<% end %>
+					</ul>
+					<% if makers.index(m) == 0 && r.maker_id == makers[0]["id"].to_i %>
+							<button class="remove" id=<%= "#{m['id']}" %>>Remove</button>
+					<% else %>
+					
+							<button class="allocate" id=<%= "#{m['id']}" %>>Allocate</button> 
+					<% end %>	
+					
+				</div>
+			<% end %>	
+		<% end %>
 </div>
 
 <% end %>
 
 
+
+ 

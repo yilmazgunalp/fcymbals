@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   get 'makers/index'
 
   get 'retailers/allocate'
-  get 'retailers/test'
   get 'retailers', to: 'retailers#index' 
+
+  resources :makers
 
 require 'resque/server'
 require 'resque-scheduler'
