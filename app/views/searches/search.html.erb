@@ -1,0 +1,19 @@
+<% content_for :css do %>
+ <%= stylesheet_link_tag    'index' %>
+<% end %>
+
+<div id="wrapper">
+	<%=render 'shared/left' %>
+	<div id="container">
+		<%=  render 'shared/logo' %>
+		<div id="s-box">
+			<form action="results" id="search-form">
+				<input type="search"  name='q' value="find your sound..">
+				<input type="submit" value="Go!">
+			</form>
+		</div>
+	</div>
+	<%= render 'shared/right' %>
+	<%= render 'shared/footer' %>
+</div>
+

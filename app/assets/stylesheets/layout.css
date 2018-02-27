@@ -1,0 +1,164 @@
+/*** VISUAL**/
+/* This is for inspecting layout visually. Delete in development/production */
+
+body {
+background: #8cc8c7;	
+}
+#wrapper>*, footer {
+background: #ffffc1;
+background-clip: content-box;
+border: 1px dashed black;
+}
+
+
+
+
+/* CLEARFIX */
+
+#wrapper:after {
+content: "";
+display: block;	
+clear: both;	
+}
+/* hack for getting footer to the bottom of the page as index page is mostly without content */
+
+
+/* WRAPPER */
+
+#wrapper {
+
+}
+
+/* STRIPES */
+
+.stripe {
+	display: none;
+}
+
+/* CONTAINER */
+
+#container {
+padding: 5% 3%;
+
+}
+
+/* FOOTER */
+footer {
+padding: 6px;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+ 
+ footer ul {
+text-align: right; 
+ }
+
+ 
+ 
+ 
+ /*****************************/
+/****** MEDIA QUERIES *******/
+/***************************/
+
+@media only screen and (min-width: 992px) {
+
+#wrapper {
+margin: 0 auto;	
+max-width: 992px;
+}	
+	
+.stripe,#container {
+display: inline-block;
+vertical-align: top;
+/* height: 87vh; */
+}	
+	
+#left-stripe {
+float: left;	
+}
+
+#right-stripe {
+float: right;	
+}	
+
+#container {
+width: 475px;
+padding: 8vh 16px 16px;	
+}	
+
+.stripe {
+width: 250px;
+padding: 8vh 16px 16px;
+}
+
+}	
+
+
+@media only screen and (max-height: 400px) and (min-width: 992px) {
+	
+html,body {
+min-height: 400px;
+}	
+	
+#wrapper,.stripe, #container {
+min-height: 300px;
+}
+
+#container {
+width: 479px;	
+}
+
+footer {
+min-height: 60px;	
+}
+ 
+}
+
+@media only screen and (min-width: 1200px) {
+
+#wrapper {
+max-width: 96%;
+padding: 0 2%;
+}	
+
+.stripe {
+width: 29%;	
+
+}	
+
+#container {
+width: 42%;
+}
+
+}	
+	
+
+@media only screen and (min-width: 1400px) {
+
+#wrapper {
+max-width: 96%;
+padding: 0 2%;
+}	
+
+.stripe {
+max-width: 350px;	
+}	
+
+#container {
+width: 44%;
+padding-left: 10%;
+
+}
+
+
+}	
+
+
+
+
+
+
+
+
+

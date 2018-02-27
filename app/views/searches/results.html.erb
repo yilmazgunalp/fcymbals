@@ -1,0 +1,19 @@
+<% content_for :css do %>
+ <%= stylesheet_link_tag    'results' %>
+<% end %>
+
+<div id="wrapper">
+	<%=render 'shared/left' %>
+	<div id="container">
+		<%=render 'shared/logo' %>
+		<!-- SEARCH RESULTS -->
+		<main id="results">
+			<div class="results-container">
+				<%= render partial: 'shared/result',  collection: @retailers %>
+			</div><!-- Results Container -->
+		</main>
+		<!-- END SEARCH RESULTS -->
+		</div>
+	<%= render 'shared/right' %>
+	<%= render 'shared/footer' %>
+</div><!-- div#wrapper -->

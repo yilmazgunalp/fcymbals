@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'makers#index'	
+  root  to: 'searches#home'
+  get 'results', to: 'searches#search'
   get 'makers/index'
 
   get 'retailers/allocate'

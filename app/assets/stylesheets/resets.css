@@ -1,0 +1,44 @@
+/* RESETS */
+
+
+body  {
+margin: 0;
+}
+
+div,footer {
+box-sizing: border-box;	
+}
+
+ul {
+list-style: none;	
+padding: 0;
+margin: 0;
+}
+
+ul li {
+display: inline-block;	
+}
+
+a {
+text-decoration: none;
+color:inherit;	
+}
+
+h1,h2,h3,h4,h5,h6,p,div {
+margin: 0;	
+}
+
+input {
+outline: none;	
+border:none;
+background: none;
+-webkit-appearance:none;
+font-family: inherit;
+padding: 10px;
+}
+
+:focus {
+border: 1px solid #928D7B;	
+}
+
+input[type="search"]::-webkit-search-cancel-button {display: none; }

@@ -5,8 +5,7 @@ def self.queue
   end	
 
   def self.perform merchant
-    Retailer.where(merchant: merchant, maker_id: 3604).map(&:allocate)
-    # log_file = File.open("#{Rails.root}/log/Retailer_Allocate_log.txt")
-    Resque.enqueue(MaillogJob,File.path(Productmatch::LOG_FILE),merchant,:allocated)
+    Retailer.alloc(merchant,'all',nil,true)
+    Resque.enqueue(MaillogJob,File.path(Solr::MATCH_LOG_FILE),merchant,:allocated)
   end
 end

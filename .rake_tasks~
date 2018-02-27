@@ -51,12 +51,10 @@ restart
 routes
 secret
 spec
-spec:controllers
-spec:helpers
-spec:jobs
-spec:mailers
+spec:findmatch
 spec:models
 spec:productmatch
+spec:views
 stats
 test
 test:db

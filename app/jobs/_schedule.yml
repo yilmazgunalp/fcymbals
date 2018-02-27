@@ -2,7 +2,7 @@ test2:
   class: "TestJob"
   queue: "test"
   cron: "*/1 * * * *"  
-  args: "every 1 minute"
+  args: "1"
 kosmic:
   class: "BgshopsJob"
   queue: "scrapeshops"
