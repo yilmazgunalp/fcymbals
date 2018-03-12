@@ -1,0 +1,48 @@
+
+body {
+padding-left: 25px;
+}
+
+ul {
+list-style: none;
+padding-left: 0;
+}
+
+.maker {
+display: inline-block;
+width: 18%;	
+}
+
+.makers {
+border: 1px solid black;
+padding: 6px;
+}
+
+.key {
+font-weight: bold;
+}
+
+.val {
+font-size: 18px;
+}
+
+.retailer {
+background-color: #aeafb2;	
+padding-left: 6px;
+}
+
+.remove, .allocate {
+height: 26px;
+width: 86px;
+padding: 2px;
+}
+
+.remove {
+background-color: #f45042;
+width: 80px;
+}
+
+.allocate {
+background-color: #f4a341;
+
+}

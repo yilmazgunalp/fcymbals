@@ -5,7 +5,7 @@ class SearchesController < ApplicationController
 	end	
 
 	def search
-		@makers = Solr.search(params[:q])
+		@makers,@facets = Solr.search(params[:q])[0], Solr.search(params[:q])[1]
 		@retailers = []
 		@makers.each() {|m| Maker.find(m).retailers.each() {|r| @retailers << r}} 
 		render 'results'	

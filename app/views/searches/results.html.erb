@@ -1,5 +1,7 @@
 <% content_for :css do %>
  <%= stylesheet_link_tag    'results' %>
+ <meta name="Mediapartners-Google" content="index">
+ <meta name="robots" content="noindex, nofollow">
 <% end %>
 
 <div id="wrapper">
@@ -8,6 +10,11 @@
 		<%=render 'shared/logo' %>
 		<!-- SEARCH RESULTS -->
 		<main id="results">
+			<div class="facets-container">
+				<ul id="facets-list">
+					<%= render partial: 'shared/facet',  collection: @facets %>
+				</ul>
+			</div>
 			<div class="results-container">
 				<%= render partial: 'shared/result',  collection: @retailers %>
 			</div><!-- Results Container -->

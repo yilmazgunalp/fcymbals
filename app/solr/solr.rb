@@ -1,21 +1,22 @@
 module Solr
-	BASE_URI = 'http://localhost:8983/solr/cymbals/'
+	BASE_URI = "#{ENV['SOLR']}/solr/cymbals/"
 	MATCH_LOG_FILE = File.new("#{Rails.root}/log/Retailer_Allocate_log.txt","w")
 
 	class << self	
 
 
 		def search(query)
-			rq = query.match("set" || "pack") ? "cymbalsets" : "allocate"
-			useparams = rq == "allocate" ? "alloc" : "cymbalsets"
-			uri = parse_string(rq,{q: encode_ascii(query), wt: 'ruby', useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
+			rq = 'find'
+			useparams = 'find'
+			uri = parse_string(rq,{q: encode_ascii(query), wt: 'ruby', 
+				useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
 			response = Net::HTTP.get_response(URI(uri))
 				if eval(response.body).dig('error') 
 					puts "SOLR ERROR:  #{uri}"
 				else	
-				results = eval(response.body).dig('response','docs')
+					results,facets = eval(response.body).dig('response','docs'),eval(response.body).dig('expanded')
 				end #if
-				@rsp = results.map() {|e| e['id']}
+			[unfold_results(results),unfold_facets(facets)]	
 		end #search()	
 
 
@@ -26,7 +27,9 @@ module Solr
 			retailers.each do |r|
 				rq = r.title.match("set" || "pack") ? "cymbalsets" : "allocate"
 				useparams = rq == "allocate" ? "alloc" : "cymbalsets"
-				uri = parse_string(rq,{q: encode_ascii(r.title), wt: 'ruby', useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
+				uri = parse_string(rq,{q: encode_ascii(r.title), 
+					wt: 'ruby', useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
+				response = Net::HTTP.get_response(URI(uri))	
 				if eval(response.body).dig('error') 
 					puts "SOLR ERROR:  #{r.to_log}"
 					eval(response.body).dig('error') 
@@ -38,9 +41,21 @@ module Solr
 		end #connect()
 
 
+		
 
 		private
 
+		def unfold_results(rsp)
+			rsp.map(){|e| e['id']}
+		end	
+		
+		def unfold_facets(facets)
+			results = {}
+			facets.each do |k,v|
+				results[k] = v['numFound']
+			end #facets.each			
+			results
+		end	
 
 		def parse_string(rq,params)
 			str = ""
@@ -56,14 +71,16 @@ module Solr
 
 
 		def boostfunction(useparams)
-			if useparams === "alloc"
+			case useparams
+			when  "alloc"
 			return 'query({!df=\'model\'v=$q},1)^2 query({!df=\'model_exact\'v=$q},1)^2 
 				query({!df=\'series_exact\'v=$q},1)^2.2 query({!df=\'kind_exact\'v=$q},1)^2.5'
-			end #if	
-
-			if useparams === "cymbalsets"
+			when "cymbalsets"
 				return 'query({!df=\'series_exact\'v=$q},1)^2.2'
-			end#if	
+			when "find"
+				return 'query({!df=\'brand\'v=$q})^9 query({!df=\'kind\'v=$q})^2 
+				query({!df=\'series\'v=$q})^3 query({!df=\'size\'v=$q})^1.8'	
+			end #case
 		end #boostfunction()	
 
 		#redundant as URI can't parse properly
@@ -77,3 +94,6 @@ module Solr
 
 	end #self
 end #module solr
+
+
+
