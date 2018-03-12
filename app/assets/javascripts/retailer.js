@@ -2,11 +2,13 @@
 //All this logic will automatically be available in application.js.
 //You can use CoffeeScript in this file: http://coffeescript.org/
 
-let xhr = new XMLHttpRequest();
 
 
 // Allocate Event Hanler
 const allocate_event = (e,id) => e.addEventListener('click', function update() {
+
+let xhr = new XMLHttpRequest();
+
 let parent = document.getElementById(e.parentNode.parentNode.id); 	
 
 xhr.open('PUT',`http://localhost:3000/makers/${id}/?r=${parent.id}`,true);
@@ -59,6 +61,7 @@ document.onreadystatechange  = () => {
 // Remove event handler
 
 const remove_event = (e,id) => e.addEventListener('click', function remove(event) {
+let xhr = new XMLHttpRequest();
 let parent = document.getElementById(e.parentNode.parentNode.id); 	
 xhr.open('PUT',`http://localhost:3000/makers/3604/?r=${parent.id}`,true);
 let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
