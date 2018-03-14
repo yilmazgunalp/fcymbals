@@ -22,7 +22,7 @@ let xhr = new XMLHttpRequest();
 
 let parent = document.getElementById(e.parentNode.parentNode.id); 	
 
-xhr.open('PUT',`http://localhost:3000/makers/${id}/?r=${parent.id}`,true);
+xhr.open('PUT',`https://fcymbals.herokuapp.com/makers/${id}/?r=${parent.id}`,true);
 let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
 xhr.setRequestHeader('X-CSRF-Token', csrf);
 xhr.send();
@@ -62,7 +62,7 @@ maker.innerHTML = "Remove";
 const remove_event = function(e,id) { e.addEventListener('click', function remove(event) {
 let xhr = new XMLHttpRequest();
 let parent = document.getElementById(e.parentNode.parentNode.id); 	
-xhr.open('PUT',`http://localhost:3000/makers/3604/?r=${parent.id}`,true);
+xhr.open('PUT',`https://fcymbals.herokuapp.com/makers/3604/?r=${parent.id}`,true);
 let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
 xhr.setRequestHeader('X-CSRF-Token', csrf);
 xhr.send();
