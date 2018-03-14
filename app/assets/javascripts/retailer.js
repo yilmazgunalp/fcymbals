@@ -7,7 +7,7 @@
 // Allocate Event Hanler
 
 // select allocate and remove makers
-document.onreadystatechange  = () => {
+document.onreadystatechange  = function()  {
 	const allocate_buttons = document.getElementsByClassName('allocate');
 	for (let button of allocate_buttons) allocate_event(button,button.id);
 
@@ -16,7 +16,7 @@ document.onreadystatechange  = () => {
 };
 
 
-const allocate_event = (e,id) => e.addEventListener('click', function update() {
+const allocate_event = function(e,id) { e.addEventListener('click', function update() {
 
 let xhr = new XMLHttpRequest();
 
@@ -27,7 +27,7 @@ let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
 xhr.setRequestHeader('X-CSRF-Token', csrf);
 xhr.send();
 
-xhr.onreadystatechange = () =>  {
+xhr.onreadystatechange = function()   {
 if (xhr.readyState == 2 && xhr.status == 204) {	
 let maker = document.getElementById(id);
 remove_event(e,id);
@@ -51,7 +51,7 @@ maker.innerHTML = "Remove";
  }
 }
 
-},true );
+},true )};
 
 
 
@@ -59,14 +59,14 @@ maker.innerHTML = "Remove";
 
 // Remove event handler
 
-const remove_event = (e,id) => e.addEventListener('click', function remove(event) {
+const remove_event = function(e,id) { e.addEventListener('click', function remove(event) {
 let xhr = new XMLHttpRequest();
 let parent = document.getElementById(e.parentNode.parentNode.id); 	
 xhr.open('PUT',`http://localhost:3000/makers/3604/?r=${parent.id}`,true);
 let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
 xhr.setRequestHeader('X-CSRF-Token', csrf);
 xhr.send();
-xhr.onreadystatechange = () => {
+xhr.onreadystatechange = function()  {
 if (xhr.readyState == 2 && xhr.status == 204) {	
 let maker = document.getElementById(id);
 maker.classList.remove('remove');
@@ -76,6 +76,6 @@ allocate_event(e,id);
 
  }
 }
-},true);
+},true)};
 
 
