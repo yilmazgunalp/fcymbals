@@ -29,8 +29,8 @@ CHEATSHEET.md
 # Ignore all backup files.
 /db/back_up/*
 
-/public/packs
-/public/packs-test
-/node_modules
-yarn-debug.log*
-.yarn-integrity
+#/public/packs
+#/public/packs-test
+#/node_modules
+#yarn-debug.log*
+#.yarn-integrity
