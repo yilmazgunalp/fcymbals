@@ -2,80 +2,79 @@
 //All this logic will automatically be available in application.js.
 //You can use CoffeeScript in this file: http://coffeescript.org/
 
+const url_d = "http://localhost:3000";
+const url_p = "https://fcymbals.herokuapp.com"
 
 
-// Allocate Event Hanler
 
-// select allocate and remove makers
-document.onreadystatechange  = function()  {
+// select allocate and remove buttons
+window.onload  = function init()  {
 	const allocate_buttons = document.getElementsByClassName('allocate');
-	for (let button of allocate_buttons) allocate_event(button,button.id);
-
+	for (let button of allocate_buttons) button.addEventListener("click",allocate);
 	const remove_buttons = document.getElementsByClassName('remove');
-	for (let button of remove_buttons) remove_event(button,button.id);
+	for (let button of remove_buttons) button.addEventListener("click",remove);
 };
 
-
-const allocate_event = function(e,id) { e.addEventListener('click', function update() {
-
-let xhr = new XMLHttpRequest();
-
-let parent = document.getElementById(e.parentNode.parentNode.id); 	
-
-xhr.open('PUT',`https://fcymbals.herokuapp.com/makers/${id}/?r=${parent.id}`,true);
-let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
-xhr.setRequestHeader('X-CSRF-Token', csrf);
-xhr.send();
-
-xhr.onreadystatechange = function()   {
-if (xhr.readyState == 2 && xhr.status == 204) {	
-let maker = document.getElementById(id);
-remove_event(e,id);
-// e.removeEventListener('click',update,true);
-
-
-// let fi = parent.childNodes[1].childNodes[3];
-for (let i =0; i < parent.children.length; i++ ) {
-	if (parent.children[i].children[1].getAttribute('class') === 'remove') {
-	let fi = parent.children[i].children[1];
-	fi.classList.add('allocate');
-	fi.classList.remove('remove');
-    fi.innerHTML = "Allocate";
-    e.addEventListener('click',update,true);
-
+// Allocate Event Hanler
+const allocate = () => {
+	let button = event.target; 
+	let xhr = makeAjaxRequest(button.id,button.parentNode.parentNode.id);
+	xhr.onreadystatechange = function()   {
+		if (xhr.readyState == 2 && xhr.status == 204) {	
+			console.log("Allocated..");
+			toggleClass(button);
+			updateSiblings(button);
+		}
 	}
 }
-maker.classList.remove('allocate');
-maker.classList.add('remove');
-maker.innerHTML = "Remove";
- }
-}
-
-},true )};
-
-
-
-
 
 // Remove event handler
-
-const remove_event = function(e,id) { e.addEventListener('click', function remove(event) {
-let xhr = new XMLHttpRequest();
-let parent = document.getElementById(e.parentNode.parentNode.id); 	
-xhr.open('PUT',`https://fcymbals.herokuapp.com/makers/3604/?r=${parent.id}`,true);
-let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
-xhr.setRequestHeader('X-CSRF-Token', csrf);
-xhr.send();
-xhr.onreadystatechange = function()  {
-if (xhr.readyState == 2 && xhr.status == 204) {	
-let maker = document.getElementById(id);
-maker.classList.remove('remove');
-maker.classList.add('allocate');
-maker.innerHTML = "Allocate";
-allocate_event(e,id);
-
- }
+const remove = () => {
+	let button = event.target; 
+	let xhr = makeAjaxRequest(3604,button.parentNode.parentNode.id);
+	xhr.onreadystatechange = function()   {
+		if (xhr.readyState == 2 && xhr.status == 204) {	
+			console.log("Removed..");
+			toggleClass(button);
+		}
+	}
 }
-},true)};
+
+const makeAjaxRequest = (maker_id,retailer_id) => {
+	let xhr = new XMLHttpRequest();
+	xhr.open('PUT',`${url_d}/makers/${maker_id}/?r=${retailer_id}`,true);
+	let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
+	xhr.setRequestHeader('X-CSRF-Token', csrf);
+	xhr.send();	
+	return xhr;
+}
 
 
+const toggleClass =  (button) => {
+		if (button.className == "allocate") {
+			button.classList.remove('allocate');
+			button.classList.add('remove');
+			button.innerHTML = "Remove";
+			button.removeEventListener("click",allocate);
+			button.addEventListener("click",remove);
+			return;	
+		}
+		if (button.className == "remove") {
+			button.classList.remove('remove');
+			button.classList.add('allocate');
+			button.innerHTML = "Allocate";
+			button.removeEventListener("click",remove);	
+			button.addEventListener("click",allocate);
+			return;
+		}
+}
+
+const updateSiblings = (button) => {
+	if (button.className == "remove") {
+		let parent = button.parentNode.parentNode
+		let targetButton = Array.from(parent.querySelectorAll(`button.remove`)).
+		filter(elm => elm.id != button.id);
+		if (targetButton[0]) toggleClass(targetButton[0]);
+		return;
+	}
+}
