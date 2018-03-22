@@ -10,6 +10,7 @@ MERCHANTS = YAML.load_file("#{Rails.root}/lib/scrape/merchants.yml")
 
 
 def self.scrape klass
+File.open("#{Rails.root}/log/Retailer_Scrape_log.txt","w")	
 b = Time.now
 LOG_FILE << "\n===>\tSCRAPING [#{klass.upcase}] on #{b}...\n\n"	
 result = Object.const_get(self.to_s + "::" + klass.capitalize).scrape
