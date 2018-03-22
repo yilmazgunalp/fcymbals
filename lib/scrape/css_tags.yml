@@ -49,7 +49,7 @@ dparadise:
   product: table.productbox>tr[valign='top']+tr
   title: td.productcolumnitemcode a
   price: nobr
-  s_price: 
+  s_price: td.productdescription
   in_stock: 
   picture: img.productimage
   link: td.productcolumnitemcode a

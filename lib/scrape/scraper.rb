@@ -42,7 +42,7 @@ def self.csv_import page,merchant,shop,file, opts = nil
 		price = options[:price].call(item,TAGS.dig(merchant,'price')) unless item.at_css(TAGS.dig(merchant,'price')).nil?
 		s_price = options[:price].call(item,TAGS.dig(merchant,'s_price')) unless item.at_css(TAGS.dig(merchant,'s_price')).nil?
 		price = options[:effective_price].call(price,s_price)
-	    rescue StandardError => e
+		rescue StandardError => e
 	 	log_error(binding,"price")
 	 	end # end rescue block for price	
 	 
@@ -70,8 +70,7 @@ def self.csv_import page,merchant,shop,file, opts = nil
 	file << [title,price,s_price,picture_url,merchant,link,code].inject([]) {|row,col| row << col.to_s}
 	
 	end	# page.css each
-GC.start
-	sleep(10)	
+	sleep(2)	
 LOG_FILE << "Page completed....\n\n"
 LOG_FILE.flush
 #sleep(1)

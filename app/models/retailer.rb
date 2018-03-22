@@ -46,6 +46,7 @@ class Retailer < ApplicationRecord
 		new_price != price ? update(price: new_price) : touch
 	end #check_price
 
+	# Deactivate retailers if their last updated time is before a given timestamp
 	def self.deactivate_records merchant,time
 		Retailer.where("merchant = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false)}
 	end	# deactivate_records

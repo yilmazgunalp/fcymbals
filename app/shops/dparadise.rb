@@ -8,7 +8,7 @@ class Dparadise < Shop
 
 @options = {
 pic_url: ->(item,selector) {item.previous_element.at_css(selector)['src']},
-title: -> (item,selector) {item.at_css(selector)['href'].match(/\/(([^\/])+$)/)[1].gsub("-"," ")}
+title: -> (item,selector) {(item.at_css(selector)['href'].match(/\/(([^\/])+$)/)[1].gsub("-"," ")).strip}
 }
 
 

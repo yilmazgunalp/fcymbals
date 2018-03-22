@@ -26,3 +26,6 @@
 	* google ads
 	* user sign up for updates
 	* API for retailers
+
+
+
