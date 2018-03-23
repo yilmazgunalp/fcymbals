@@ -3,12 +3,13 @@ class Retailer < ApplicationRecord
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
 
-	def self.alloc(merchant,res=nil,rec=nil,log = false)
-		File.new("#{Rails.root}/log/Retailer_Allocate_log.txt","w") if log
+	def self.alloc(merchant,res=nil,rec=nil,count,offset)
+		puts "****RETAILER ALLOC CALLED WITH #{count} #{offset}"
+		# File.new("#{Rails.root}/log/Retailer_Allocate_log.txt","w") if log
 		@rsp =  if(rec == 'all') 
-				Solr.match(Retailer.where(merchant: merchant)) 
+				Solr.match(Retailer.where(merchant: merchant).limit(count))
 			else	
-				Solr.match(Retailer.where(merchant: merchant, maker_id: 3604))
+				Solr.match(Retailer.where(merchant: merchant, maker_id: 3604).limit(count).offset(offset))
 			end #if	
 			
 		@rsp.each do |k,v|
@@ -17,7 +18,7 @@ class Retailer < ApplicationRecord
 			@rsp.delete(k) unless res == "all"
 			end#if
 		end	#rsp.each
-		log_allocate(@rsp) if log
+		log_allocate(@rsp) 
 		@rsp 
 	end #allocate   
 
