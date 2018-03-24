@@ -44,8 +44,18 @@ end
 
 
 def self.scrape
-prepare_file	
-get_all_links(page).each {|link| eval("extract_data(get_asp_page(link))")}
+prepare_file
+
+
+get_all_links(page).each_with_index do |link,i|
+	thread = Thread.new do 
+		puts "startting thread #{i}"
+		Abh.extract_data(Abh.get_asp_page(link))
+		puts "forked thread #{i}"
+	end	
+	thread.join
+end
+
 @file.flush.close
 @file.to_io
 end

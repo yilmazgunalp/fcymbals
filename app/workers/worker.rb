@@ -16,8 +16,8 @@ class Worker
   def perform
     while (job = @queue.pop)
       break if job == :done
+       puts "#{name}_@#{pid} got #{job}" # only for debugging
       eval(job)
-      puts "#{name}_@#{pid} got #{job}" # only for debugging
-    end
+      end
   end
 end
