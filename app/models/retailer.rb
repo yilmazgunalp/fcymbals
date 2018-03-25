@@ -4,8 +4,6 @@ class Retailer < ApplicationRecord
   	belongs_to :maker, :inverse_of => :retailers
 
 	def self.alloc(merchant,res=nil,rec=nil,count,offset)
-		puts "****RETAILER ALLOC CALLED WITH #{count} #{offset}"
-		# File.new("#{Rails.root}/log/Retailer_Allocate_log.txt","w") if log
 		@rsp =  if(rec == 'all') 
 				Solr.match(Retailer.where(merchant: merchant).limit(count))
 			else	
