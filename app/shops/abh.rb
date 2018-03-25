@@ -7,7 +7,7 @@ class Abh < Shop
 @form = page.form_with(:dom_id => "aspnetForm")
 
 @options = {
-code:  -> (page,selector) {page.at_css(selector).text.match(/Code:\s+.(\w+)/)[1]}
+#code:  -> (page,selector) {page.at_css(selector).text.match(/Code:\s+.(\w+)/)[1]}
 }
 
 
@@ -36,6 +36,7 @@ links.uniq
 end
 
 def self.get_asp_page link
+	
 link_for_form = "ctl00:" + link.gsub("_",":").gsub("LinkButton","ctl00:LinkButton")
 form['__EVENTTARGET'] = link_for_form
 form['RadAJAXControlID'] = "MainContent_RadAjaxPanel1"
@@ -45,21 +46,10 @@ end
 
 def self.scrape
 prepare_file
-
-
-get_all_links(page).each_with_index do |link,i|
-	thread = Thread.new do 
-		puts "startting thread #{i}"
-		Abh.extract_data(Abh.get_asp_page(link))
-		puts "forked thread #{i}"
-	end	
-	thread.join
-end
-
+get_all_links(page).each { |link| extract_data(get_asp_page(link))}
 @file.flush.close
 @file.to_io
 end
-
 
 end #class Abh	
 
