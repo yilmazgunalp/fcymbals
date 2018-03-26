@@ -2,6 +2,7 @@ class Retailer < ApplicationRecord
 	include Productmatch
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
+  	belongs_to :merchant, foreign_key: 'merchant', primary_key: 'code', dependent: :destroy, validate: true
 
 	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 

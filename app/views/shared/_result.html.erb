@@ -1,7 +1,7 @@
 <div class="result">
 	<h1 class="result-header">
 		<ul class="result-header-ul">
-			<li class="merchant"> <%=result.merchant %> <span class="address">VIC,Flemington</span></li>
+			<li class="merchant"> <%=result.merchant.name %> <span class="address"><%= result.merchant.state%></span></li>
 			<li class="price"><span class="currency">AUD</span><%=result.price.to_i %></li>
 		</ul>
 	</h1>

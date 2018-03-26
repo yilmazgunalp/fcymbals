@@ -10,40 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180110120822) do
+ActiveRecord::Schema.define(version: 2018_03_26_112825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "makers", force: :cascade do |t|
-    t.string   "brand",       null: false
-    t.string   "code"
-    t.string   "series"
-    t.string   "model"
-    t.string   "kind",        null: false
-    t.string   "size"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["code"], name: "index_makers_on_code", using: :btree
+  create_table "makers", id: :serial, force: :cascade do |t|
+    t.string "brand", null: false
+    t.string "code"
+    t.string "series"
+    t.string "model"
+    t.string "kind", null: false
+    t.string "size"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["code"], name: "index_makers_on_code"
   end
 
-  create_table "retailers", force: :cascade do |t|
-    t.integer  "maker_id",    default: 3604
-    t.string   "title",                      null: false
-    t.float    "price",                      null: false
-    t.float    "s_price"
-    t.boolean  "in_stock"
-    t.text     "description"
-    t.string   "picture_url"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.string   "merchant",                   null: false
-    t.string   "link",                       null: false
-    t.integer  "duplicate",   default: 0
-    t.boolean  "active",      default: true
-    t.string   "code"
-    t.index ["maker_id"], name: "index_retailers_on_maker_id", using: :btree
+  create_table "merchants", force: :cascade do |t|
+    t.string "name"
+    t.string "state"
+    t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "code"
+  end
+
+  create_table "retailers", id: :serial, force: :cascade do |t|
+    t.integer "maker_id", default: 3604
+    t.string "title", null: false
+    t.float "price", null: false
+    t.float "s_price"
+    t.boolean "in_stock"
+    t.text "description"
+    t.string "picture_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "merchant", null: false
+    t.string "link", null: false
+    t.integer "duplicate", default: 0
+    t.boolean "active", default: true
+    t.string "code"
+    t.index ["maker_id"], name: "index_retailers_on_maker_id"
   end
 
   add_foreign_key "retailers", "makers"
