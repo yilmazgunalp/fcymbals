@@ -3,7 +3,7 @@ class Retailer < ApplicationRecord
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
 
-	def self.alloc(merchant,res=nil,rec=nil,count,offset)
+	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 
 				Solr.match(Retailer.where(merchant: merchant).limit(count))
 			else	

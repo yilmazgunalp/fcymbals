@@ -24,6 +24,11 @@ text-decoration: none;
 color:inherit;	
 }
 
+a:focus {
+border: none;
+
+}
+
 h1,h2,h3,h4,h5,h6,p,div {
 margin: 0;	
 }
