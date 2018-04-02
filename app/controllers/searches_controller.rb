@@ -14,7 +14,7 @@ class SearchesController < ApplicationController
 	def getfacets()
 		results = []
 		params[:makers].split("-").each do |m|
-			 results +=  Maker.find(m).retailers.pluck(:merchant,:title,:price)
+			 results +=  Maker.find(m).retailers.pluck(:shop,:title,:price)
 		end	
 		render json: results
 	end	

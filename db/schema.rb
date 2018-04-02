@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_03_26_112825) do
+ActiveRecord::Schema.define(version: 2018_04_02_111711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_03_26_112825) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "code"
+    t.index ["code"], name: "index_merchants_on_code"
   end
 
   create_table "retailers", id: :serial, force: :cascade do |t|
@@ -47,7 +48,7 @@ ActiveRecord::Schema.define(version: 2018_03_26_112825) do
     t.string "picture_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "merchant", null: false
+    t.string "shop", null: false
     t.string "link", null: false
     t.integer "duplicate", default: 0
     t.boolean "active", default: true

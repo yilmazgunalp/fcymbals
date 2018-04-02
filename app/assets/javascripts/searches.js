@@ -1,3 +1,6 @@
+const url_d = "http://localhost:3000";
+const url_p = "https://fcymbals.herokuapp.com"
+
 const parser = new DOMParser();
 const template = parser.parseFromString(`<div class="result">
     <h1 class="result-header">

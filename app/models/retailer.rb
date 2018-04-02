@@ -2,17 +2,17 @@ class Retailer < ApplicationRecord
 	include Productmatch
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
-  	belongs_to :merchant, foreign_key: 'merchant', primary_key: 'code', dependent: :destroy, validate: true
+  	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code', dependent: :destroy
 
 	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 
 				Solr.match(Retailer.where(merchant: merchant).limit(count))
 			else	
-				Solr.match(Retailer.where(merchant: merchant, maker_id: 3604).limit(count).offset(offset))
+				Solr.match(Retailer.where(shop: merchant, maker_id: 3604).limit(count).offset(offset))
 			end #if	
 			
 		@rsp.each do |k,v|
-			if v.length == 1 || (!v.empty? && v[0]['score'] - v[1]['score'] > 1)+
+			if v.length == 1 || (!v.empty? && v[0]['score'] - v[1]['score'] > 1)
 			Maker.find(v[0]["id"]).retailers << k
 			@rsp.delete(k) unless res == "all"
 			end#if

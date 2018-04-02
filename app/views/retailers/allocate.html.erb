@@ -1,3 +1,9 @@
+<% content_for :css do %>
+<%= javascript_include_tag 'retailer' %>
+ 
+<% end %>
+
+
 <h1>  <%=params[:merchant] %>  </h1>
 <% @rsp.each do |r,makers| %>
 	<header class="retailer">
