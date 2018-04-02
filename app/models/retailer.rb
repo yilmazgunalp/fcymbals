@@ -12,7 +12,7 @@ class Retailer < ApplicationRecord
 			end #if	
 			
 		@rsp.each do |k,v|
-			if v.length == 1 || (!v.empty? && v[0]['score'] - v[1]['score'] > 1)
+			if v.length == 1 || (!v.empty? && v[0]['score'] - v[1]['score'] > 1)+
 			Maker.find(v[0]["id"]).retailers << k
 			@rsp.delete(k) unless res == "all"
 			end#if

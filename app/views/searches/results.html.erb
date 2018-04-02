@@ -1,5 +1,5 @@
 <% content_for :css do %>
- <%= stylesheet_link_tag    'results', media: 'all'%>
+ <%= stylesheet_link_tag 'svg','form','results', media: 'all'%>
  <meta name="Mediapartners-Google" content="index">
  <meta name="robots" content="noindex, nofollow">
 <% end %>
@@ -8,6 +8,8 @@
 	<%=render 'shared/left' %>
 	<div id="container">
 		<%=render 'shared/logo' %>
+		<%= render 'shared/form' %>
+		
 		<!-- SEARCH RESULTS -->
 		<main id="results">
 			<div class="facets-container">
@@ -16,11 +18,18 @@
 				</ul>
 			</div>
 			<div class="results-container">
+				<% if !@retailers.empty? %>
 				<%= render partial: 'shared/result',  collection: @retailers %>
+				<%else %>
+				<%= render partial: 'shared/noresult' %>	
+				<% end %>
+
+				
 			</div><!-- Results Container -->
 		</main>
 		<!-- END SEARCH RESULTS -->
 		</div>
 	<%= render 'shared/right' %>
-	<%= render 'shared/footer' %>
+	
 </div><!-- div#wrapper -->
+<%= render 'shared/footer' %>

@@ -52,7 +52,7 @@ module Solr
 		def unfold_facets(facets)
 			results = {}
 			facets.each do |k,v|
-				results[k] = v['numFound']
+				results[k] = v['docs'].map {|e| e['id']}.join("-")
 			end #facets.each			
 			results
 		end	

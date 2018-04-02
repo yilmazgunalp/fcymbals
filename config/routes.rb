@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root  to: 'searches#home'
   get 'results', to: 'searches#search'
   get 'makers/index'
+  get 'searches/getfacets', to: 'searches#getfacets'
 
   get 'retailers/allocate'
   get 'retailers', to: 'retailers#index' 

@@ -1,1 +1,1 @@
-<a href="."><li class="facet"> <%=facet[0].capitalize%> <span class="numfound"><%=facet[1] %></span></li></a>
+<a  href="" onclick="getFacets(this.dataset.ids)" data-ids= <%= "#{facet[1]}" %> ><li class="facet" data-ids= <%= "#{facet[1]}" %> > <%=facet[0].capitalize%> </li></a>
