@@ -42,7 +42,7 @@ const remove = () => {
 
 const makeAjaxRequest = (maker_id,retailer_id) => {
 	let xhr = new XMLHttpRequest();
-	xhr.open('PUT',`${url_d}/makers/${maker_id}/?r=${retailer_id}`,true);
+	xhr.open('PUT',`${url_p}/makers/${maker_id}/?r=${retailer_id}`,true);
 	let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
 	xhr.setRequestHeader('X-CSRF-Token', csrf);
 	xhr.send();	
