@@ -1,0 +1,35 @@
+	/***** SVG *******/
+	/***************************/
+
+#logo {
+margin-bottom: 10px;
+height: 8em;
+}
+
+svg{
+max-width: 55%;
+height: 100%;
+min-width: 280px;	
+}
+
+text {
+letter-spacing: 0.02em;	
+word-spacing: 0.4em;
+font-size: 2em;
+fill: black;
+}
+
+tspan {
+letter-spacing: 0.16em;
+fill: red;
+font-size: 1.55em;
+vertical-align: middle;
+font-family: Verdana;	
+}
+
+tspan:last-child {
+letter-spacing: initial;
+}
+	
+
+	
