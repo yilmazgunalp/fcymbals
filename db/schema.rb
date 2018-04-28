@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2018_04_02_111711) do
   end
 
   create_table "retailers", id: :serial, force: :cascade do |t|
-    t.integer "maker_id", default: 3604
+    t.integer "maker_id"
     t.string "title", null: false
     t.float "price", null: false
     t.float "s_price"

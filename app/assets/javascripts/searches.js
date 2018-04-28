@@ -1,5 +1,5 @@
 const url_d = "http://localhost:3000";
-const url_p = "https://fcymbals.herokuapp.com"
+const url_p = "http://www.redcymbal.net"
 
 const parser = new DOMParser();
 const template = parser.parseFromString(`<div class="result">

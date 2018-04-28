@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+match '*path', :controller => 'application', :action => 'handle_options_request', via: :options
   root  to: 'searches#home'
   get 'results', to: 'searches#search'
   get 'makers/index'
