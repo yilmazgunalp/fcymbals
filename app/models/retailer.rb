@@ -1,5 +1,4 @@
 class Retailer < ApplicationRecord
-	include Productmatch
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
   	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code', dependent: :destroy
@@ -87,27 +86,6 @@ class Retailer < ApplicationRecord
 
 		Solr::MATCH_LOG_FILE.flush
 	end #log_allocate()	
-
-	def log_error(e)
-		Productmatch::LOG_FILE.puts "#{id} : #{title}"
-		Productmatch::LOG_FILE.puts "#{e}  : #{e.h}"
-		Productmatch::LOG_FILE.puts  e.cause.class unless e.instance_of?(TooManyMatchesError)
-		if e.instance_of?(TooManyMatchesError)
-				Productmatch::LOG_FILE.puts "#{find_makers(e.h,50000).length} many possible matches"
-				find_makers(e.h).each_with_index do |e,i|
-					Productmatch::LOG_FILE.puts "#{i+1}: #{e.to_hash}"
-				end #each 
-		end #if
-		Productmatch::LOG_FILE.puts 
-		Productmatch::LOG_FILE.flush
-	end #to_log
-
-	def log_no_brand(e)
-		Productmatch::NO_BRANDS.puts "#{id} : #{title}"
-		Productmatch::NO_BRANDS.puts "#{e}  : #{e.h}"
-		Productmatch::NO_BRANDS.puts 
-		Productmatch::NO_BRANDS.flush
-	end #log_no_brand	
 
 	def self.log_matches(results_ary)
 		results_ary.each do |record|
