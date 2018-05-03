@@ -29,7 +29,12 @@ class Retailer < ApplicationRecord
 					if retailer 
 					retailer.check_price(row.field('price').to_i)
 					else
-					Retailer.create!(row.to_h)
+					puts row.to_h
+					tmp_retailer = row.to_h
+					tmp_retailer["shop"]= Merchant.find_by(code: tmp_retailer["merchant"])
+					puts tmp_retailer
+					tmp_retailer.delete("merchant")
+					Retailer.create!(tmp_retailer)
 					end #if retailer
 				rescue  StandardError => e
 				puts e	
