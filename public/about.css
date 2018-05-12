@@ -56,6 +56,9 @@ margin: 10px auto;
 padding-left: 1.2%;	
 }	
 
+main h5,main span {
+padding-left: 1.2%;	
+}
 		
 	/*****************************/
 	/****** MEDIA QUERIES *******/

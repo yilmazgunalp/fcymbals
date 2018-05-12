@@ -5,7 +5,7 @@ class Retailer < ApplicationRecord
 
 	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 
-				Solr.match(Retailer.where(merchant: merchant).limit(count))
+				Solr.match(Retailer.where(shop: merchant).limit(count))
 			else	
 				Solr.match(Retailer.where(shop: merchant, maker_id: 3604).limit(count).offset(offset))
 			end #if	
@@ -29,12 +29,11 @@ class Retailer < ApplicationRecord
 					if retailer 
 					retailer.check_price(row.field('price').to_i)
 					else
-					puts row.to_h
 					tmp_retailer = row.to_h
-					tmp_retailer["shop"]= Merchant.find_by(code: tmp_retailer["merchant"])
 					puts tmp_retailer
+                                        tmp_retailer["shop"] = tmp_retailer["merchant"]
 					tmp_retailer.delete("merchant")
-					Retailer.create!(tmp_retailer)
+					puts Retailer.create!(tmp_retailer)
 					end #if retailer
 				rescue  StandardError => e
 				puts e	
@@ -53,7 +52,7 @@ class Retailer < ApplicationRecord
 
 	# Deactivate retailers if their last updated time is before a given timestamp
 	def self.deactivate_records merchant,time
-		Retailer.where("merchant = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false)}
+		Retailer.where("shop  = ? AND updated_at < ?",merchant,time).each {|retailer| retailer.update(active: false)}
 	end	# deactivate_records
 
 	def to_log

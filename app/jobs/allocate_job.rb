@@ -5,7 +5,7 @@ def self.queue
   end	
 
   def self.perform merchant
-  	count = Retailer.where(merchant: merchant).count/100
+  	count = Retailer.where(shop: merchant).count/100
   	workerpool = WorkerPool.new(3)
   	count.times do |i| 
   		workerpool << "Retailer.alloc(\"#{merchant}\",'all',nil,100,#{(i)*100})"
