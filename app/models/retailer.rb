@@ -3,6 +3,9 @@ class Retailer < ApplicationRecord
   	belongs_to :maker, :inverse_of => :retailers
   	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code', dependent: :destroy
 
+        #send selected retailers to Solr module for matchig
+        #res: refers to whether to include all retailer in response
+        #rec:  refers to whether to include all retailer in Solr match
 	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 
 				Solr.match(Retailer.where(shop: merchant).limit(count))
