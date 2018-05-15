@@ -25,7 +25,7 @@ module Solr
 		def match(retailers)
 			result = {}	
 			retailers.each do |r|
-				rq = r.title.match?(/(set)|(pack)/) ? "cymbalsets" : "allocate"
+				rq = r.title.gsub(/"”/,"").match?(/(set)|(pack)/) ? "cymbalsets" : "allocate"
 				useparams = rq == "allocate" ? "alloc" : "cymbalsets"
 				uri = parse_string(rq,{q: encode_ascii(r.title), 
 					wt: 'ruby', useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
@@ -67,7 +67,7 @@ module Solr
 		end	#parse_string
 
 		def encode_ascii(string)
-			string.gsub(/[\(\)%\%\"\”!-]/,"").encode(Encoding.find('ASCII'),{invalid: :replace, undef: :replace, replace: ""})
+			string.gsub(/[\(\)%\%\"\””!-]/,"").encode(Encoding.find('ASCII'),{invalid: :replace, undef: :replace, replace: ""})
 		end	#encode_ascii()
 
 
