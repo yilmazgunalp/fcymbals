@@ -10,7 +10,7 @@ match '*path', :controller => 'application', :action => 'handle_options_request'
   get 'retailers', to: 'retailers#index' 
 
   resources :makers
-
+  resources :retailers
 require 'resque/server'
 require 'resque-scheduler'
 require 'resque/scheduler/server'

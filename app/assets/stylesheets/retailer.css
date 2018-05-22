@@ -31,6 +31,22 @@ background-color: #aeafb2;
 padding-left: 6px;
 }
 
+.retailer p {
+display: inline-block;
+margin-right: 25px;
+}
+
+.deactivate {
+background-color: #008080; 
+}
+
+.activate {
+background-color: #ee7600;
+}
+
+.retailer a {
+display: block;
+}
 .remove, .allocate {
 height: 26px;
 width: 86px;

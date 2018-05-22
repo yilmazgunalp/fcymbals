@@ -9,6 +9,10 @@
 	<header class="retailer">
 		<h3><%=r.title %></h4>
 		<p><%=r.id %></p>
+
+		<% if r.active %>
+                    <button class="deactivate" id=<%= "#{r.id}" %>>De-Activate</button>
+		<% end %>	
 		<a href= <%=r.link %> target = 'blank'>Product Link</a>
 	</header>
 <div class="makers" id=<%= "#{r.id}" %>>

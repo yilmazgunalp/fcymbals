@@ -13,6 +13,8 @@ window.onload  = function init()  {
 	for (let button of allocate_buttons) button.addEventListener("click",allocate);
 	const remove_buttons = document.getElementsByClassName('remove');
 	for (let button of remove_buttons) button.addEventListener("click",remove);
+	const deact_buttons = document.getElementsByClassName('deactivate');
+	for (let button of deact_buttons) button.addEventListener("click",deactivate);
 };
 
 // Allocate Event Hanler
@@ -49,6 +51,14 @@ const makeAjaxRequest = (maker_id,retailer_id) => {
 	return xhr;
 }
 
+const updateActiveStatus = (retailer_id,active_status) => {
+	let xhr = new XMLHttpRequest();
+	xhr.open('PUT',`${url_p}/retailers/${retailer_id}/?active=${active_status}`,true);
+	let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
+	xhr.setRequestHeader('X-CSRF-Token', csrf);
+	xhr.send();	
+	return xhr;
+}
 
 const toggleClass =  (button) => {
 		if (button.className == "allocate") {
@@ -69,6 +79,21 @@ const toggleClass =  (button) => {
 		}
 }
 
+const  toggleActive =  (button) => {
+		if (button.className == "deactivate") {
+			button.classList.remove('deactivate');
+			button.classList.add('activate');
+			button.innerHTML = "Activate";
+			return;	
+		}
+		if (button.className == "activate") {
+			button.classList.remove('activate');
+			button.classList.add('deactivate');
+			button.innerHTML = "De-Activate";
+			return;
+		}
+}
+
 const updateSiblings = (button) => {
 	if (button.className == "remove") {
 		let parent = button.parentNode.parentNode
@@ -76,5 +101,18 @@ const updateSiblings = (button) => {
 		filter(elm => elm.id != button.id);
 		if (targetButton[0]) toggleClass(targetButton[0]);
 		return;
+	}
+}
+
+
+// Deactivate  event handler
+const deactivate = () => {
+	let button = event.target; 
+	let xhr = updateActiveStatus(button.id,button.className);
+	xhr.onreadystatechange = function()   {
+		if (xhr.readyState == 2 && xhr.status == 204) {	
+			console.log("Deactivated..");
+			toggleActive(button);
+		}
 	}
 }
