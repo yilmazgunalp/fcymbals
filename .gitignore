@@ -28,7 +28,7 @@ CHEATSHEET.md
 
 # Ignore all backup files.
 /db/back_up/*
-
+/db/scraped/*
 #/public/packs
 /public/packs-test
 /node_modules

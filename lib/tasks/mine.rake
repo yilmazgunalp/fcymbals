@@ -1,7 +1,7 @@
 namespace :myrake  do
 desktop = '/home/yilmazgunalp/Desktop/' 	
-backup_path = "/home/yilmazgunalp/ygprojects/fcymbals/db/back_up/"
-dump_path = "/home/yilmazgunalp/ygprojects/fcymbals/tmp/dbdumps/"
+backup_path = "/home/yg/ygprojects/fcymbals/db/back_up/"
+dump_path = "/home/yg/ygprojects/fcymbals/tmp/dbdumps/"
 time_stamp =  '_' + Time.now.strftime('%Y%m%d%H%M')
 push_table_file = nil
 
@@ -26,6 +26,19 @@ desc "connect to redis"
 
 
 namespace :db  do
+
+#save a csv file with '~' as delimited in tmp/ folder then pass as argument to this task
+# EXAMPLE USAGE :  rake myrake:db:uploadtomakers[sabianupdate]
+        desc "pushes records in a csv file  to production"
+             task :uploadtomakers, [:file]  do |task,args|
+                 file_name = "/home/yg/ygprojects/fcymbals/tmp/#{args.file}.csv"
+                 puts "PREPARING TO PUSH #{args.file} TO PRODUCTION DB..."
+                File.open("#{Rails.root}/lib/tasks/copy_sql.sql", "w") do |f|
+               f << "\\copy table77 from  \'#{file_name}\' with delimiter as '~' csv header;"
+                end 
+               system "psql #{ENV["AWS"]} -f ./lib/tasks/update_makers.sql"
+               puts "DONE!"
+         end  #uploadtomakers};};};)};};
 
 	desc "pushes selected merchant from retailers to production database"
 		task :pushmerchant, [:merchant] do |task,args|
