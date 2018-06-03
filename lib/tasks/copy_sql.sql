@@ -1,1 +1,1 @@
-\copy table77 from  '/home/yg/ygprojects/fcymbals/tmp/:sabianupdate.csv' with delimiter as '~' csv header;
+\copy table77 from  '/home/yg/ygprojects/fcymbals/tmp/update_test.csv' with delimiter as '~' csv header;

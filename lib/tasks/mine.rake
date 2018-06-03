@@ -30,15 +30,15 @@ namespace :db  do
 #save a csv file with '~' as delimited in tmp/ folder then pass as argument to this task
 # EXAMPLE USAGE :  rake myrake:db:uploadtomakers[sabianupdate]
         desc "pushes records in a csv file  to production"
-             task :uploadtomakers, [:file]  do |task,args|
-                 file_name = "/home/yg/ygprojects/fcymbals/tmp/#{args.file}.csv"
+             task :inserttomakers, [:file]  do |task,args|
+                 file_name = "/#{Rails.root}/tmp/#{args.file}.csv"
                  puts "PREPARING TO PUSH #{args.file} TO PRODUCTION DB..."
-                File.open("#{Rails.root}/lib/tasks/copy_sql.sql", "w") do |f|
-               f << "\\copy table77 from  \'#{file_name}\' with delimiter as '~' csv header;"
+                File.open("#{Rails.root}/lib/tasks/update_sql.sql", "w") do |f|
+               f << "\\copy table77 (brand,code,series,model,kind,size,description) from \'#{file_name}\' with delimiter as '~' csv header;"
                 end 
                system "psql #{ENV["AWS"]} -f ./lib/tasks/update_makers.sql"
                puts "DONE!"
-         end  #uploadtomakers};};};)};};
+         end  #uploadtomakers
 
 	desc "pushes selected merchant from retailers to production database"
 		task :pushmerchant, [:merchant] do |task,args|
