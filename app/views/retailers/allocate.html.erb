@@ -4,8 +4,7 @@
 <% end %>
 
 
-<h1>  <%=params[:merchant] %>  </h1>
-<% @rsp.each do |r,makers| %>
+<h1>  <%=params[:merchant] %>  </h1> <% @rsp.each do |r,makers| %>
 	<header class="retailer">
 		<h3><%=r.title %></h4>
 		<p><%=r.id %></p>
@@ -13,6 +12,10 @@
 		<% if r.active %>
                     <button class="deactivate" id=<%= "#{r.id}" %>>De-Activate</button>
 		<% end %>	
+		<%= form_for r , url: linkto_path(r.id),html: {class: "linktomaker"} do |f| %>
+  <%= f.text_field :maker_id %>
+  <%= f.submit "Allocate" %>
+<% end %>
 		<a href= <%=r.link %> target = 'blank'>Product Link</a>
 	</header>
 <div class="makers" id=<%= "#{r.id}" %>>

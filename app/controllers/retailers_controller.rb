@@ -4,6 +4,11 @@ class RetailersController < ApplicationController
 		@rsp = Retailer.alloc(params[:merchant],params[:res],params[:rec])
 	end #allocate
 
+        def linktomaker
+        p params[:id]
+       Retailer.find(params[:id]).update(maker: Maker.find(params[:retailer][:maker_id]))
+        p Retailer.find(params[:id])
+        end
         def update 
          retailer = Retailer.find(params[:id])
         if params[:active] == "deactivate"

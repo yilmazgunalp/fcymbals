@@ -8,6 +8,7 @@ match '*path', :controller => 'application', :action => 'handle_options_request'
 
   get 'retailers/allocate'
   get 'retailers', to: 'retailers#index' 
+  patch 'retailers/:id/linktomaker', to: 'retailers#linktomaker', as: 'linkto'
 
   resources :makers
   resources :retailers

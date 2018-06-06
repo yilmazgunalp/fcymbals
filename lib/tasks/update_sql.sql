@@ -1,1 +1,1 @@
-\copy table77 (brand,code,series,model,kind,size,description) from '//home/yilmazgunalp/ygprojects/fcymbals/tmp/update_test.csv' with delimiter as '~' csv header;
+\copy table77 (brand,code,series,model,kind,size,description) from '//home/yg/ygprojects/fcymbals/tmp/zildjian.csv' with delimiter as '~' csv header;

@@ -1,6 +1,6 @@
 namespace :solr do 
 
-    desc "indexes given csv file to solr collection seperate csv with | character"
+    desc "downloads all makers from production and index them to solr"
 
      task :index, [:file]  do |task,args|
 
