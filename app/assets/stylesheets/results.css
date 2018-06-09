@@ -20,6 +20,12 @@ display: block;
 clear: both;	
 }
 
+.facets-container {
+margin-top: 25px;    
+}
+#facet-header {
+font-weight: 600;
+}
 #facets-list  {
 background-color: #f7f8f9;
 padding: 2.3em 4.5em;

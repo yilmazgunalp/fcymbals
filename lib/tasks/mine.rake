@@ -40,7 +40,19 @@ namespace :db  do
                puts "DONE!"
          end  #uploadtomakers
 
-	desc "pushes selected merchant from retailers to production database"
+	# upsert records from a local csv file '~' delimter to production for makers table
+        desc "upserts records from local csv to production makers table"
+             task :upserttomakers, [:file]  do |task,args|
+                 file_name = "/#{Rails.root}/tmp/#{args.file}.csv"
+                 puts "PREPARING TO UPSERT  #{args.file} TO PRODUCTION DB MAKERS TABLE..."
+                File.open("#{Rails.root}/lib/tasks/upsert_sql.sql", "w") do |f|
+               f << "\\copy table77 (id,brand,code,series,model,kind,size,description) from \'#{file_name}\' with delimiter as '~' csv header;"
+                end 
+               system "psql #{ENV["AWS"]} -f ./lib/tasks/upsert_makers.sql"
+               puts "DONE!"
+         end  #upserttomakers
+
+desc "pushes selected merchant from retailers to production database"
 		task :pushmerchant, [:merchant] do |task,args|
 			file_name = dump_path+ args.merchant+".csv"
 			puts "copying merchant records into csv file on localhost..."

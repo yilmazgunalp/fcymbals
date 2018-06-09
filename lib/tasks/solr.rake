@@ -1,6 +1,6 @@
 namespace :solr do 
 
-    desc "downloads all makers from production and index them to solr"
+    desc "downloads all makers from production and indexes them to solr"
 
      task :index, [:file]  do |task,args|
 
