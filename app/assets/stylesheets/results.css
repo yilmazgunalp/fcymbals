@@ -53,7 +53,7 @@ width: 33%;
 
 .result {
 
-background: #EEE6E4;
+background: #fff;
 max-height: 200px;
 margin: 15px 0;
 }
@@ -92,6 +92,11 @@ max-width: 100%;
 .product-info {
 
 padding-top: 2em;
+}
+
+.googlify {
+border-radius: 5px;    
+box-shadow: 3px 3px 3px #ebdec4,-3px -3px 3px #ebdec4;
 }
 
 

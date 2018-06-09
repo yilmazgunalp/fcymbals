@@ -5,19 +5,19 @@ font-size: 1.2em;
 }
 	
 #s-box {
-text-align: center;
 margin-top: 3px;
 }
 
 input[type="search"] {
 border: 1px solid #F4ECCD;
 height: 36px;
-border-radius: 3px;
+border-radius: 3px 0 0 3px;
 width: 80%;
 max-width: 400px;
 font-size: inherit;
 color: #4c3c08;
 font-weight: lighter;
+padding: 9px;
 }
 
 
@@ -29,4 +29,7 @@ input[type="submit"]{
 font-size: inherit;
 font-weight: bold;
 letter-spacing: 0.1em;	
+background: #db4545;
+padding: 8px;
+border-radius: 0 3px 3px 0;
 }
