@@ -2,7 +2,7 @@ const url_d = "http://localhost:3000";
 const url_p = "http://www.redcymbal.net"
 
 const parser = new DOMParser();
-const template = parser.parseFromString(`<div class="result">
+const template = parser.parseFromString(`<div class="result googlify">
     <h1 class="result-header">
         <ul class="result-header-ul">
             <li class="merchant"> <span class="address"></span></li>
@@ -56,7 +56,7 @@ function getUrlParam(parameter, defaultvalue){
 function getFacets(ids) {
    event.preventDefault();
    let xhr = new XMLHttpRequest();
-   xhr.open('GET',`${url_p}/searches/getfacets?makers=${ids}`,true);
+   xhr.open('GET',`${url_d}/searches/getfacets?makers=${ids}`,true);
    let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
     xhr.setRequestHeader('X-CSRF-Token', csrf);
     xhr.setRequestHeader('Accept', 'application/json');

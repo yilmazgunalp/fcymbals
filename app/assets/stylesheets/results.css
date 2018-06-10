@@ -20,21 +20,35 @@ display: block;
 clear: both;	
 }
 
+/* FACETS */
+
 .facets-container {
 margin-top: 25px;    
 }
 #facet-header {
-font-weight: 600;
+font-weight: bold;
+color: blue;
 }
 #facets-list  {
-background-color: #f7f8f9;
-padding: 2.3em 4.5em;
+box-shadow: 1px 0 #ebdec4,-1px 0 1px #ebdec4;
+padding: 0.8em 2em;
 
 } 
 
 .facet {
+background-color: #d45440;
+background-clip: content-box;
+text-align: center;
 margin: 5px 0;
+font-weight: bold;
+padding: 2px;
+width: 31%;
+border-radius: 45%;
+}
 
+.brand-name {
+vertical-align: middle;
+height: 2.5em;
 }
 
 
@@ -44,12 +58,6 @@ margin: 5px 0;
 /* #results {
 background: #EB9984;	
 }	 */  
-
-
-.facet {
-width: 33%;
-}
-
 
 .result {
 
