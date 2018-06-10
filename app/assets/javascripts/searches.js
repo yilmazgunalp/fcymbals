@@ -56,7 +56,7 @@ function getUrlParam(parameter, defaultvalue){
 function getFacets(ids) {
    event.preventDefault();
    let xhr = new XMLHttpRequest();
-   xhr.open('GET',`${url_d}/searches/getfacets?makers=${ids}`,true);
+   xhr.open('GET',`${url_p}/searches/getfacets?makers=${ids}`,true);
    let csrf =  document.getElementsByTagName('meta')[1].getAttribute('content');
     xhr.setRequestHeader('X-CSRF-Token', csrf);
     xhr.setRequestHeader('Accept', 'application/json');
