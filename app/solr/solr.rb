@@ -26,7 +26,7 @@ module Solr
 			result = {}	
 			retailers.each do |r|
 				rq = r.title.gsub(/["”]/,"").match(/(set)|(pack)/) ? "cymbalsets" : "allocate"
-				useparams = rq == "allocate" ? "alloc" : "cymbalsets"
+				useparams = rq == "allocate" ? "allocrelaxed" : "cymbalsets"
 				uri = parse_string(rq,{q: encode_ascii(r.title), 
 					wt: 'ruby', useParams: useparams, bf: boostfunction(useparams),sow: 'true'})
 				response = Net::HTTP.get_response(URI(uri))	
