@@ -3,7 +3,7 @@
 //You can use CoffeeScript in this file: http://coffeescript.org/
 
 const url_d = "http://localhost:3000";
-const url_p = "http://www.redcymbal.net"
+const url_p = "https://www.redcymbal.net"
 
 
 
