@@ -75,6 +75,10 @@ module Solr
 			when  "alloc"
 			return 'query({!df=\'model\'v=$q},1)^2 query({!df=\'model_exact\'v=$q},1)^2 
 				query({!df=\'series_exact\'v=$q},1)^2.2 query({!df=\'kind_exact\'v=$q},1)^2.5'
+                        when "allocrelaxed"
+                        return 'query({!df=\'kind_exact\'v=$q},1)^1.03 query({!df=\'series_exact\'v=$q},1)^1.03 
+                        query({!df=\'kind\'v=$q},1)^1.03 query({!df=\'model_exact\'v=$q},1)^1.03 
+                        query({!df=\'series\'v=$q},1)^1.03 query({!df=\'model\'v=$q},1)^1.02'
 			when "cymbalsets"
 				return 'query({!df=\'series_exact\'v=$q},1)^2.2'
 			when "find"
