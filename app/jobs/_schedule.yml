@@ -38,3 +38,8 @@ ddream:
   queue: "scrapeshops"
   cron: "30 10 * * 7"
   args: ddream
+clean:
+  class: "CleanJob"
+  queue: "cleanretailers"
+  cron: "30 03 15 * *"
+

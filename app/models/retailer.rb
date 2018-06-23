@@ -3,9 +3,12 @@ class Retailer < ApplicationRecord
   	belongs_to :maker, :inverse_of => :retailers
   	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code', dependent: :destroy
 
+        scope :active, -> { where(active: true) }
+
         #send selected retailers to Solr module for matchig
         #res: refers to whether to include all retailer in response
         #rec:  refers to whether to include all retailer in Solr match
+
 	def self.alloc(merchant,res=nil,rec=nil,count=50,offset=nil)
 		@rsp =  if(rec == 'all') 
 				Solr.match(Retailer.where(shop: merchant).limit(count))
@@ -62,6 +65,14 @@ class Retailer < ApplicationRecord
 		id.to_s + "\t" + title + "\t" + "\t\tACTIVE:\t" +active.to_s
 	end #to_log
 
+	# Delete records if they have been inactive in the last 15 days
+	def self.clean_old_records time
+		Retailer.where("updated_at < ?",time).each {|retailer| retailer.destroy}
+	end	# clean_old_records
+
+	def to_log
+		id.to_s + "\t" + title + "\t" + "\t\tACTIVE:\t" +active.to_s
+	end #to_log
 	
 	private
 
