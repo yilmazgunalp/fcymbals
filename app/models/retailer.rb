@@ -1,7 +1,7 @@
 class Retailer < ApplicationRecord
 	include Solr
   	belongs_to :maker, :inverse_of => :retailers
-  	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code', dependent: :destroy
+  	belongs_to :merchant, foreign_key: 'shop', primary_key: 'code'
 
         scope :active, -> { where(active: true) }
 

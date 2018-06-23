@@ -1,6 +1,7 @@
 <div class="result googlify">
 	<h1 class="result-header">
 		<ul class="result-header-ul">
+                        <% p result%>   
 			<li class="merchant"> <%=result.merchant.name %> <span class="address"><%= result.merchant.state%></span></li>
 			<li class="price"><span class="currency">AUD</span><%=result.price.to_i %></li>
 		</ul>

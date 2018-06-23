@@ -8,6 +8,7 @@ class SearchesController < ApplicationController
 		@makers,@facets = Solr.search(params[:q])[0], Solr.search(params[:q])[1]
 		@retailers = []
 		@makers.each() {|m| Maker.find(m).retailers.active.each() {|r| @retailers << r}}
+                p @retailers
 		render 'results'
 	end
 
