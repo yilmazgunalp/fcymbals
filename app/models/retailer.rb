@@ -67,7 +67,7 @@ class Retailer < ApplicationRecord
 
 	# Delete records if they have been inactive in the last 15 days
 	def self.clean_old_records time
-		Retailer.where("updated_at < ?",time).each {|retailer| retailer.destroy}
+		Retailer.where("active = ? AND updated_at < ?",false,time).each {|retailer| retailer.destroy}
 	end	# clean_old_records
 
 	def to_log
