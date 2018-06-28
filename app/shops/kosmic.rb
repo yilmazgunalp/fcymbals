@@ -5,6 +5,7 @@ class Kosmic < Shop
 @shop = Scraper::MERCHANTS[merchant]	
 
 @options = {
+title: -> (item,selector) {item.at_css(selector)['title'].strip.downcase!},
 
 }
 

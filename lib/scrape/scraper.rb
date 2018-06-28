@@ -39,7 +39,6 @@ def self.csv_import page,merchant,shop,file, opts = nil
 		page.css(TAGS.dig(merchant,"product")).each_with_index do |item,i|
 				
 				title =  options[:title].call(item,TAGS.dig(merchant,'title'))
-				
 		begin # begin rescue block for price	
 		price = options[:price].call(item,TAGS.dig(merchant,'price')) unless item.at_css(TAGS.dig(merchant,'price')).nil?
 		s_price = options[:price].call(item,TAGS.dig(merchant,'s_price')) unless item.at_css(TAGS.dig(merchant,'s_price')).nil?
