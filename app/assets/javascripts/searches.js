@@ -83,6 +83,7 @@ for (elm of list) {
    let price = document.createTextNode(elm[2]);
    temp.querySelector("li.price").appendChild(price);
    temp.querySelector("a").innerText = elm[1];
+   temp.querySelector("a").setAttribute('href',elm[3])
 
    newContainer.appendChild(temp);
    }
