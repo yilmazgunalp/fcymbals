@@ -18,11 +18,6 @@ thedrum:
   queue: "scrapeshops"
   cron:  "30 10 * * 3" 
   args: thedrum
-abh:
-  class: "BgshopsJob"
-  queue: "scrapeshops"
-  cron: "30 10 * * 4"  
-  args: abh
 derringers:
   class: "BgshopsJob"
   queue: "scrapeshops"
