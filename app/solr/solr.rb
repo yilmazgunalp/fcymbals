@@ -14,9 +14,9 @@ module Solr
 				if eval(response.body).dig('error') 
 					puts "SOLR ERROR:  #{uri}"
 				else	
-					results,facets = eval(response.body).dig('response','docs'),eval(response.body).dig('expanded')
+					results = eval(response.body).dig('response','docs')
 				end #if
-			[unfold_results(results),unfold_facets(facets)]	
+			[unfold_results(results)]	
 		end #search()	
 
 
@@ -49,14 +49,6 @@ module Solr
 			rsp.map(){|e| e['id']}
 		end	
 		
-		def unfold_facets(facets)
-			results = {}
-			facets.each do |k,v|
-				results[k] = v['docs'].map {|e| e['id']}.join("-")
-			end #facets.each			
-			results
-		end	
-
 		def parse_string(rq,params)
 			str = ""
 			params.each do |k,v|

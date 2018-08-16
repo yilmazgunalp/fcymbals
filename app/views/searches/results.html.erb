@@ -14,17 +14,13 @@
 		<!-- SEARCH RESULTS -->
 		<main id="results">
 			<div class="facets-container">
-                        <h3 id="facet-header">filter results by brand...</h3>                        
-				<ul id="facets-list">
-					<%= render partial: 'shared/facet',  collection: @facets %>
-				</ul>
+
 			</div>
 			<div class="results-container">
-				<% if !@retailers.empty? %>
-				<%= render partial: 'shared/result',  collection: @retailers %>
-				<%else %>
+				<% if @no_result%>
 				<%= render partial: 'shared/noresult' %>	
 				<% end %>
+				<%= render partial: 'shared/result',  collection: @retailers %>
 
 				
 			</div><!-- Results Container -->

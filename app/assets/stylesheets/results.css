@@ -25,30 +25,10 @@ clear: both;
 .facets-container {
 margin-top: 25px;    
 }
-#facet-header {
-font-weight: bold;
-color: blue;
-}
-#facets-list  {
-box-shadow: 1px 0 #ebdec4,-1px 0 1px #ebdec4;
-padding: 0.8em 2em;
 
-} 
+#no-result {
+color: #002d5b;
 
-.facet {
-background-color: #d45440;
-background-clip: content-box;
-text-align: center;
-margin: 5px 0;
-font-weight: bold;
-padding: 2px;
-width: 31%;
-border-radius: 45%;
-}
-
-.brand-name {
-vertical-align: middle;
-height: 2.5em;
 }
 
 

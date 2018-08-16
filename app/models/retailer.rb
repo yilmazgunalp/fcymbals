@@ -33,6 +33,7 @@ class Retailer < ApplicationRecord
 				begin 
 				retailer =  check_for_retailer(row.field('title'), row.field('link'))
 					if retailer 
+          retailer.update(active: true)
 					retailer.check_price(row.field('price').to_i)
 					else
 					tmp_retailer = row.to_h

@@ -5,19 +5,13 @@ class SearchesController < ApplicationController
 	end	
 
 	def search
-		@makers,@facets = Solr.search(params[:q])[0], Solr.search(params[:q])[1]
+		@makers = Solr.search(params[:q])[0]
 		@retailers = []
 		@makers.each() {|m| Maker.find(m).retailers.active.each() {|r| @retailers << r}}
-                p @retailers
+    if @retailers.empty? 
+    @no_result = true
+    @retailers = Retailer.limit(100).order('RANDOM()').where.not(maker_id: 3604).where(active: true)
+    end
 		render 'results'
 	end
-
-	def getfacets()
-		results = []
-		params[:makers].split("-").each do |m|
-			 results +=  Maker.find(m).retailers.active.pluck(:shop,:title,:price,:link);
-		end	
-		render json: results
-	end	
-
 end
